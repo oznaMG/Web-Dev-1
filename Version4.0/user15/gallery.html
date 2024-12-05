@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 4.0
+        Name: Jacob Schieffer
+        Date Completed: 12/03/2024
+    -->
+
+<head>
+
+    <title>Gallery</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Version 4.0 - Gallery">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        #rainbow {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your NavBar ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="display.html" class="nav-link">Display</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled" tabindex="-1">Contact</a>
+                    </li>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your NavBar ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-primary" type="button">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <main class="container-fluid mt-3">
+
+        <h1 class="text-left my-3 title" tabindex="0">My favorite Animal Crossing Villagers</h1>
+        <!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+
+        <div id="gallery">
+            <p>Hover over the images to get more info.</p>
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://us-east.storage.cloudconvert.com/tasks/37595ac1-8a06-448a-b59a-c6c212b23f38/Tangy_ACNH.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20241204%2Fva%2Fs3%2Faws4_request&X-Amz-Date=20241204T143906Z&X-Amz-Expires=86400&X-Amz-Signature=143b12b1acab7e697f97afc3eb954e7482b265c7fd662e69fa34f973e485fcaf&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Tangy_ACNH.jpg%22&response-content-type=image%2Fjpeg&x-id=GetObject" alt="Tangy_ACNH" width="200" height="325">
+                        <p class="caption"></p>
+                    </div>
+                    <div class="back">
+                        <a href="https://animalcrossing.fandom.com/wiki/Tangy" target="_blank">
+                            <h2 class="mh-100">Tangy</h2>
+                        </a>
+                        <p class="description">Tangy is a peppy cat villager that appears in every game of the Animal Crossing series. The name "Tangy" comes from the sharp taste of citrus fruit. Her Japanese name is a contraction of "100 Percent" and refers to juice concentrate. She appears on the album cover for K.K. Birthday. She has the music hobby.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://us-east.storage.cloudconvert.com/tasks/5ee13d51-35d4-4b19-8c7a-8adbea63c6a6/Mint_ACNH.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20241204%2Fva%2Fs3%2Faws4_request&X-Amz-Date=20241204T145228Z&X-Amz-Expires=86400&X-Amz-Signature=e32fa8799133c9b3b403e47f8ecc10011af810758ef151dad17b14a1e01a2899&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Mint_ACNH.jpg%22&response-content-type=image%2Fjpeg&x-id=GetObject" alt="Mint_ACNH">
+                        <p class="caption"></p>
+                    </div>
+                    <div class="back">
+                        <a href="https://animalcrossing.fandom.com/wiki/Mint" target="_blank">
+                            <h2>Mint</h2>
+                        </a>
+                        <p class="description">Mint is a snooty squirrel villager from the Animal Crossing series, known for her mint green fur. She appears in nearly every game and references mint in her quotes. Mint has a fashion hobby and is featured on the cover of Animal City.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://us-east.storage.cloudconvert.com/tasks/eb7962e2-35cd-4a3e-b775-7f814513c0d2/Raymond_ACNH.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20241204%2Fva%2Fs3%2Faws4_request&X-Amz-Date=20241204T150230Z&X-Amz-Expires=86400&X-Amz-Signature=933c191830ec142c9b1d0b2aeefce2559623aa0e703dabb0f2bd0dcf87ad0cf2&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Raymond_ACNH.jpg%22&response-content-type=image%2Fjpeg&x-id=GetObject" alt="Raymond_ACNH" width="200" height="325">
+                        <p class="caption"></p>
+                    </div>
+                    <div class="back">
+                        <a href="https://animalcrossing.fandom.com/wiki/Raymond" target="_blank">
+                            <h2 class="mh-100">Raymond</h2>
+                        </a>
+                        <p class="description">Raymond is a smug cat villager from New Horizons and Pocket Camp. His English name means "Advice," reflecting his business attire. His Japanese phrase suggests strictness, while his Dutch phrase means neat, highlighting his precision. He has a nature hobby.</p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="container">
+            <div class="flipper">
+                <div class="front">
+                    <img src="https://us-east.storage.cloudconvert.com/tasks/40985b5f-fb61-4f35-a8b9-5ec786bf1ead/Lolly_ACNH.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20241204%2Fva%2Fs3%2Faws4_request&X-Amz-Date=20241204T151538Z&X-Amz-Expires=86400&X-Amz-Signature=a401414aceaa01452a1bde2ef77b426b754ad5f782a8707179174474cff753d4&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Lolly_ACNH.jpg%22&response-content-type=image%2Fjpeg&x-id=GetObject" alt="Lolly_ACNH" width="200" height="325">
+                    <p class="caption"></p>
+                </div>
+                    <div class="back">
+                        <a href="https://animalcrossing.fandom.com/wiki/Lolly" target="_blank">
+                            <h2 class="mh-100">Lolly</h2>
+                        </a>
+                        <p class="description">Lolly is a normal cat villager in the Animal Crossing series, introduced in Animal Forest e+. Her name, derived from "lollipop," and her catchphrase "bonbon," which means "candy" in French, reflect her sweet personality. Her Japanese name, Ramune, refers to a type of soda, and both her name and phrases often refer to cats.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+    </main>
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer>
+        <span class="title d-block">Example of a Footer Title</span>
+        <div class="container py-1" id="footerTable">
+            <ul class="list-unstyled d-flex justify-content-center">
+                <li class="mx-3">
+                    <i class="fa-brands fa-facebook fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-x-twitter fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-instagram fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-github fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-tiktok fa-3x" aria-hidden="true"></i>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>

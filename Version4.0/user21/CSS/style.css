@@ -1,3 +1,9 @@
+@import url(rainbow.css);
+
+td:hover {
+	background-color: black;
+  }
+
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -19,3 +25,174 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+.button {
+	background-color: #d7f5d8;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button1 {
+	border-radius: 8px;
+}
+
+.button2 {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td{
+	padding:20px;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
+	font-family: "Indie Flower", cursive;
+}
+
+.class{
+	property: value;
+  }
+
+  .buttonpink {
+	box-shadow: 0px 0px 0px 2px #f09ee6;
+	background-color:#b078c2;
+	border-radius:10px;
+	border:1px solid #884d94;
+	display:inline-block;
+	cursor:pointer;
+	color:#f5fa67;
+	font-family:Arial;
+	font-size:18px;
+	padding:12px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #572966;
+}
+.buttonpink:hover {
+	background-color:#95469c;
+}
+.buttonpink:active {
+	position:relative;
+	top:1px;
+}
+
+.btn:before, .icon-heart:after, .icon-star:after, .icon-plus:after, .icon-file:before {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+
+.btn-1c:after {
+width: 0%;
+height: 100%;
+top: 0;
+left: 0;
+background: #fff;
+}
+
+.myButt {
+	box-shadow: 3px 4px 0px 0px #5e3800;
+	background-color:#9ce0ff;
+	border-radius:11px;
+	display:inline-block;
+	cursor:pointer;
+	color:#bd8e00;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #e1e2ed;
+}
+.myButt:hover {
+	background-color:#7dcbd7;
+}
+.myButt:active {
+	position:relative;
+	top:1px;
+}
+
+.title{
+	font-family: 'Agdasima'; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+
+  text {
+	font-family: 'Agdasima'; 
+  }
+  
+  #morecontent {
+	background-color: rgb(179, 237, 255);
+  }
+
+#footertable {
+	background-color: #7dcbd7;
+	border-style:groove;
+	border: width 10px;
+}
+
+#hirebuttons {
+	background-color: #7dcbd7;
+	border-bottom: #5e3800;
+	border: width 50px;
+}
+
+p {
+	font-family: 'Agdasima'; 
+}
+
+#knowledge > * {
+	border: 3px rgb(196, 175, 216) solid;
+  }
+
+p * {
+	background-color: #ebc6ec;
+  }
+
+div li * ::marker{
+	content:"𝄞 ";
+	font-size: 30px;
+  }
+
+div li * ::marker{
+	color: rgb(125, 3, 169);
+  }
+
+i:hover {
+	background-color: rgb(234, 196, 250);
+  }
+
+li i:first-child {
+	color: rgb(119, 75, 125);
+  }
+
+h3:hover {
+	background-color: rgb(255, 209, 250);
+  }

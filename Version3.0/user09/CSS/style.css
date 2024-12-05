@@ -1,21 +1,49 @@
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	font-family: "baskerville", fantasy;
 	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
+	text-align: center;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	cellspacing: 10px;
+	border-collapse: collapse;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#ffd1f4; 
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #003366;
+	background-color: #fe6c6c;
+}
+
+h1 {
+	font-family: "baskerville", fantasy;
+	color: #9eceff;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 1px;
+	border-collapse: collapse;
+	background-color: #ffdede;
+}
+h2 {
+	text-align: center;
+	color: #000000;
+	background-color: #ffd2d2;
+}
+body {
+	background-image: "images/sky.jpeg";
+	background-repeat: no-repeat;
+	background-size: cover;
+ }
+
+li {
+	text-align: left;
+	color:aliceblue
 }
