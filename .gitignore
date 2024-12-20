@@ -1,14 +1,16 @@
+ <main>
+
+
+
 < main>
 
-.DS_Store
-.DS_Store
+
 
 /.buildpath
 /build/
 */archive/
 
 __MACOSX
-.DS_Store
 
 .project
 .settings
@@ -17,10 +19,7 @@ __MACOSX
 
 # OS generated files #
 ######################
-*/.DS_Store
-.DS_Store
-.DS_Store?
-._*
+*/.
 .Spotlight-V100
 .Trashes
 Icon?
@@ -84,3 +83,4 @@ Network Trash Folder
 Temporary Items
 .apdisk
  main
+ </main>

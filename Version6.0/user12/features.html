@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 6.0
+    Name:shabir sadeqi
+    Date Completed:12/19/24
+-->
+
+<head>
+    <link rel="icon" type="image/ico" href="./images/favicon 2.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bugatti Features</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/bugatti-background.jpg'); 
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+            background-color: transparent; 
+        }
+
+        .navbar {
+            background-color: rgba(33, 33, 33, 0.9);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar .navbar-brand {
+            font-weight: 700;
+            font-size: 2rem;
+            color: #f1c40f;
+            text-transform: uppercase;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 12px 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .navbar .navbar-nav .nav-link:hover {
+            color: #f1c40f;
+            background-color: #333;
+            border-radius: 20px;
+            transition: 0.3s ease;
+        }
+
+        .features {
+            background-color: rgba(255, 255, 255, 0.85); 
+            padding: 80px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 50px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .features::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(236, 234, 234, 0.2); 
+            border-radius: 8px;
+            z-index: -1;
+        }
+
+        .features h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeInUp 1s forwards;
+        }
+
+        .features .lead {
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: fadeInUp 1.5s 0.5s forwards;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 1.5s forwards;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-card i {
+            font-size: 3rem;
+            color: #f1c40f;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .feature-card:hover i {
+            color: #333;
+        }
+
+        .feature-card h4 {
+            font-size: 1.7rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .feature-card p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #212121;
+            color: #fff;
+            padding: 30px 0;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #f1c40f;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .feature-card {
+                padding: 20px;
+            }
+
+            .features h2 {
+                font-size: 2rem;
+            }
+
+            .features .lead {
+                font-size: 1.1rem;
+            }
+
+            .navbar .navbar-nav .nav-link {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bugatti</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Bugatti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="engineering.html">Engineering</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Cutting-Edge Features</h2>
+            <p class="lead">Bugatti is known for blending high performance with extreme luxury. Here are some of the features that set Bugatti cars apart:</p>
+            <div class="row">
+                <!-- Feature 1: Performance -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h4>Performance and Speed</h4>
+                        <p>Bugatti vehicles are engineered for ultimate speed. With groundbreaking aerodynamics, lightweight materials, and advanced engines, they are the fastest cars in the world.</p>
+                    </div>
+                </div>
+                <!-- Feature 2: Interior -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <i class="fas fa-cogs"></i>
+                        <h4>Exquisite Interior</h4>
+                        <p>The interior of a Bugatti is a masterpiece, crafted from the finest leather, polished metal, and exotic wood finishes. Comfort is paired with cutting-edge technology.</p>
+                    </div>
+                </div>
+                <!-- Feature 3: Luxury -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <i class="fas fa-palette"></i>
+                        <h4>Unmatched Luxury</h4>
+                        <p>Every Bugatti car combines world-class engineering with exquisite luxury. The attention to detail in every aspect ensures a truly unique driving experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bugatti | All Rights Reserved</p>
+        <div>
+            <a href="https://facebook.com" class="text-white me-3"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com" class="text-white me-3"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://instagram.com" class="text-white"><i class="fab fa-instagram-square"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

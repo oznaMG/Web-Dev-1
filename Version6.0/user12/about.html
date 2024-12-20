@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 6.0
+    Name:shabir sadeqi
+    Date Completed:12/19/24
+-->
+
+<head>
+    <link rel="icon" type="image/ico" href="./images/favicon 2.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Bugatti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #212121;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #f1c40f;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 12px 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f1c40f;
+            background-color: #333;
+            border-radius: 20px;
+            transition: 0.3s ease;
+        }
+
+        .about {
+            background: url('images/about-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            color: #ddd;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .about img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+        }
+
+        .about .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .milestones {
+            background-color: #333;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .milestones h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .milestones p {
+            font-size: 1.2rem;
+            color: #ddd;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .milestones ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 1.1rem;
+        }
+
+        .milestones ul li {
+            background-color: #444;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 12px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .milestones ul li i {
+            color: #f1c40f;
+            margin-right: 10px;
+        }
+
+        .milestones ul li:hover {
+            background-color: #555;
+            cursor: pointer;
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bugatti</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Bugatti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="engineering.html">Engineering</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about py-5 fade-in">
+        <div class="container">
+            <h2>About Bugatti</h2>
+            <p>Founded by Ettore Bugatti in 1909, the company quickly became synonymous with performance and luxury. The
+                first car, the <strong>Bugatti Type 13</strong>, was a game-changer, and the brand has continued to lead
+                the industry
+                ever since.</p>
+            <p>Bugatti's legacy is built on the foundation of excellence in design, engineering, and innovation. Today,
+                the
+                brand is known for its <strong>world-record-breaking performance</strong> and breathtaking designs.</p>
+            <img src="images/veyron.jpg" alt="Bugatti Type 13">
+        </div>
+    </section>
+
+    <!-- Milestones Section -->
+    <section class="milestones py-5 fade-in">
+        <div class="container">
+            <h2>Bugatti Milestones</h2>
+            <p>Bugatti's journey has been full of remarkable achievements and historic moments. Here are some key
+                milestones
+                that have defined the brand:</p>
+            <ul>
+                <li><i class="fas fa-trophy"></i> <strong>1909</strong>: Founded by Ettore Bugatti in Molsheim, Alsace.
+                </li>
+                <li><i class="fas fa-cogs"></i> <strong>1920s</strong>: The Type 35 became the most successful race car
+                    in history.</li>
+                <li><i class="fas fa-car"></i> <strong>2005</strong>: The Veyron 16.4, the world's fastest car, was
+                    unveiled.</li>
+                <li><i class="fas fa-rocket"></i> <strong>2016</strong>: The Chiron became the new flagship, with 1,479
+                    horsepower.</li>
+                <li><i class="fas fa-flag-checkered"></i> <strong>2020</strong>: Bugatti produced the Divo, focused on
+                    track precision and performance.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Bugatti | All Rights Reserved</p>
+        <div>
+            <a href="https://facebook.com" class="text-white me-3"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com" class="text-white me-3"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://instagram.com" class="text-white"><i class="fab fa-instagram-square"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

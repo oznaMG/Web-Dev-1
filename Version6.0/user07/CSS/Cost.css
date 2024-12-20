@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
+
+
+header {
+	/* flex:10; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-left: 10px;
+	gap: 10px;
+	background-color: #FFFFFF;
+	min-height: 70px;
+	border-bottom: 2px solid #E3E3E3;
+}
+body {
+    background-color: #cfd2d292;
+}
+a {
+	text-decoration: none;
+	color: #4A4A4A;
+	transition: 0.8s;
+    size: 5%;
+}
+main {
+	flex:10;
+	padding-left: 20px;
+	padding-right: 20px;
+    text-align: center;
+}
+a:hover {
+	background-color: #a3a1a1;
+}
+
+
+ /*--------------------------------------CLICKABLE LINKS AT THE TOP OF THE PAGE (START)--------------------------------------------------------------------*/ 
+  .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: x-large;
+    margin-left: 14%;
+    list-style-type: none;
+
+  }
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+    color: #FFFFFF;
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(30px);
+    transform: scale(0.9, 0.9);
+  }
+
+  button {
+    --color: #797979;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    color: #fff;
+  }
+  
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  button:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  button:active:before {
+    background: #34ff88;
+    transition: background 0s;
+  }
+
+  .Browse {
+    --color: #797979;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    
+  }
+  
+  .Browse:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .Browse:hover {
+    color: #fff;
+  }
+  
+  .Browse:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .Browse:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .Browse:active:before {
+    background: #34ff88;
+    transition: background 0s;
+  }
+
+
+/*--------------------------------------CLICKABLE LINKS AT THE TOP OF THE PAGE (END)--------------------------------------------------------------------*/ 
+  
+  
+ 
+  
+  .spacer  {
+      background-color: #b1b1b141;
+      width: 3px;
+      height: 80%;
+  }
+
+
+/* MAIN BODY*/
+h1 {
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 0px;
+    text-align: center;
+    padding-top: 200px;
+}
+body {
+	background-color: #F1F6F8;
+	margin: 0;
+	font-family: 'Poppins';
+	display: flex;
+	flex-direction: column;
+	gap:10px;
+	height: 106vh;
+}
+
+/* PRODUCTS */
+
+.Sep{
+    background-color: #b1b1b141;
+    width: 90%;
+    height: 3px;
+}
+
+
+.product {
+    width: 40%;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 35px 25px;
+    margin: 15px 35px;
+    float: left;
+    background-color:#cfd2d292;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #aba5a5;
+    margin-left: 5%;
+    list-style-type: none;
+}
+
+.product:hover{
+    background-color: #cccccc;
+    transition: 400ms;
+    transform: scale(1.1, 1.1);
+    color: #4d4d4db0;
+}
+/* .product:hover > .product:not(:hover) {
+    filter: blur(30px);
+    transform: scale(0.9, 0.9);
+  } */
+
+.product-icon{
+    height: 75px;
+}
+.product-text{
+    font-size: 20px;
+    color: #141414;
+    font-weight:700;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 1px #828282;
+    margin-top: 0;
+}
+
+.itemContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    padding-left: 14%;
+}
+.new{
+    background-color: #da97af;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+    width: fit-content;
+    margin-left: 43%;
+
+}
+
+.priceContainer{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+    margin-top: -10px;
+}
+.crossedPrice{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: line-through;
+    font-weight: 600;
+    font-size: 15px;
+    color: #6B7280;
+}
+.actuallPrice{
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 15px;
+    color: #EF4444;
+}
+
+.order{
+    --color: #8ad581;
+}
+.order:hover{
+    color: #fff; 
+}
+.order:active::before{
+    --color: #34ff88;
+    
+}
+div>a{
+    color: #FFFFFF;
+}
+
+.preview{
+    --color: #599dd8; 
+}
+.preview:hover{
+    color: #FFFFFF;
+}
+.preview:active:before {
+    background: #4bf8fe;
+    transition: background 0s;
+  }
+
+
+
+
+
+
+
+/* FOOTER STUFF */
+.footerList li {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+   }
+   
+   .footerList li:disabled {
+    pointer-events: none;
+   }
+   
+   .footerList li:hover {
+    color: #fff;
+    background-color: #c1c1c1;
+    box-shadow: rgba(143, 142, 142, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   .footerText:hover{
+    color: #FFFFFF;
+   }
+   
+   .footerList li:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+
+
+
+
+
+  footer {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.footerList {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+}
+
+.footerList li {
+	list-style-type: none;
+	display: inline;
+	padding-left: 30px; /* Remove the indent */
+	/* margin-left: 20px; */
+}
+
+.footerLink {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+
+
+
+
+.inspect {
+    position: relative;
+    width: 80%;
+    height: 90%;
+    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+    margin-left: 125;
+    float: center;
+  }
+  
+  .inspect::after {
+    content: "Add to Cart";
+    padding-top: 1.25em;
+    padding-left: 1.25em;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: #00AC7C;
+    color: #fff;
+    height: 4em;
+    width: 100%;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+    font-size: x-large;
+  }
+  
+  .inspect .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .inspect .price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+    color: #000;
+  }
+  
+  .inspect:hover::after {
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .inspect:active {
+    transform: scale(10px);
+  }
+  
+  .inspect:active::after {
+    content: "Added !";
+    height: 2.8em;
+  }
+  
+  .text {
+    max-width: 55px;
+  }
+  
+  .image {
+    background: rgb(241, 241, 241);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }

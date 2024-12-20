@@ -1,0 +1,47 @@
+
+
+.red {
+	background-color: #ff0000;
+}
+
+td {
+	padding: 20px;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-align: center;
+}
+.title{
+	color: rgb(255, 0, 0);
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  .title-small {
+	font-size: .5rem;
+	background-color: yellow;
+  }
+ 

@@ -1,0 +1,84 @@
+/* Font and basic gallery styles */
+#gallery {
+  font-family: "Roboto", sans-serif; /* Changed to Roboto font */
+  line-height: 1.5em;
+  text-align: center;
+}
+
+/* Container for each item in the gallery */
+.container {
+  display: inline-block;
+  margin: 3%;
+  perspective: 1000px; /* Controls the 3D depth */
+}
+
+/* Flipper element that performs the rotation */
+.flipper {
+  position: relative;
+  transition: transform 0.3s; /* Faster flip (0.3s duration) */
+  transform-style: preserve-3d;
+}
+
+/* Front and back of the flipper (the card) */
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 320px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  backface-visibility: hidden; /* Hides the back side of the card when flipped */
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg); /* Keeps the back face rotated 180 degrees by default */
+}
+
+/* Make sure the image fits properly */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Adjust the size for container and both sides (front/back) */
+.container, .front, .back {
+  width: 250px;
+  height: 320px;
+}
+
+/* Trigger the double flip and make the back side visible after flip */
+.container:hover .flipper {
+  transform: rotateY(540deg); /* Ends with the back side visible (540 degrees) */
+}
+
+/* Styling for links */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Styling for the caption and the back-side title */
+.caption, .back h1 {
+  font-family: "Roboto", sans-serif; /* Using Roboto font */
+  font-size: 1.7em;
+  padding: 10px 10px 0 10px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Position the caption at the bottom of the image */
+p.caption {
+  position: absolute;
+  bottom: 1vh;
+}
+
+/* Description text on the back side */
+.description {
+  font-size: 0.9em;
+  padding: 0 20px 20px 20px;
+  text-align: left;
+}

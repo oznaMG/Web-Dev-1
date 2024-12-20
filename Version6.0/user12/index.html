@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 6.0
+    Name:shabir sadeqi
+    Date Completed:12/19/24
+-->
+
+<head>
+    <link rel="icon" type="image/ico" href="./images/favicon 2.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bugatti - Excellence in Automotive Engineering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #212121;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #f1c40f;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 12px 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f1c40f;
+            background-color: #333;
+            border-radius: 20px;
+            transition: 0.3s ease;
+        }
+
+        header.hero {
+            background: url('images/bugatti-hero.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        header.hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        .hero .btn {
+            background-color: #ffcc00;
+            color: #111;
+            font-size: 1.1rem;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background-color: #e5b900;
+            transform: scale(1.05);
+        }
+
+        .introduction {
+            padding: 60px 0;
+            background-color: #f2f2f2;
+        }
+
+        .introduction h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .introduction p {
+            font-size: 1.1rem;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .models {
+            padding: 80px 0;
+        }
+
+        .models h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .card .btn-primary {
+            background-color: #ffcc00;
+            color: #111;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .card .btn-primary:hover {
+            background-color: #e5b900;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffcc00;
+            font-size: 1.5rem;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            color: #e5b900;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bugatti</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Bugatti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="engineering.html">Engineering</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-white text-center py-5"
+        style="background: url('images/bugatti-hero.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Bugatti: The Pinnacle of Automotive Excellence</h1>
+            <p class="lead">Experience the fastest, most luxurious, and most exclusive cars ever created.</p>
+            <a href="#models" class="btn btn-light btn-lg mt-3">Explore the Models</a>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="introduction py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Why Bugatti?</h2>
+            <p class="text-center">Bugatti is synonymous with extreme performance, innovative technology, and an
+                uncompromising commitment to luxury. With cars like the Veyron, Chiron, and Divo, Bugatti has redefined
+                the limits of speed and exclusivity.</p>
+        </div>
+    </section>
+
+    <!-- Featured Models Section -->
+    <section id="models" class="models py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Iconic Bugatti Models</h2>
+            <div class="row">
+                <!-- Bugatti Veyron -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-lg border-0 rounded-3">
+                        <img src="images/veyron.jpg" class="card-img-top" alt="Bugatti Veyron">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bugatti Veyron</h5>
+                            <p class="card-text">The Veyron set the benchmark for speed and luxury with its 267 mph top
+                                speed.</p>
+                            <a href="models.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bugatti Chiron -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-lg border-0 rounded-3">
+                        <img src="images/chiron.jpg" class="card-img-top" alt="Bugatti Chiron">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bugatti Chiron</h5>
+                            <p class="card-text">The Chiron pushes the limits of performance, with a top speed of 261
+                                mph.</p>
+                            <a href="models.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bugatti Divo -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-lg border-0 rounded-3">
+                        <img src="images/divo.jpg" class="card-img-top" alt="Bugatti Divo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bugatti Divo</h5>
+                            <p class="card-text">The Divo is a more track-focused version of the Chiron, built for
+                                precision and agility.</p>
+                            <a href="models.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Bugatti | All Rights Reserved</p>
+        <div>
+            <a href="https://facebook.com" class="text-white me-3"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com" class="text-white me-3"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://instagram.com" class="text-white"><i class="fab fa-instagram-square"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

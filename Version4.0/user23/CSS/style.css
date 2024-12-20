@@ -1,21 +1,143 @@
+@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap);
+@import url(rainbow.css);
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button1 {
+	border-radius: 8px;
+}
+
+.button2 {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td {
+	padding: 20px;
+}
+
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
 }
 
-tr {
-	border: 1px solid #ffffff;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	text-align: center;
-	background-color:#9FB6CD; 
 }
+.button-largeRadius {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.button-largeRadius:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.button-largeRadius {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.button-largeRadius:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.button-largeRadius:active {
+	position:relative;
+	top:1px;
+}
+.button-smallRadius {
+	box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.button-smallRadius:hover {
+	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color:#415989;
+}
+.button-smallRadius:active {
+	position:relative;
+	top:1px;
+}
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+  #morecontent {
+	background-color: yellow;
+  } 
+ #footerTable {background-color: #b1eef6}
+ #hireButtons {background-color: #2e466e;}
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
-}
+ #knowledge > * {
+	border: 3px red solid;
+  }
+  div li::marker{
+	color: red;
+  }
+  #knowledge li::marker{
+	content:"😜 ";
+  }
+   div li:hover {
+	background-color: black;
+  }

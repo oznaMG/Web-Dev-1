@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 5.0
+    Name:
+    Date Completed:
+-->
+
+<head>
+    <title>Bootstrap Examples</title>
+
+    <!-- Homepage meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Version 5.0 - Index Bootstrap Examples">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            background: #dbdfe5;
+            margin-bottom: 15px;
+        }
+        
+        .demo-content.bg-alt {
+            background: #abb1b8;
+        }
+        body {background-color: #3b5998;}
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ----------------------------------->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Navigation Bar</title>
+        <style>
+            /* General reset */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            /* Navbar container */
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 20px;
+                background-color: #333;
+            }
+    
+            /* Logo */
+            .logo a {
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+    
+            /* Navigation list */
+            .nav-list {
+                list-style: none;
+                display: flex;
+                align-items: center;
+            }
+    
+            .nav-list li {
+                margin-left: 20px;
+                position: relative;
+            }
+    
+            .nav-list li a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                padding: 8px 15px;
+                display: block;
+            }
+    
+
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+    
+            .dropdown-menu {
+                list-style: none;
+                position: absolute;
+                background-color: #444;
+                top: 100%;
+                left: 0;
+                min-width: 150px;
+                display: none;
+                padding: 10px 0;
+                border-radius: 5px;
+            }
+    
+            .dropdown-menu li {
+                padding: 8px 20px;
+            }
+    
+            .dropdown-menu li a {
+                color: white;
+                text-decoration: none;
+                display: block;
+            }
+    
+            .dropdown-menu li a:hover {
+                background-color: #575757;
+            }
+    
+            .search-container {
+                display: flex;
+                align-items: center;
+            }
+    
+            .search-container input {
+                padding: 8px;
+                border: none;
+                border-radius: 4px;
+                margin-right: 10px;
+            }
+    
+            .search-container button {
+                padding: 8px 15px;
+                border: none;
+                background-color: #575757;
+                color: white;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+    
+            .search-container button:hover {
+                background-color: #444;
+            }
+    
+            /* Hover effects */
+            .nav-list li a:hover {
+                background-color: #575757;
+            }
+    
+            .search-container input:focus {
+                outline: none;
+                border: 2px solid #575757;
+            }
+    
+            /* Responsive design */
+            @media (max-width: 768px) {
+                .navbar {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+    
+                .nav-list {
+                    flex-direction: column;
+                    width: 100%;
+                    margin-top: 20px;
+                }
+    
+                .nav-list li {
+                    margin: 10px 0;
+                    width: 100%;
+                }
+    
+                .search-container {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+    
+                .search-container input {
+                    width: 80%;
+                    margin-right: 10px;
+                }
+    
+                .search-container button {
+                    width: 20%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">Website</a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.mcdonalds.com">McDonald's</a></li>
+                            <li><a href="https://www.dominos.com">Domino's</a></li>
+                            <li><a href="https://www.wingstop.com">Wingstop</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </nav>
+        </header>
+    </body>
+    </html>
+    
+    <!---------------------------------- End the nav-bar ------------------------------------->
+    
+    <!---------Jumbotron---------------------------------------------->
+    <header class="p-5 bg-primary-subtle text-black" name="Jumbotron">
+        <h4> Bootstrap Examples</h4>
+        <p class="lead"> Let's look at the many different examples of how we can use bootstrap and what bootstrap can do!
+        </p>
+    </header>
+
+    <main>
+        <!---------Three Column Layouts------------------------------------>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="demo-content">.col-md-6</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="demo-content bg-alt">.col-md-6</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="demo-content">.col-md-4</div>
+                </div>
+                <div class="col-md-8">
+                    <div class="demo-content bg-alt">.col-md-8</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="demo-content">.col-md-3</div>
+                </div>
+                <div class="col-md-9">
+                    <div class="demo-content bg-alt">.col-md-9</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col demo-content">Column one</div>
+                <div class="col demo-content bg-alt">Column two</div>
+                <div class="col demo-content">Column three</div>
+                <div class="col demo-content bg-alt">Column four</div>
+                <div class="col demo-content">Column five</div>
+                <div class="col demo-content bg-alt">Column six</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-lg-3">
+                    <div class="demo-content">.col-md-4 .col-lg-3</div>
+                </div>
+                <div class="col-md-8 col-lg-6">
+                    <div class="demo-content bg-alt">.col-md-8 .col-lg-6</div>
+                </div>
+                <div class="col-md-12 col-lg-3">
+                    <div class="demo-content">.col-md-12 .col-lg-3</div>
+                </div>
+            </div>
+        </div>
+
+        <!---------Table-Striped------------------------------------------->
+        <div class="container mt-3" name="table-striped">
+        </div>
+
+        <!---------List-Group---------------------------------------------->
+        <div class="container mt-3" name="list-group">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">
+                    <i class="fa fa-home"></i> Home
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-camera"></i> Pictures <span class="badge bg-secondary badge-pill badge-primary pull-right active">145</span>
+                </a>
+                <a href="https://www.spotify.com/" target="_blank" class="list-group-item list-group-item-action">
+                    <i class="fa fa-music"></i> Music <span class="badge bg-secondary badge-pill badge-primary pull-right active">50</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-film"></i> Videos <span class="badge bg-secondary badge-pill badge-primary pull-right">8</span>
+                </a>
+                <a href="https://discord.com" target="_blank" class="list-group-item list-group-item-action">
+                    <i class="fa-brands fa-discord"></i> Discord
+                </a>
+            </div>
+        </div>
+
+        <!---------Form Button--------------------------------------------->
+        <div class="container mt-3 vstack" name="form-button">
+        </div>
+    </main>
+
+    <!---------------------------------- Begin the footer ------------------------------------->
+    <footer>
+        <span class="title"></span>
+        <div class="container py-4" id="footerTable">
+            <ul class="list-unstyled d-flex justify-content-center">
+                <li class="mx-3">
+                    <i class="fa-brands fa-facebook fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-x-twitter fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-instagram fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-github fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-tiktok fa-3x" aria-hidden="true"></i>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!---------------------------------- End the footer -------------------------------------->
+
+    <!-- Footer Section -->
+    <footer class="bg-info text-center">
+        <div class="container p-4">
+            
+
+            <section>
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2"><strong>Sign up for our newsletter</strong></p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form5Example2" class="form-control" />
+                                <label class="form-label" for="form5Example2">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-4">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section class="mb-4">
+                <p style="font-size: 2rem; font-weight: bold;">
+                    Master the Art of Cooking
+            </section>
+        </div>
+        <section class="mb-4">
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="https://www.twitter.com" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="https://www.google.com" role="button" target="_blank"><i class="fab fa-google"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://www.instagram.com" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com" role="button" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="https://www.github.com" role="button" target="_blank"><i class="fab fa-github"></i></a>
+        </section>
+        
+        <style>
+            .btn:hover {
+                opacity: 0.8; /* Makes the button slightly transparent on hover */
+                transform: scale(1.1); /* Slightly enlarges the button on hover */
+            }
+        </style>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2025 Copyright:
+        </div>
+    </footer>
+
+    <!-- Footer Section End -->
+</body>
+
+</html>

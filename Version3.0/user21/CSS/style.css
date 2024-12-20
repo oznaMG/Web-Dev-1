@@ -1,6 +1,10 @@
+main {
+	background-image: url('images/fireflies.jpg')
+  }
+
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	font-family: "Comfortaa";
+	color: #bc96cc;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
@@ -9,13 +13,49 @@ table {
 }
 
 tr {
-	border: 1px solid #ffffff;
+	border: 1px solid #4c3400;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#f2aef8; 
 }
 
 th {
 	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+	color: #2e001c;
+	background-color: #e5d0f4;
+}
+
+body {
+	background-image: url(https://media.discordapp.net/attachments/1197698781462941738/1308811079752745011/photo-1528353518104-dbd48bee7bc4.png?ex=673f4ccd&is=673dfb4d&hm=3c210bb1f9d53384e8971d1e774c573e8ada2b15efaddc652593872b5c12403c&=&format=webp&quality=lossless&width=1798&height=1012);
+	background-size: cover;
+	background-position: relative;
+   }
+
+h1 {
+	font-family: "Comfortaa";
+	color: #fffff1;
+}
+
+h2 {
+	font-family: "Comfortaa";
+	color: #fffff1;
+}
+
+li{
+	font-family: "Comfortaa";
+	color: #fffff1;
+}
+
+p{
+		font-family: "Comfortaa";
+		color: #fffff1;
+}
+
+div{
+	font-family: "Comfortaa";
+		color: #fffff1;
+}
+
+h3{
+font-family: "Comfortaa";
+color: #fffff1;
 }

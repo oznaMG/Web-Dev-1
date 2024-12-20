@@ -1,0 +1,150 @@
+<html lang="en">
+    <head>
+
+    <title>Stolen TrafficCones</title>
+
+    <!-- Homepage meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Version 5.0 - Index Bootstrap Examples">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/Cost.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+
+
+    <body>
+        <header>
+            <img src="images/TrafficCone.png" height="100px"   id="icon">
+                <div class="spacer"></div>
+            <nav>
+                <ul class="cards">
+                    <li><a href="menu.html" class="card" >Go back</a></li>
+                    <li><a href="shop.html" class="card">Store</a></li>
+                    <li><a href="about.html" class="card">More-Info</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="products">
+                <div class="product">
+                    <div><img src="images/PixelCone.png"  class="product-icon" ></div>
+        
+                    <div class="itemInformationContainer">
+                        <div class="new">Popular!</div>
+                        <div class="product-text"> Pixelated Cone</div>
+                        <div class="priceContainer"></div>
+                            <p class="crossedPrice">$609.99</p>
+                            <p class="actuallPrice">$14.99</p>
+                    </div>
+
+                    <div class="Sep"></div>
+
+                    <div class="itemContainer">
+                        <div class="order"> <button class="order" id="order" onclick="changeText()">Order</button> </div>
+                        <li><a href="store1.html"  class="preview"> <button class="preview">Preview</button></a></li>
+                    </div>
+
+                    <script>
+                        function changeText() {
+                            const button = document.getElementById('order');
+                            button.innerText = 'IN CART';
+                            }
+
+                    </script>
+
+                </div>
+                <div class="product">
+                    <div><img src="images/2dCone.png"  class="product-icon"></div>
+                    <div class="itemInformationContainer">
+                        <div class="new">Popular!</div>
+                        <div class="product-text"> 2D Cone</div>
+                        <div class="priceContainer"></div>
+                            <p class="crossedPrice">$19.99</p>
+                            <p class="actuallPrice">$9.99</p>
+                    </div>
+
+                    <div class="Sep"></div>
+
+                    <div class="itemContainer">
+                        <div class="order"> <button class="order" id="order2" onclick="changeText2()">Order</button> </div>
+                        <li><a href="store2.html"  class="preview"> <button class="preview">Preview</button></a></li>
+                        
+                    </div>
+                    <script>
+                        function changeText2() {
+                            const button = document.getElementById('order2');
+                            button.innerText = 'IN CART';
+                            }
+
+                    </script>
+                </div>
+                <div class="product">
+                    <div><img src="images/IllusCone.png"  class="product-icon"></div>
+                    <div class="itemInformationContainer">
+                        <div class="new">Popular!</div>
+                        <div class="product-text"> Illustration Cone</div>
+                        <div class="priceContainer"></div>
+                            <p class="crossedPrice">$79.99</p>
+                            <p class="actuallPrice">$2.99</p>
+                    </div>
+
+                    <div class="Sep"></div>
+
+                    <div class="itemContainer">
+                        <div class="order"> <button class="order" id="order3" onclick="changeText3()">Order</button> </div>
+                        <li><a href="store3.html"  class="preview"> <button class="preview">Preview</button></a></li>
+                    </div>
+                    <script>
+                        function changeText3() {
+                            const button = document.getElementById('order3');
+                            button.innerText = 'IN CART';
+                            }
+
+                    </script>
+                </div>
+                <div class="product">
+                    <div><img src="images/CircCone.png"  class="product-icon"></div>
+                    <div class="itemInformationContainer">
+                        <div class="new">Popular!</div>
+                        <div class="product-text"> Circle Cone</div>
+                        <div class="priceContainer"></div>
+                            <p class="crossedPrice">$59.99</p>
+                            <p class="actuallPrice">$19.99</p>
+                    </div>
+
+                    <div class="Sep"></div>
+
+                    <div class="itemContainer">
+                        <div class="order"> <button class="order"id="order4" onclick="changeText4()">Order</button> </div>
+                        <li><a href="store4.html"  class="preview"> <button class="preview">Preview</button></a></li>
+                    </div>
+                    
+                </div>
+            </section> 
+
+        </main>
+        </items>
+        <footer>
+            <ul class="footerList">
+                <li><a href="mailto:234853@shakopeeschools.org" target="_blank" class="footerLink">Contact Us</a></li>
+            </ul>
+    
+            <p class="footerText">© 2024 WebDev - Traffic Cones</p>
+        </footer>
+    </body>

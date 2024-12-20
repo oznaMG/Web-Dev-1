@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 4.0
+        Name:
+        Date Completed:
+    -->
+
+<head>
+
+    <title>Gallery</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Version 4.0 - Gallery">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        #rainbow {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your NavBar ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="display.html" class="nav-link">Display</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled" tabindex="-1">Contact</a>
+                    </li>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your NavBar ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-primary" type="button">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <main class="container-fluid mt-3">
+
+        <h1 class="text-left my-3 title" tabindex="0">Random store</h1>
+        <!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+
+        <div id="gallery">
+            <p>Hover over the images to get the answer</p>
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://www.millerchemical.com/wp-content/uploads/2021/03/pineapple-176818583.png" alt="Pineapple">
+                        <p class="caption">Fruit</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://en.wikipedia.org/wiki/Pineapple" target="_blank">
+                            <h2 class="mh-100">Pineapple</h2>
+                        </a>
+                        <p class="description">The pineapple is a tropical plant with an edible fruit, known for its sweet and tangy taste. It is native to South America but is now grown in tropical and subtropical regions worldwide.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://assets.editorial.aetnd.com/uploads/2011/06/gettyimages-142198198.jpg" alt="Eiffel Tower">
+                        <p class="caption">Landmark</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://en.wikipedia.org/wiki/Eiffel_Tower" target="_blank">
+                            <h2 class="mh-100">Eiffel Tower</h2>
+                        </a>
+                        <p class="description">The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It was completed in 1889 and has become a global cultural icon of France and one of the most-visited paid monuments in the world.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://www.worldanimalprotection.us/cdn-cgi/image/fit=cover,width=1600,format=auto/siteassets/images/wildlife/kangaroos/kangaroo-joey-getty.jpg" alt="Kangaroo">
+                        <p class="caption">Animal</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://en.wikipedia.org/wiki/Kangaroo" target="_blank">
+                            <h2 class="mh-100">Kangaroo</h2>
+                        </a>
+                        <p class="description">Kangaroos are marsupials native to Australia. Known for their powerful hind legs, large tails, and unique hopping movement, they are an iconic symbol of the Australian wilderness.</p>
+                    </div>
+                </div>
+            </div>
+<div class="container">
+    <div class="flipper">
+        <div class="front">
+            <img src="https://www.unjourdeplusaparis.com/wp-content/uploads/2015/05/photo-louvre-insolite.jpg" alt="Louvre Museum">
+            <p class="caption">Museum</p>
+        </div>
+        <div class="back">
+            <a href="https://en.wikipedia.org/wiki/Louvre" target="_blank">
+                <h2 class="mh-100">Louvre Museum</h2>
+            </a>
+            <p class="description">The Louvre is the world's largest and most visited art museum. Located in Paris, it is home to thousands of works of art, including the famous painting, the Mona Lisa.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+    </main>
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer>
+        <span class="title d-block">Example of a Footer Title</span>
+        <div class="container py-1" id="footerTable">
+            <ul class="list-unstyled d-flex justify-content-center">
+                <li class="mx-3">
+                    <i class="fa-brands fa-facebook fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-x-twitter fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-instagram fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-github fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-tiktok fa-3x" aria-hidden="true"></i>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>

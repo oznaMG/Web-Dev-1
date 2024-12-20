@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gato</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 80px 20px 20px 20px;
+            text-align: center;
+        }
+
+        .container h1 {
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .menu-item {
+            flex: 1 1 200px;
+            padding: 15px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .menu-item h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .menu-item p {
+            margin: 5px 0 0;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .fruit-cat-img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="mainpage.html">Home</a>
+        <a href="personal_favorites.html">Personal Favorites</a>
+        <a href="fruit_cat.html">The Gato</a>
+        <a href="top5_momazos.html">Top 5 Momazos</a>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to The Gato Page</h1>
+        <div class="menu">
+            <!-- First Row of Images -->
+            <div class="menu-row">
+                <div class="menu-item">
+                    <h2>Fancy ahh cat™</h2>
+                    <img src="images/Fancy-cat.jpeg" alt="Fancy cat™">
+                    <p>Loves lounging in luxury and prefers only the finest kibble.</p>
+                </div>
+                <div class="menu-item">
+                    <h2>Serious cat™</h2>
+                    <img src="images/Gato.jpg" alt="Chamba Gato™">
+                    <p>Always on duty, this cat means business.</p>
+                </div>
+                <div class="menu-item">
+                    <h2>Alien cat™</h2>
+                    <img src="images/URANIUM.jpeg" alt="Alien cat™">
+                    <p>I LOVE URANIUM _. Mysterious and out of this world.</p>
+                </div>
+                <div class="menu-item">
+                    <h2>Watermelon cat®</h2>
+                    <img src="images/Watermelon-Cat.webp" alt="Watermelon cat®">
+                    <p>Sweet, juicy, and refreshingly cool.</p>
+                </div>
+            </div>
+            <!-- Second Row of Images -->
+            <div class="menu-row">
+                <div class="menu-item">
+                    <h2>Charming Cat™</h2>
+                    <img src="images/Charming-cat.jpeg" alt="Charming Cat™">
+                    <p>Charming and delightful, this cat wins hearts effortlessly.</p>
+                </div>
+                <div class="menu-item">
+                    <h2>Mystery Cat™</h2>
+                    <img src="images/Mystery-cat.jpeg" alt="Mystery Cat™">
+                    <p>A true enigma, this cat is full of surprises.</p>
+                </div>
+                <div class="menu-item">
+                    <h2>Playful Cat™</h2>
+                    <img src="images/Playful-cat.jpeg" alt="Playful Cat™">
+                    <p>Energetic and fun, this cat loves to play all day long.</p>
+                </div>
+                <div class="menu-item">
+                    <h2>Sophisticated Cat™</h2>
+                    <img src="images/Sophisticated-cat.jpeg" alt="Sophisticated Cat™">
+                    <p>Elegant and refined, this cat enjoys the finer things in life.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="sound" src="audio/Muhehehe.mp3" preload="auto"></audio>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var sound = document.getElementById("sound");
+            sound.play();
+        });
+    </script>
+
+</body>
+
+</html>

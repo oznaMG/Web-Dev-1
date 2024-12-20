@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+#Gallery {
+  font-family: "Orbitron", sans-serif;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.Container {
+  display: inline-block;  
+  margin: 3%;
+color: 1000px;
+
+}
+
+.Flipper {
+  position: relative;
+  transition: 1.6s;
+  transform-style: preserve-3d;
+}
+
+.Front, .Back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 320px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  backface-visibility: hidden;
+}
+
+.Front {
+  z-index: 2;
+  background-color: rgb(160, 82, 45);
+}
+
+.Back {
+  transform: rotateY(540deg);
+  background-color: rgb(160, 82, 45);
+}
+
+img {
+  width: 100%;
+}
+
+.Container, .Front, .Back {
+  width: 250px;
+  height: 320px;
+}
+
+.Container:hover .Flipper {
+  transform: rotateY(540deg);
+}
+
+a {
+  color: black;
+}
+
+.Caption, .Back h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.7em;
+  padding: 10px 10px 0 10px;
+  margin: 0;
+  text-align: center;
+}
+
+p.Caption {
+  position: absolute;
+  bottom: 1vh;
+}
+
+.Description {
+  font-size: 0.9em;
+  padding: 0 20px 20px 20px;
+  text-align: left;
+}

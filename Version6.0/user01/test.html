@@ -1,0 +1,352 @@
+<!DOCTYPE
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Website Template</title>
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7DPEgi8mLFDO9xZo0oN5YHyh7vK2HgVoK8" 
+    crossorigin="anonymous"
+    
+  >
+</head>
+<body>
+  <!-- Navbar -->
+  <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Responsive Navbar</title>
+          <style>
+            /* Basic styling for the navbar */
+            body {
+              margin: 0;
+              font-family: Arial, sans-serif;
+            }
+            .navbar {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-color: #333;
+              padding: 10px 20px;
+            }
+            .navbar a {
+              color: rgb(77, 255, 0);
+              text-decoration: none;
+              padding: 10px 15px;
+            }
+            .navbar a:hover {
+              background-color: #ffffff;
+              border-radius: 5px;
+            }
+            .navbar .nav-links {
+              display: flex;
+            }
+            .navbar .logo {
+              font-size: 20px;
+              font-weight: bold;
+            }
+            @media (max-width: 768px) {
+              .navbar .nav-links {
+                flex-direction: column;
+                display: none; /* Hidden by default */
+                width: 100%;
+                background-color: #00ff11;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                z-index: 1;
+              }
+              .navbar .nav-links.active {
+                display: flex; /* Show when active */
+              }
+              .navbar .menu-toggle {
+                display: block;
+                cursor: pointer;
+              }
+              .navbar .menu-toggle span {
+                background: white;
+                height: 3px;
+                width: 25px;
+                margin: 5px;
+                display: block;
+              }
+            }
+            @media (min-width: 769px) {
+              .navbar .menu-toggle {
+                display: none;
+              }
+            }
+body {
+  background-image: url('caps');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+body {
+  color: rgb(0, 208, 255); 
+}
+</style>
+        </head>
+        <body>
+          <nav class="navbar">
+            <div color:DodgerBlue; = "logo">MyWebsite</div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="rainbow.html">Attackers</a>  
+          </nav>
+        
+          <script>
+            function toggleMenu() {
+              const navLinks = document.querySelector('.nav-links');
+              navLinks.classList.toggle('active');
+            }
+          </script>
+        </body>
+        </html>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <section id="home">
+        <h2 style="background-color:rgb(0, 0, 0);">
+        Best characters in each special category they fit in</h2>
+        <h2 style="background-color:rgb(0, 0, 0);">
+      <p>
+    </section>
+
+    <section id="about" class="mt-5">
+      <h2 style="background-color:rgb(0, 0, 0);">
+      <p></p>
+    </section>
+
+    <section id="services" class="mt-5">
+      <h2 style="background-color:rgb(0, 0, 0);">
+    <li>Roamer</li>
+    <li>Wall Denial</li>
+    <li>Support</li>
+    </h2>
+    </section>
+     
+    <section id="contact" class="mt-5">
+      <h2 style="background-color:rgb(0, 0, 0);">
+   
+      <body style="background-image: url('capsule_616x353.jpg');"></body>
+    </section>
+  </main>
+  <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Flip Cards</title>
+    <style>
+        /* General container for the cards */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between cards */
+            padding: 20px;
+        }
+    
+        /* Flip card styling */
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px; /* Create a 3D effect */
+        }
+    
+        /* Flip card inner container */
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+    
+        /* Flip card front and back */
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden; /* Hide back face when not flipped */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+        .flip-card-front {
+            background-color: #fff;
+            color: black;
+        }
+    
+        .flip-card-back {
+            background-color: #007BFF;
+            color: white;
+            transform: rotateY(180deg); /* Flip the back side */
+        }
+    
+        /* Flip the card on hover */
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+    </style>
+    </head>
+    <body>
+    <div class="card-container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="cav.jpeg" HTML Imagealt="Avatar" style="width:300px;height:300px;">
+                    <h2></h2>
+                </div>
+                <div class="flip-card-back">
+                    <h2>Caveira's job is to catch attackers off guard and get kills</h2>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="bandit.jpeg" HTML Imagealt="Avatar" style="width:300px;height:300px;">
+                    <h2></h2>
+                </div>
+                <div class="flip-card-back">
+                    <h2>Bandit's job is to secure the hard breach walls making it harder for the site to get breached.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="doc.webp" HTML Imagealt="Avatar" style="width:300px;height:300px;">
+                    <h2></h2>
+                </div>
+                <div class="flip-card-back">
+                    <h2>Doc's role is to sit on site and make sure your team gets stim shots.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+  <!-- Footer -->
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    footer {
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .social-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .social-links li {
+        display: inline;
+    }
+    .social-links a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 32px; /* Increased size */
+        transition: color 0.3s;
+    }
+    .social-links a:hover {
+        color: #1da1f2; /* Default Twitter Blue */
+    }
+    #form-button {
+background-color: rgb(0, 149, 255);
+color: white;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+font-size: 16px;
+}
+
+</style>
+
+ 
+    <footer class ="bg-dark text-white text-center py-3">
+    <p>Connect with us:</p>
+    <ul class="social-links">
+        <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+    </ul>
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,21 +1,97 @@
-table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
-}
+	@import url(rainbow.css);
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
-}
+	table {
+		font-family: "Marker Felt", "Comic Sans MS", fantasy;
+		color: #003366;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+		border-collapse: collapse;
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
-}
+	}
+
+	tr {
+		border: 1px solid #ffffff;
+		text-align: center;
+		background-color: #9FB6CD;
+	}
+
+	th {
+		text-align: center;
+		color: #ffffff;
+		background-color: #003366;
+	}
+
+	.button {
+		background-color: #4CAF50;
+		border: none;
+		color: white;
+		padding: 20px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+
+	.button1 {
+		border-radius: 8px;
+	}
+
+	.button2 {
+		border-radius: 30%;
+	}
+
+	.red {
+		background-color: #ff0000;
+	}
+
+	td {
+		padding: 20px;
+	}
+
+	table {
+		.card {
+			display: inline;
+			display: inline-block;
+			/* Other existing styles for the .card class */
+		}
+
+		margin-left: auto;
+		display: inline-block;
+		margin-right: auto;
+	}
+
+	.title {
+		color: red;
+		font-family: 'Trebuchet MS', sans-serif;
+	}
+
+	.title-large {
+		font-size: 2rem;
+	}
+
+	.title-small {
+		font-size: .5rem;
+	}
+
+	#morecontent {
+		background-color: rgb(13, 255, 110);
+	}
+
+	* {
+		color: rgb(0, 0, 0);
+	}
+
+	p+* {
+		background-color: #FFFF00;
+	}
+
+	div li::marker {
+		color: red;
+	}
+
+	div li::marker {
+		content: "😜 ";
+	}

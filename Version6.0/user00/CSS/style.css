@@ -1,0 +1,102 @@
+body {
+    background-color: gray;
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/rustic-weathered-wood-logs-royalty-free-image-1654709658.jpg");
+    position: relative;
+}
+
+
+.tinos-regular {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tinos-bold {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.tinos-regular-italic {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.tinos-bold-italic {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    font-family: "tinos", sans-serif;
+    color: black;
+    text-decoration: none;
+    background: none;
+    border: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.footer {
+    font-family: "tinos", sans-serif;
+    font-size: 20px;
+    width: 100%;
+left: 0;
+height: calc(100% - 54px); /*Minus the height of the header*/
+top: 54px; /*The height of the header*/
+background-size: cover;
+background-attachment: fixed;
+
+}
+
+i>li:hover {
+    background-color: rgba(0, 0, 0, 0.27);
+    padding: 5%;
+    color: white !important
+}
+p>a:hover {
+    background-color: rgba(0, 0, 0, 0.27);
+    padding: 5%;
+    color: white !important
+}
+a>i:hover {
+    background-color: rgba(0, 0, 0, 0.27);
+    color: white !important
+}
+table {
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+    color: #000000d0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+tr {
+    border: 1px solid #ffffff;
+    text-align: center;
+    background-color:#838383; 
+}
+
+th {
+    text-align: center;
+    color: #ffffff;
+    background-color: #464646;
+}
+.container td:nth-child(1) {
+    background-color: rgb(160, 82, 45);
+    color: black;
+}
+li> a:hover { background-color: rgba(0, 0, 0, 0.27);
+    color: white !important
+}
+
+.buttonRed
+{color: red;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 2.0
-        Name: Mr.Finger
+        Name: Mr.Finger user 00
         Date Completed:
     -->
 
@@ -19,7 +19,61 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #banner {
+            border: 5px inset rgb(34, 187, 47);
+            background-color: rgb(0, 150, 200);
+            text-align: center;
+        }
+        div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(24, 15, 109);
+    margin-top: 2rem;
+}
 
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 35%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 40%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: #da0909;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
     </style>
 </head>
 
@@ -37,20 +91,69 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-             
+            <h1>this is header size 1</h1>
+            <h2>this is header size 2</h2>
+            <h3>This is header size 3</h3>
+            <h4>this is header size 4</h4>
+            <h5>this is header size 5</h5>
+            <h6>This is header size 6</h6>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            During the rest of this <del>course we will be using many different HTML elements.</del> Below are 8 less
+            commonly used elements. Experiment with these elements by placing these 8 elements into your webpage.
+            You <sup>see comments in the code</sup> that tell you where to place these "other" HTML elements. Write some
+            new text and experiment by adding in these different elements.
+            For example: Welcome to my brand new <ins>AWESOME WEBSITE</ins> Click here for some awesome
+            <sup>DEALS</sup>. Use your creativity!
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
-        </div>
-        <div id="banner">
-        </div>
-        <div id="face">
+            <del></del> - puts a strike through the words
+            <ins></ins> - adds underline
+            <sub></sub> -- subscript
+            <sup></sup> -- superscript
+            <small></small> -- defines a small text
+            <progress value="55" max="150"> </progress> - represents the progress of a task
+            <hr> — will place a horizontal line (no closing tag needed)
+            <abbr title="World Health Organization"> WHO </abbr> -- used to show acronyms
 
         </div>
+
+        <div id="banner">
+
+        </div>
+
+        <div id="face">
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div id="mouth">
+            </div>
+        </div>
+
+        <h1>PUT YOUR BIG TITLE HERE</h1>
+
+        <section style="background: rgb(245, 245, 220, .5);">
+            <h2>Introduction or 1st Point</h2>
+            <p>Content in here that explains your 1st point</p>
+            <p>Content in here that explains your 1st point</p>
+            <p>Content in here that explains your 1st point</p>
+            <p>Content in here that explains your 1st point</p>
+            <p>Content in here that explains your 1st point</p>
+            <p>Content in here that explains your 1st point</p>
+            <p>Content in here that explains your 1st point</p>
+        </section>
+        
+        <section style="color: #da0909;">
+            <h2>2nd Point</h2>
+            <p>Content in here that explains your 2nd point</p>
+        </section>
     </main>
 
 

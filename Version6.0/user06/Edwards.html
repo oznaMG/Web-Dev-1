@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 4.0
+        Name:
+        Date Completed:
+    -->
+
+<head>
+
+    <title>SGA Player Stats</title>
+    <link rel="icon" type="image/x-icon" href="images/NBA.ico"/>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Version 4.0 - Index">
+
+      
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+        .player-stats-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px auto;
+      width: 80%;
+    }
+
+    .player-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .player-header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .player-header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 10px;
+    }
+
+    .stats-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .stats-table th,
+    .stats-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .stats-table th {
+      background-color: #007AC1ff;
+      color: white;
+      font-weight: bold;
+    }
+
+    .stats-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="gallery.css">
+      
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your NavBar ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="SGA.html" class="nav-link active">SGA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Edwards.html" class="nav-link active">Edwards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="LeBron.html" class="nav-link active">LeBron</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Giannis.html" class="nav-link active">Giannis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Jokic.html" class="nav-link active">Jokic</a>
+                    </li>
+                    
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your NavBar ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </ul>
+                <form class="d-flex">
+                    
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+    <link rel="stylesheet" href="gallery.css">
+    <main class="container-fluid mt-3">
+
+        <h1 class="text-left my-3 title" tabindex="0">Anthony Edwards Stats so Far</h1>
+        <h5>Team: Minnesota Timberwolves</h5>
+        <!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+       
+                <!-- Main Player Stats Container -->
+  <div class="player-stats-container">
+    <!-- Player Info Section -->
+    <div class="player-header">
+        <img src="images/Edwards.jpeg" alt="Anthony Edwards"> 
+    </div>
+
+    <!-- Stats Table -->
+    <table class="stats-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Games Played</th>
+          <th>Points Per Game</th>
+          <th>Rebounds Per Game</th>
+          <th>Assists Per Game</th>
+          <th>Field Goal %</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2024-2025</td>
+          <td>26</td>
+          <td>30.3</td>
+          <td>5.5</td>
+          <td>6.3</td>
+          <td>51.0%</td>
+        </tr>
+        <tr>
+          <td>Last 10</td>
+          <td>10</td>
+          <td>22.6</td>
+          <td>5.7</td>
+          <td>4.1</td>
+          <td>42.0%</td>
+        </tr>
+        <tr>
+          <td>Home Games</td>
+          <td>13</td>
+          <td>25.9</td>
+          <td>5.4</td>
+          <td>4.0</td>
+          <td>45.3%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+              
+            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+    </main>
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer class="bg-dark text-white text-center text-lg-start">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase" style="color: lightblue;">About Me</h5>
+              <p> 
+                I am a Junior at Shakopee Highschool and I took WebDevelopment to learn more about websites and how they are created.
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase" style="color: lightblue;" >Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="http://127.0.0.1:5501/Version5.0/user06/Index.html" class="text-blue">Home</a></li>
+                <li><a href="https://www.espn.com/nba/stats" class="text-blue">Stats</a></li>
+                <li><a href="http://127.0.0.1:5501/Version4.0/user06/display.html" class="text-blue">Contact</a></li>
+                <li><a href="http://shakonet.isd720.com" class="text-blue">NBA</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase" style="color: lightblue;">Follow Us</h5>
+                <div class="d-flex justify-content-start">
+                  <a href="https://facebook.com" class="text-blue me-3" target="_blank" style="font-size: 2rem;">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com" class="text-blue me-3" target="_blank" style="font-size: 2rem;">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="https://instagram.com" class="text-blue me-3" target="_blank" style="font-size: 2rem;">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://linkedin.com" class="text-blue" target="_blank" style="font-size: 2rem;">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>

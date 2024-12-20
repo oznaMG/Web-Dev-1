@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 4.0
+        Name:Diego
+        Date Completed:
+    -->
+    
+<head>
+
+    <title>Gallery</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Version 4.0 - Gallery">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        #rainbow {
+            width: 100%;
+        }#gallery {
+    font-family: "Orbitron", sans-serif;
+    line-height: 1.5em;
+    text-align: center;
+  
+}.container {
+    display: inline-block;
+    margin: 3%;
+    perspective: 1000px;
+}.flipper {
+    position: relative;    
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}.front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 320px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    backface-visibility: hidden;
+}.front{
+    z-index:2;
+}
+
+.back{
+    transform:rotateY(180deg);
+}img {
+    width: 100%;
+  }
+.container, .front, .back {
+    width: 250px;
+    height: 320px;
+}.container:hover .flipper {
+    transform: rotateY(180deg);
+  } a {
+    color: rgb(0, 0, 0);
+  }.caption, .back h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.7em;
+    padding: 10px 10px 0 10px;
+    margin: 0;
+    text-align: center;
+  }
+  p.caption {
+    position: absolute;
+    bottom: 1vh;
+  }
+  
+  .description {
+    font-size: 0.9em;
+    padding: 0 20px 20px 20px;
+    text-align: left;
+  }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your NavBar ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                   
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="display.html" class="nav-link">Display</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled" tabindex="-1">Contact</a>
+                    </li>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your NavBar ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-primary" type="button">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <main class="container-fluid mt-3">
+
+        <h1 class="text-left my-3 title" tabindex="0">Favorite manga/anime from 1-7</h1>
+        <!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+       
+        <div id="gallery">
+            <p>Hover over the images</p>
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="dandadan.jpg" alt="DANDADAN">
+                        <p class="caption">1</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://en.wikipedia.org/wiki/Dandadan" target="_blank">
+                            <h2 class="mh-100">DANDADAN</h2>
+                        </a>
+                        <p class="description">Dandadan, also script displayed as Dan Da Dan, is a Japanese manga series written and illustrated by Yukinobu Tatsu. It has been serialized in Shueisha's Shōnen Jump+ app and website since April 2021, with its chapters collected in 17 tankōbon volumes as of November 2024. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="bleach.jpg" alt="BLEACH">
+                        <p class="caption">2</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://en.wikipedia.org/wiki/Bleach_(TV_series)" target="_blank">
+                            <h2>BLEACH</h2>
+                        </a>
+                        <p class="description">Ichigo Kurosaki never asked for the ability to see ghosts -- he was born with the gift. When his family is attacked by a Hollow -- a malevolent lost soul -- Ichigo becomes a Soul Reaper, dedicating his life to protecting the innocent and helping the tortured spirits themselves find peace.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="trigun.jpg" alt="TRIGUN">
+                        <p class="caption">3</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://en.wikipedia.org/wiki/Trigun" target="_blank">
+                            <h2 class="">TRIGUN</h2>
+                        </a>
+                        <p class="description">Trigun is a Japanese manga series written and illustrated by Yasuhiro Nightow. It was first serialized in Tokuma Shoten's shōnen manga magazine Monthly Shōnen Captain from March 1995 to December 1996, until the magazine ceased its publication; its chapters were collected in three tankōbon volumes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="flipper">
+                <div class="front">
+                    <img src="berserk.jpg" alt="BERSERK">
+                    <p class="caption">4</p>
+                </div>
+                <div class="back">
+                    <a href="https://en.wikipedia.org/wiki/Berserk_(manga)" target="_blank">
+                        <h2 class="">BERSERK</h2>
+                    </a>
+                    <p class="description">Berserk is a Japanese manga series written and illustrated by Kentaro Miura. Set in a medieval Europe-inspired dark fantasy world, the story centers on the characters of Guts, a lone swordsman, and Griffith, the leader of a mercenary band called the "Band of the Hawk".</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="container">
+        <div class="flipper">
+            <div class="front">
+                <img src="Chainsawman2.jpg" alt="CHAINSAWMAN">
+                <p class="caption">5</p>
+            </div>
+            <div class="back">
+                <a href="https://en.wikipedia.org/wiki/Chainsaw_Man" target="_blank">
+                    <h2 class="">CHAINSAWMAN</h2>
+                </a>
+                <p class="description">Chainsaw Man is a Japanese manga series written and illustrated by Tatsuki Fujimoto. Its first arc was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump from December 2018 to December 2020; its second arc began serialization in Shueisha's Shōnen Jump+ app and website in July 2022.</p>
+            </div>
+        </div>
+    </div>
+</div> 3
+
+<div class="container">
+    <div class="flipper">
+        <div class="front">
+            <img src="sasuke.jpg" width="190" height="340" alt="NARUTO">
+            <p class="caption">6</p>
+        </div>
+        <div class="back">
+            <a href="https://en.wikipedia.org/wiki/Naruto" target="_blank">
+                <h2 class="">NARUTO</h2>
+            </a>
+            <p class="description">Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.</p>
+        </div>
+    </div>
+</div>
+</div>   <div class="container">
+    <div class="flipper">
+        <div class="front">
+                <img src="fullmetal.jpg" alt="FULLMETAL ALCHEMIST">
+            <p class="caption">7</p>
+        </div>
+        <div class="back">
+            <a href="https://en.wikipedia.org/wiki/Fullmetal_Alchemist" target="_blank">
+                <h2 class="">FULLMETAL ALCHEMIST</h2>
+            </a>
+            <p class="description">Fullmetal Alchemist is a Japanese manga series written and illustrated by Hiromu Arakawa. It was serialized in Square Enix's shōnen manga anthology magazine Monthly Shōnen Gangan between July 2001 and June 2010; the publisher later collected the individual chapters in 27 tankōbon volumes.</p>
+        </div>
+    </div>
+</div>
+</div> 
+
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+    </main>
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer>
+        <span class="title d-block">Example of a Footer Title</span>
+        <div class="container py-1" id="footerTable">
+            <ul class="list-unstyled d-flex justify-content-center">
+                <li class="mx-3">
+                    <i class="fa-brands fa-facebook fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-x-twitter fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-instagram fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-github fa-3x" aria-hidden="true"></i>
+                </li>
+                <li class="mx-3">
+                    <i class="fa-brands fa-tiktok fa-3x" aria-hidden="true"></i>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>

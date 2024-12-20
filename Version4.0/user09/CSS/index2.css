@@ -1,0 +1,138 @@
+@import url(rainbow.css);
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button1 {
+	border-radius: 8px;
+}
+
+.button2 {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td{
+	padding:20px;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
+}
+
+.Button {
+	background-color:#dbdbdb;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Courier New;
+	font-size:24px;
+	padding:16px 38px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffffff;
+}
+.Button:hover {
+	background-color:#ffffff;
+}
+.Button:active {
+	position:relative;
+	top:1px;
+}
+.SaberToothButton {
+	box-shadow:inset 0px 1px 0px 0px #ff6c61;
+	background:linear-gradient(to bottom, #c42f2f 5%, #000000 100%);
+	background-color:#c42f2f;
+	border-radius:6px;
+	border:1px solid #ff0000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #333130;
+}
+.SaberToothButton:hover {
+	background:linear-gradient(to bottom, #000000 5%, #c42f2f 100%);
+	background-color:#000000;
+}
+.SaberToothButton:active {
+	position:relative;
+	top:1px;
+}
+.GreenButton {
+	box-shadow: 0px 0px 50px 3px #3dc21b;
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 50px #2f6627;
+}
+.GreenButton:hover {
+	background-color:#5cbf2a;
+}
+.GreenButton:active {
+	position:relative;
+	top:1px;
+}
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+  #morecontent {
+	background-color: yellow;
+  }
+
+  #footer{
+    text-align:right;
+    border: 2px solid black;
+}
+
+*{
+    text-align:left;
+    border: 1000px solid rgb(77, 61, 61);
+border: #18ab29;
+	cursor:help;
+	transform: rotate(1000005530deg);
+}
+
+#hireButtons {
+	background-color: rgb(124, 124, 16);
+}
+
+#footerTable {
+	background-color: rgb(59, 255, 190);
+}

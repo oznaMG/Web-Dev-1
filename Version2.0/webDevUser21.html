@@ -19,7 +19,61 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+#banner{
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+}
+div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(153, 255, 0);
+    margin-top: 2rem;
+}
 
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 30%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: #000;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 50%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
     </style>
 </head>
 
@@ -28,7 +82,7 @@
 
         <!-- Your 1st Heading-->
         <h1>About Me</h1>
-        <div id="tags">
+        <div id="banner">
             <p>
                 This is my first webpage! I was able to code all the HTML and CSS in order to make it.
                 Watch out world of web design here I come!
@@ -37,30 +91,107 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <h1>biggest</h1>
+            <h2>smaller biggest</h2>
+            <h3>bigger</h3>
+            <h4>smaller bigger</h4>
+            <h5>big small</h5>
+            <h6>small</h6>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+            <hr> 
+            <body> wow look at that line above me that i used using hr</body>
+            <del>strikethrough my beloved</del>
+            <ins>under this is a line! wowie zowie!</ins>
+            <sub>the kind of stuff when saying how many hydrogens i have</sub>
+            <sup>idk what superscript is but its probably the one that goes above right</sup>
+            <small>just a wee bit smallor</small>
+            <progress value="22" max="100" > what the sigma </progress >
+            <abbr title="Google" > da big gee </abbr>
+            <h1>vote me for pressydent</h1>
+<section>
+    <h2>why me for president</h2>
+    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas litora erat nisl laoreet semper.</p>
+</section>
 
+<section>
+    <h2>why not anyone else</h2>
+    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Nec libero eleifend nec mauris elementum etiam. Integer egestas lectus metus lobortis aenean orci. Vestibulum et aptent netus eu leo. Vitae sem convallis inceptos aptent praesent rutrum rhoncus massa. Nullam hendrerit ac natoque leo porttitor mollis aliquam sagittis posuere. Rutrum vulputate ridiculus eleifend commodo iaculis tellus purus. In rhoncus nisl natoque consectetur hac. Ac nam penatibus hendrerit tincidunt convallis; ante urna? Velit montes malesuada pellentesque rutrum faucibus dapibus dis.
+
+        Et volutpat mus semper, tortor odio ex eleifend vel. Ante vel purus ante class ante. Dolor velit purus sollicitudin bibendum, quisque feugiat montes. Eleifend fusce sed sapien molestie magna sociosqu. Montes curae mi penatibus viverra per hac! Sed mauris rutrum auctor ullamcorper dis erat viverra penatibus. Orci nunc egestas fermentum arcu, lectus nascetur semper posuere. Placerat nostra porta enim purus; cras lorem semper.
+        
+        Varius malesuada dis duis maximus ligula lacus nisl facilisis. Scelerisque mi aenean tempor interdum curae hac odio suspendisse. Ut ultrices augue nisl mus laoreet montes lectus eleifend himenaeos. Eleifend feugiat per porta iaculis blandit; massa elementum. Bibendum integer ad adipiscing ad torquent litora sed sem iaculis. Semper dui conubia finibus lobortis dis tincidunt suscipit.
+        
+        Integer nullam dui facilisi non augue nulla. Massa integer dapibus aliquam nisl consequat dignissim cursus rhoncus. At tempus ad amet ex ipsum. Non ante risus mi scelerisque libero senectus sed maximus. Ultrices cursus cubilia dui luctus risus tristique hac. Odio dignissim penatibus maximus malesuada sem imperdiet maximus vulputate et. Amet parturient a consequat placerat ultrices imperdiet leo morbi. Suspendisse nibh tellus vulputate sed facilisis duis primis fusce. Parturient commodo id vestibulum ullamcorper nam amet gravida dignissim.
+        
+        Laoreet porta curabitur tortor rhoncus curabitur lobortis. Donec adipiscing urna facilisi mus integer nunc sit est. Pretium imperdiet hac rhoncus a lorem facilisi justo. Eros vel sed condimentum mattis fames amet nascetur. Tincidunt mus fringilla porta aptent interdum lacus. Interdum vestibulum vitae posuere duis mollis at vitae lorem.</p>
+</section>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
-        </div>
+        </div> 
         <div id="banner">
         </div>
         <div id="face">
-
-        </div>
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div class="right eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div id="mouth">
+           </div>
+           
     </main>
 
 
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="https://youtu.be/NVDR3sexlDY?si=XodqNW8GpbVeFqTt" target="_blank">[your name]</a></center>
         </p>
 
     </footer>
 </body>
 
 </html>
+<h1>PUT YOUR BIG TITLE HERE</h1>
+<section>
+    <h2>why me for president</h2>
+    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas litora erat nisl laoreet semper.</p>
+</section>
+
+<section>
+    <h2>why not anyone else</h2>
+    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Nec libero eleifend nec mauris elementum etiam. Integer egestas lectus metus lobortis aenean orci. Vestibulum et aptent netus eu leo. Vitae sem convallis inceptos aptent praesent rutrum rhoncus massa. Nullam hendrerit ac natoque leo porttitor mollis aliquam sagittis posuere. Rutrum vulputate ridiculus eleifend commodo iaculis tellus purus. In rhoncus nisl natoque consectetur hac. Ac nam penatibus hendrerit tincidunt convallis; ante urna? Velit montes malesuada pellentesque rutrum faucibus dapibus dis.
+
+        Et volutpat mus semper, tortor odio ex eleifend vel. Ante vel purus ante class ante. Dolor velit purus sollicitudin bibendum, quisque feugiat montes. Eleifend fusce sed sapien molestie magna sociosqu. Montes curae mi penatibus viverra per hac! Sed mauris rutrum auctor ullamcorper dis erat viverra penatibus. Orci nunc egestas fermentum arcu, lectus nascetur semper posuere. Placerat nostra porta enim purus; cras lorem semper.
+        
+        Varius malesuada dis duis maximus ligula lacus nisl facilisis. Scelerisque mi aenean tempor interdum curae hac odio suspendisse. Ut ultrices augue nisl mus laoreet montes lectus eleifend himenaeos. Eleifend feugiat per porta iaculis blandit; massa elementum. Bibendum integer ad adipiscing ad torquent litora sed sem iaculis. Semper dui conubia finibus lobortis dis tincidunt suscipit.
+        
+        Integer nullam dui facilisi non augue nulla. Massa integer dapibus aliquam nisl consequat dignissim cursus rhoncus. At tempus ad amet ex ipsum. Non ante risus mi scelerisque libero senectus sed maximus. Ultrices cursus cubilia dui luctus risus tristique hac. Odio dignissim penatibus maximus malesuada sem imperdiet maximus vulputate et. Amet parturient a consequat placerat ultrices imperdiet leo morbi. Suspendisse nibh tellus vulputate sed facilisis duis primis fusce. Parturient commodo id vestibulum ullamcorper nam amet gravida dignissim.
+        
+        Laoreet porta curabitur tortor rhoncus curabitur lobortis. Donec adipiscing urna facilisi mus integer nunc sit est. Pretium imperdiet hac rhoncus a lorem facilisi justo. Eros vel sed condimentum mattis fames amet nascetur. Tincidunt mus fringilla porta aptent interdum lacus. Interdum vestibulum vitae posuere duis mollis at vitae lorem.</p>
+    </section>
+<!--aaaaaaa-->
+    <h1>PUT YOUR BIG TITLE HERE</h1>
+<code>
+    <h2>why me for president</h2>
+    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas litora erat nisl laoreet semper.</p>
+</code>
+
+<code>
+    <h2>why not anyone else</h2>
+    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Nec libero eleifend nec mauris elementum etiam. Integer egestas lectus metus lobortis aenean orci. Vestibulum et aptent netus eu leo. Vitae sem convallis inceptos aptent praesent rutrum rhoncus massa. Nullam hendrerit ac natoque leo porttitor mollis aliquam sagittis posuere. Rutrum vulputate ridiculus eleifend commodo iaculis tellus purus. In rhoncus nisl natoque consectetur hac. Ac nam penatibus hendrerit tincidunt convallis; ante urna? Velit montes malesuada pellentesque rutrum faucibus dapibus dis.
+
+        Et volutpat mus semper, tortor odio ex eleifend vel. Ante vel purus ante class ante. Dolor velit purus sollicitudin bibendum, quisque feugiat montes. Eleifend fusce sed sapien molestie magna sociosqu. Montes curae mi penatibus viverra per hac! Sed mauris rutrum auctor ullamcorper dis erat viverra penatibus. Orci nunc egestas fermentum arcu, lectus nascetur semper posuere. Placerat nostra porta enim purus; cras lorem semper.
+        
+        Varius malesuada dis duis maximus ligula lacus nisl facilisis. Scelerisque mi aenean tempor interdum curae hac odio suspendisse. Ut ultrices augue nisl mus laoreet montes lectus eleifend himenaeos. Eleifend feugiat per porta iaculis blandit; massa elementum. Bibendum integer ad adipiscing ad torquent litora sed sem iaculis. Semper dui conubia finibus lobortis dis tincidunt suscipit.
+        
+        Integer nullam dui facilisi non augue nulla. Massa integer dapibus aliquam nisl consequat dignissim cursus rhoncus. At tempus ad amet ex ipsum. Non ante risus mi scelerisque libero senectus sed maximus. Ultrices cursus cubilia dui luctus risus tristique hac. Odio dignissim penatibus maximus malesuada sem imperdiet maximus vulputate et. Amet parturient a consequat placerat ultrices imperdiet leo morbi. Suspendisse nibh tellus vulputate sed facilisis duis primis fusce. Parturient commodo id vestibulum ullamcorper nam amet gravida dignissim.
+        
+        Laoreet porta curabitur tortor rhoncus curabitur lobortis. Donec adipiscing urna facilisi mus integer nunc sit est. Pretium imperdiet hac rhoncus a lorem facilisi justo. Eros vel sed condimentum mattis fames amet nascetur. Tincidunt mus fringilla porta aptent interdum lacus. Interdum vestibulum vitae posuere duis mollis at vitae lorem.</p>
+    </code>

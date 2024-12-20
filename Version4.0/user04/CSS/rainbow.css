@@ -1,0 +1,41 @@
+@import url(rainbow.css); 
+
+.background-red {
+    background-color: red;
+}
+
+.background-orange {
+    background-color: orange;
+}
+
+.background-yellow {
+    background-color: yellow;
+}
+
+.background-green {
+    background-color: green;
+}
+
+.background-blue {
+    background-color: blue;
+}
+
+.background-indigo {
+    background-color: indigo;
+}
+
+.background-violet {
+    background-color: violet;
+}
+td:hover {
+    background-color: black;
+  }
+  selector:pseudo-class {
+    property: value;
+  }
+  div:hover {
+    background-color: blue;
+  }
+  a.highlight:hover {
+    color: #ff0000;
+  }

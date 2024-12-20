@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 5.0
+    Name: Jacob Schieffer
+    Date Completed: 12/10/2024
+-->
+
+<head>
+    <link rel="favicon-32x32" type="image/x-icon" href="/images/favicon-32x32.png">
+
+    <title>Bootstrap Examples</title>
+
+    <!-- Homepage meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Version 5.0 - Index Bootstrap Examples">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .footer {
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            background: #ff90dc;
+            margin-bottom: 15px;
+        }
+        
+        .demo-content.bg-alt {
+            background: #ff00aa;
+        }
+        .table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-color-type: var(--bs-table-striped-color);
+  --bs-table-bg-type: rgb(0, 144, 255);
+}
+
+#footerTable {
+background-color: rgb(255, 120, 120);
+}
+
+body{
+    background-color: rgb(116, 214, 128);
+}
+    </style>
+
+    <body>
+        <!---------------------------------- Begin the nav-bar ----------------------------------->
+        <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            data-mdb-collapse-init
+            class="navbar-toggler"
+            type="button"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+  
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="#">
+              <img
+                src="https://acnhcdn.com/latest/NpcBromide/NpcNmlCat05.png"
+                height="69"
+                alt="MDB Logo"
+                loading="lazy"
+              />
+            </a>
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Files</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Downloads</a>
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+  
+          <!-- Right elements -->
+          <div class="d-flex align-items-center">
+            <!-- Icon -->
+            <a class="text-reset me-3" href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+  
+            <!-- Notifications -->
+            <div class="dropdown">
+              <a
+                data-mdb-dropdown-init
+                class="text-reset me-3 dropdown-toggle hidden-arrow"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                aria-expanded="true"
+              >
+                <i class="fas fa-bell"></i>
+                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">Support</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Messages (1)</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Delete Account?!</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Avatar -->
+            <div class="dropdown">
+              <a
+                data-mdb-dropdown-init
+                class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                href="#"
+                id="navbarDropdownMenuAvatar"
+                role="button"
+                aria-expanded="true"
+              >
+                <img
+                src="https://i.pinimg.com/474x/e9/c1/1c/e9c11ccec9ba5faddf20e1c7a81a7a52.jpg"
+                  class="rounded-circle"
+                  height="25"
+                  alt="Tangy"
+                  loading="lazy"
+                />
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownMenuAvatar">
+                <li>
+                  <a class="dropdown-item" href="#">Profile Settings</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Subscription Services</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+        <!---------------------------------- End the nav-bar ------------------------------------->
+        <!---------Jumbotron---------------------------------------------->
+        <header class="p-5 bg-primary-subtle text-black" name="Jumbotron">
+            <h4> Bootstrap Examples</h4>
+            <p class="lead"> Let's look at the many different examples of how we can use bootstrap and what bootstrap can do!
+            </p>
+        </header>
+
+        <main>
+            <!---------Three Column Layouts------------------------------------>
+            <div class="container mt-3">
+                <!--Row with two equal columns-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="demo-content">.col-md-6</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="demo-content bg-alt">.col-md-6</div>
+                    </div>
+                </div>
+                <!--Row with two columns divided in 1:2 ratio-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="demo-content">.col-md-4</div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="demo-content bg-alt">.col-md-8</div>
+                    </div>
+                </div>
+                <!--Row with two columns divided in 1:3 ratio-->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="demo-content">.col-md-3</div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="demo-content bg-alt">.col-md-9</div>
+                    </div>
+                </div>
+
+                <!---------Auto Layout Columns--------->
+                <div class="row">
+                    <div class="col demo-content">Column one</div>
+                    <div class="col demo-content bg-alt">Column two</div>
+                    <div class="col demo-content">Column three</div>
+                    <div class="col demo-content bg-alt">Column four</div>
+                    <div class="col demo-content">Column five</div>
+                    <div class="col demo-content bg-alt">Column six</div>
+                </div>
+
+                <!---------Flexible Layouts--------->
+                <div class="row">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="demo-content">.col-md-4 .col-lg-3</div>
+                    </div>
+                    <div class="col-md-8 col-lg-6">
+                        <div class="demo-content bg-alt">.col-md-8 .col-lg-6</div>
+                    </div>
+                    <div class="col-md-12 col-lg-3">
+                        <div class="demo-content">.col-md-12 .col-lg-3</div>
+                    </div>
+                </div>
+            </div>
+
+            <!---------Table-Striped------------------------------------------->
+            <div class="container mt-3" name="table-striped">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Row</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Clark</td>
+                            <td>Kent</td>
+                            <td>clarkkent@mail.com</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John</td>
+                            <td>Carter</td>
+                            <td>johncarter@mail.com</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Peter</td>
+                            <td>Parker</td>
+                            <td>peterparker@mail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!---------List-Group---------------------------------------------->
+            <div class="container mt-3" name="list-group">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        <i class="fa fa-home"></i> Home
+                    </a>
+                    <a href="https://photos.google.com/?pli=1" target="_blank" class="list-group-item list-group-item-action">
+                        <i class="fa fa-camera"></i> Photos <span class="badge bg-secondary badge-pill badge-primary pull-right active">183</span>
+                    </a>
+                    <a href="https://music.amazon.com/" target="_blank" class="list-group-item list-group-item-action">
+                        <i class="fa fa-music"></i> Amazon Music <span class="badge bg-secondary badge-pill badge-primary pull-right active">140</span>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="list-group-item list-group-item-action">
+                        <i class="fa fa-film"></i> Videos <span class="badge bg-secondary badge-pill badge-primary pull-right">153</span>
+                    </a>
+                </div>
+                
+            </div>
+
+            <!---------Form Button--------------------------------------------->
+            <div class="container mt-3 vstack" name="login-button">
+                <a href="login.html" class="btn btn-success btn-lg" role="button" aria-pressed="false">Login to view more of this website!</a>
+            </div>
+            <br>
+
+        </main>
+
+        <!---------------------------------- Begin the footer ------------------------------------->
+        <footer>
+            <div class="container py-0" id="footerTable">
+                <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+                    <div class="layout-container responsivegrid aem-GridColumn aem-GridColumn--default--12" data-component-id="51e927945f39700e952adb9bd3dc97e7">
+                <div class="aem-Grid aem-Grid--12 aem-Grid--default--12  grid-image-layout-container-uid89d9  heading-bg-color-layout-container-uid89d9" data-automation-test-id="layout-container-uid89d9">
+                          <style data-automation-test-id="headingColor-layout-container-uid89d9">
+                          </style>
+                     
+                     <div class="container" id="layout-container-uid89d9" data-componentname="layout-container-uid89d9">   
+                          
+                          <div class="socialfollow aem-GridColumn aem-GridColumn--default--12" data-component-id="f881184c0350e55b789024b15f22837e">
+                 
+                <link rel="stylesheet" href="/etc.clientlibs/microsoft/components/content/socialfollow/v1/socialfollow/clientlibs/site.min.ACSHASH0fa38db43eb641c9ac1ca868ce3d294f.css" type="text/css">
+                <script src="/etc.clientlibs/microsoft/components/content/socialfollow/v1/socialfollow/clientlibs/site.min.ACSHASHec8aed9df755a7b27e52317dcf532df8.js"></script>
+                
+                <link rel="canonical" href="https://www.microsoft.com/en-us">
+                
+                    <section class="col-12" aria-label="follow us on social media" id="socialfollow-uid4e09" data-componentname="socialfollow-uid4e09">
+                        <h2 class="base font-weight-normal d-inline align-middle mr-g">
+                            Follow ACNHJake
+                        </h2>
+                        <ul class="list-inline d-inline-block align-middle mb-0 socialfollow-ul">
+                            <a class="d-inline-block action-trigger" href="https://www.instagram.com/jaketheslayer69" target="_blank" aria-label="Follow ACNHJake on Instagram, opens in a new tab" data-bi-ecn="Instagram" data-bi-bhvr="126" data-bi-cn="Instagram" data-bi-socchn="Instagram" data-bi-ct="Social Button" data-bi-pa="body" data-bi-compnm="Social Follow - horizontal">
+                                    
+                                            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Instagram 2x?scl=1" data-src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Instagram 2x?scl=1" alt="Instagram" title="Instagram" width="32" height="32">					
+                                    
+                                    
+                                </a><li class="list-inline-item mr-g socialfollow-li">
+                                
+                                
+                            </li>
+                        
+                            <li class="list-inline-item mr-g socialfollow-li">
+                                
+                                <a class="d-inline-block action-trigger" href="https://youtube.com/@ACNHJake" target="_blank" aria-label="Follow ACNHJake on YouTube, opens in a new tab" data-bi-ecn="YouTube" data-bi-bhvr="126" data-bi-cn="X" data-bi-socchn="X" data-bi-ct="Social Button" data-bi-pa="body" data-bi-compnm="Social Follow - horizontal">
+                                    
+                                            <img src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-1/1024/youtube-1024.png" data-src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-MSCOM-YouTube-64x64?scl=1" alt="YouTube" title="YouTube" width="32" height="32">					
+                                    
+                                    
+                                </a>
+                            </li>
+                        </ul>
+                        <script type="application/ld+json">
+                            {
+                                "name": "ACNHJake",
+                                "sameAs":["https://www.instagram.com/jaketheslayer69","https://youtube.com/@ACNHJake"]
+                            };
+                        </script>
+                    </section>
+                </div>
+                
+                          
+                     </div>
+                </div></div>
+                
+                    
+                </div>
+            </div>
+        </footer>
+        <!---------------------------------- End the footer --------------------------------------->
+    </body>
+
+</html>
