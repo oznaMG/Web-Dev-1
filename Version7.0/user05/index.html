@@ -414,37 +414,41 @@
     </style>
   </head>
   <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+</head>
+<body>
     <h1>Number Guessing Game</h1>
     <p>Guess the number between 1 and 1000:</p>
     <input type="number" id="guess" min="1" max="1000" />
     <button onclick="checkGuess()">Submit</button>
     <div id="message"></div>
-  
+
     <script>
       const randomNumber = Math.floor(Math.random() * 1000) + 1;
       let attempts = 0;
-  
+
       function checkGuess() {
         const userGuess = Number(document.getElementById('guess').value);
         attempts++;
-  
+        
+        const difference = Math.abs(randomNumber - userGuess);
+        
+       
+        const percentageDifference = Math.floor((difference / 1000) * 100);
+        
         if (userGuess === randomNumber) {
           document.getElementById('message').innerHTML = `
             <strong>Congratulations!</strong> You guessed the number in ${attempts} attempts!
           `;
-        } else if (userGuess < randomNumber) {
-          document.getElementById('message').textContent = 'Too low! Try again.';
         } else {
-          document.getElementById('message').textContent = 'Too high! Try again.';
+          document.getElementById('message').textContent = `You're off by ${percentageDifference}%! Try again.`;
         }
       }
     </script>
-  </body>
-  </html>
-  
 </body>
-</html>
-
-</body>
-
 </html>
