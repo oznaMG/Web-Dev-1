@@ -1,0 +1,21 @@
+main { 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 5px, double, red;
+    text-align: center;
+}
+
+title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 5px, double, red;
+}
+
+table {
+    text-align: justify;
+}
