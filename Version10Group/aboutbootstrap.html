@@ -3,12 +3,12 @@
 
 <!--Version 5.0
     Name: ben dang
-    Date Completed: 12/6/24
+    Date Completed: 1/1x/25
 -->
 
 <head>
     <title>About Bootstrap</title>
-
+    <link rel="icon" type="image/x-icon" href="/Version6.0/user21/images/Screenshot 2025-01-14 at 10.20.09 AM.png">
     <!-- Homepage meta data -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,10 +31,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
-    <style type="styles.css">
-
+    <style>
+        p {
+            text-align:center !important
+        }
+        
+        .bg-primary {
+background-color: #1a1a1a !important
+}
+        demo-content {
+            text-align:center !important
+        }
+    main {
+        border-style:none;
+        margin-top:0;
+    }
+        .space {
+            font-size: 5px 
+        }
+    
     </style>
 </head>
+
+<!--IMPORTANT - USE <p class="space">ㅤ</p> IF BR DOESNT WORK-->
 
 <body>
 
@@ -43,13 +62,86 @@
     </nav>
 
     <main>
-        <p>all i want for christmas is you</p>
+        <div class="bg-primary text-white p-5 text-center">
+        <h1>What is Bootstrap?</h1>
+        <p>Bootstrap in a Nutshell</p> 
+      </div>
+<br>
+<br>
+      <div class="row">
+        <div class="col-3 text-center">aaa</div>
+        <h1 class="col-6 text-center">Summary</h1>
+        <div class="col-3 text-center">aaa</div>
+      </div>
+<br>
+      <div class="row">
+        <div class="col-3 text-center">aaa</div>
+        <p class="col-6 text-center">
+            Bootstrap is a framework created by a web-designer who formerly worked for Twitter. The main function of Bootstrap is to create a responsive website.
+        </p>
+        <div class="col-3 text-center">aaa</div>
+      </div>
+    </div>
+<br>
+    <div class="row">
+        <div class="col-3 text-center">aaa</div>
+        <h1 class="col-6 text-center">How Does it Work?</h1>
+        <div class="col-3 text-center">aaa</div>
+      </div>
+<br>
+    <div class="row">
+        <div class="col-3 text-center">aaa</div>
+        <p class="col-6 text-center">A framework (like Bootstrap) comes with it's own predefined set of CSS rules and styles. Importing it allows you to "call upon" the framework inside your code. For example, this website calls upon Bootstrap in the red header (you can take a look using the Inspect tool [ctrl + i]).</p>
+        <div class="col-3 text-center">aaa</div>
+    </div>
+
+<br>
+    <div class="row">
+        <div class="col-3 text-center">aaa</div>
+        <h1 class="col-6 text-center">Columns</h1>
+        <div class="col-3 text-center">aaa</div>
+    </div>
+<br>
+    <div class="row">
+        <div class="col-3 text-center">aaa</div>
+        <p class="col-6 text-center"> One primary feature of Bootstrap is it's ability to create rows and columns (like on this page). The special part of Bootstrap rows and columns is that they automatically resize in propotion to the screen size. This page uses the following code to use Bootstrap's column mechanics:</p>
+        <div class="col-3 text-center">aaa</div>
+    </div>
+    <div class="row">
+
+    <div class="col-3 text-center">aaa</div>
+    <div class="col-6 text-center">
+<!--dummy code-->
+<textarea>
+<div class="row">
+<div class="col-3 text-center"></div>
+<h1 class="col-6 text-center">Columns</h1>
+<div class="col-3 text-center"></div>
+</div>
+</textarea>
+<!--dummy code-->
+<p class="space">ㅤ</p>
+</div>
+    <div class="col-3 text-center">aaa</div>
+<div class="col-3 text-center"></div>
+<h1 class="col-6 text-center">What?</h1>
+<div class="col-3 text-center"></div>
+<p class="space">ㅤ</p>
+
+<div class="row">
+    <div class="col-3 text-center">aaa</div>
+    <p class="col-6 text-center"> Notice the numbers 3 and 6 in the code? Bootstrap divides the page into 12 "inches" that can split up into sections by using code. This text takes up 6 Bootstrap "inches," while the sides take up 3 "inches" each.</p>
+    <div class="col-3 text-center">aaa</div>
+</div>
+<div class="col-12 text-center">
+    <a href="/Version10Group/Index.html" class="btn btn-outline-danger btn-block">Return to Home Page</href>
+</div>
     </main>
-
-
+    
     <footer>
-
+    
+        
     </footer>
-
-
+    
+   
 </body>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Collaboration and Pull Requests</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #555;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #111;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul li {
+            margin: 8px 0;
+        }
+
+        ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .highlight {
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        .procedure-section img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GitHub Collaboration and Pull Requests</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <section>
+        <h2></h2>
+        <p>By completing this exercise, you will:</p>
+        <ul>
+            <li>Become acquainted with the problem of source control.</li>
+            <li>Understand the solution offered by GitHub for collaborative development.</li>
+            <li>Consider the social impacts of using collaborative tools like GitHub.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Version control is a powerful tool for developing any project or product. If you are collaborating with one or more other people, it becomes even more important. Have you ever found it difficult to keep papers well organized? Imagine 35 people working on the same document at the same time. GitHub provides a solution to these challenges through effective version control and collaboration features like pull requests.</p>
+    </section>
+
+    <section>
+        <h2>Materials</h2>
+        <ul>
+            <li>Computer with Internet browser and GitHub client software.</li>
+            <li>GitHub individual account and membership in an organizational account's team.</li>
+        </ul>
+    </section>
+
+    <section class="procedure-section">
+        <h2>Procedure</h2>
+        <p><strong>Part III: Share Your Changes</strong></p>
+        <ol>
+            <li>After committing all your changes, you can now <strong>Push to origin</strong>. This will make your changes available on GitHub.com.</li>
+            <img src="1.1.1 master merge branch part3.png" alt="Master merge branch example">
+            
+            <li>It's now time to make your changes known to the top master. Create a <strong>Pull Request</strong> so your changes can be merged into the original code.</li>
+            <img src="1.1.1 pull request part1.png" alt="Create pull request step 1">
+            
+            <li>Click on the branch tab and select <strong>Create pull request</strong> or use the shortcut <code>cmd+R</code>.</li>
+            <img src="1.1.1 pull request part2.png" alt="Create pull request step 2">
+            
+            <li>This will take you to GitHub.com where you will perform the following steps to pull your changes into the original code.</li>
+            <p><strong>Important:</strong> Make sure that the correct forks are selected. You want your master head fork on the right and the WebDev-ShakoHS/WebDev repository on the left. If you see any errors, fix them before submitting your changes. Once everything looks good, click the green <strong>Create pull request</strong> button.</p>
+            <img src="1.1.1 pull request part3.png" alt="Create pull request step 3">
+            
+            <li>Give your pull request some descriptive information, and then you can finally create the pull request!</li>   
+            <p>Your teacher will now receive a notification that someone has code they would like to merge into the original repository. If everything was done correctly, your class's code will be easily merged into the class repo's current version (the head commit) on the master branch. If two developers make changes to the same line of code, merging the commits may require additional work in the git shell—something you will learn beyond this course.</p>
+         &nbsp; 
+         &nbsp; 
+        </ol>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 GitHub Learning. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

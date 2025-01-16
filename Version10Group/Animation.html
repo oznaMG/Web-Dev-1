@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 10
+
     Name: Matthew Lim
-    Date Completed: 
+    Date Completed: 1/13/25
 -->
 
 <head>
@@ -30,79 +31,177 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="gallery.css">
     <style type="text/css">
 
-        body {
-            background-color: rgb(206, 223, 232);
-        }
+    h2{padding: 20px;}
 
-        h1 {
-            color: rgb(0, 0, 0);
-            display: inline-block;
-            display: center;
-            border: 5px solid #000000;
-            font-size: 55px;
-            margin: 450px;
-            padding: 10px;
-        }
+    footer {
+    background-color: #2d3a3d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    }
 
-        h2 {
-            color: rgb(0, 0, 0);
-            display: inline-block;
-            display: center;
-            border: 2px solid #000000;
-            font-size: 30px;
-            margin: 550px;
-            padding: 10px;
-            perspective: 1000px;
-        }
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    }
 
-        p { 
-            padding: 5px;
-            font-size: 15;
-            
-        }
 
-        .main-container {
-        display: flex;
-        flex-direction: column;
-        }
+    header {
+    background-color: #2d3a3d;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    }
+
+    header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    }
+
+    section h2 {
+    font-size: 2.5em;
+    color: #2d3a3d;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    section h4 {
+    font-size: 1.5em;
+    color: #2d3a3d;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+    }
+
+    header p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    }
+
+    footer p {
+    font-size: 1em;
+    }
+
+    .mh-100 {color: blue;}
+    
     </style>
+
+
 </head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CSS Animations</h1>
+            <p>By: Matthew Lim</p>
+        </div>
+    </header>
+    
+    <section id="intro">
+        <div class="container">
+            <h2>What are CSS Animations?</h2>
+            <p>CSS animations allow you to animate transitions between one CSS style to another. This can bring your web page to life with smooth effects and transitions. Animations can be triggered by user interactions or can run automatically.</p>
+        </div>
+    </section>
+
+    <section id="examples">
+        <div class="container">
+            <h2>CSS Animation Examples</h2>
+            <div class="example-grid">
+                <div class="example-card fade-in">
+                    <h3>Fade In</h3>
+                    <p>This is an example of a fade-in card.</p>
+                </div>
+                <div class="example-card bounce">
+                    <h3>Bounce</h3>
+                    <p>This is an example of a card that demonstrates bounces using keyframes.</p>
+                </div>
+                <div class="example-card rotate">
+                    <h3>Rotate</h3>
+                    <p>This is an example of a card that rotates with a continuous animation.</p>
+                </div>
+                <div class="example-card slide-in">
+                    <h3>Slide In</h3>
+                    <p>This is an example of a card that slides in from the left.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>What are CSS Card Animations?</h2>
+
+        <p>CSS card animations can be used to animate images or boxes on a website. CSS card animations methods are often used to create interactive experiences when users click on items. With CSS card animations, you can add visual effects and transitions like flipping or changing the rotation of the card!</p>
+
+        <h2>What will you need to create CSS Card Animations?</h2>
 
 
+        <p>First, you will need create a new called called gallery.html. Then open the repository link and copy all the code and paste into your gallery.html file. When you open the gallery.html file in a google browser, there should be no styling but your page should include pictures, links, and a description. </p>
 
-<Body>
+        <a href="https://github.com/rmainhar/SHS_WebDevelopment/blob/master/Version4.0/user00/gallery.html" target="_blank">
 
+            <h2 class="mh-100">Repository link</h2>
+            </a>
 
-    <Nav>
+            <h2>How does this looks like?</h2>
+            <xmp>
+            <div id="gallery">
+                <div class="container">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="https://www.axiomtek.com/Download/Ptype3/en-US/ATX_Motherboard.jpg" alt="ATX_Motherboard">
+                            <p class="caption">Computer Part</p>
+                        </div>
+                        <div class="back">
+                            <a href="https://en.wikipedia.org/wiki/Motherboard" target="_blank">
+                            <h1>Motherboard</h1>
+                            </a>
+                            <p class="description">A motherboard is the main printed circuit board in general-purpose computers.</p>
+                     </div>
+                </div>
+            </div>
+            </xmp>
 
-    </Nav>
-    <main class="container-fluid mt-3">
+            <div id="gallery">
+                <div class="container">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="https://www.axiomtek.com/Download/Ptype3/en-US/ATX_Motherboard.jpg" alt="ATX_Motherboard">
+                            <p class="caption">Computer Part</p>
+                        </div>
+                        <div class="back">
+                            <a href="https://en.wikipedia.org/wiki/Motherboard" target="_blank">
+                            <h1>Motherboard</h1>
+                            </a>
+                            <p class="description">A motherboard is the main printed circuit board in general-purpose computers.</p>
+                     </div>
+                </div>
+            </div>
 
-        
-        <h1 class="text-center my-3 title" tabindex="0">How to create CSS Animations</h1>
+            <h4>As you can see, this looks straightforward with 1 big "div" gallery that holds the entire gallery, and 1 "div" container for each item - each having a front and back. However, it isn't a card and has no animations.</h4>
 
-        <h2 class="text-center my-3 title" tabindex="0">What are CSS Animations?</h2>
-        <p>CSS Animations are used to animate images or boxes on a website. An example of an CSS Animation would be card animations that can be used to make an interactive experience when a user hovers or click on a card on the webiste. You can add visual effects and transitions like flipping.</p>
+            <h2>Creating a gallery.css file</h2>
+            <p>We will start from the top and work our way down. You can start by creating a new .css file and name it gallery.css The file is already linked in head of your .html file, so make sure you name it with correct spelling!</p>
 
-        <h2 class="text-center my-3 title" tabindex="0">What will you need?</h2>
-        
-    <Main>
+    </section>
 
-    </Main>
+    <footer>
+        <div class="container">
+            <p>My Footer</p>
+        </div>
+    </footer>
 
-
-
-
-    <Footer>
-
-    </Footer>
-
-</Body>
-
-
-
-
-</Html>
+</body>
+</html>
