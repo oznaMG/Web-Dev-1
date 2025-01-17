@@ -16,6 +16,31 @@ h6 {
     border: 5px, double, red;
 }
 
-table {
+table >* {
     text-align: justify;
+}
+
+nav, footer {
+background-color: black;
+color: whitesmoke;
+word-spacing: 5px;
+}
+
+nav {
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: red;
+}
+
+footer {
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: red;
+    margin-top: auto;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }

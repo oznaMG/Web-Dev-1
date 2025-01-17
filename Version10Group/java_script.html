@@ -32,19 +32,37 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
-        div {
-            width: 80%;
-            border: 2px, solid rgb(255, 32, 32);
-            padding: 50px;
-            margin: 20px;
-            background-color: rgb(217, 225, 229);
-        }
         .codeeditorcontent {
             width: 80%;
-            border: 2px, solid rgb(92, 92, 92);
+            border: 2px, solid rgb(96, 88, 88);
             padding: 50px;
-            margin: 20px;
-            background-color: rgb(197, 212, 222);
+            margin: 6px;
+            background-color: rgb(39, 29, 37);
+            color:rgb(49, 255, 49);text-align: left;
+        }
+        .Example-Tag {
+            color:rgb(202, 125, 241);
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        #Signature {
+            font-family:monospace;
+            font-size: 65%;
+        }
+        main { 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 5px, double, red;
+    text-align: center;
+        }
+        p {
+        text-align: left;
+        }
+        .Copy-Paste-Heading {
+            font-family: monospace;
+        }
+        img {
+            display:inline;
         }
     </style>
 </head>
@@ -60,30 +78,33 @@
 
     </Nav>
 
-    <h3>
-        <center>Basic JavaScript</center>
+    <h3 style="display:inline">
+        <center>Basic JavaScript <img src="Images/Science and Tech.png" style="width:45px;height:50px"></center> 
     </h3>
     <h4>
         <center>Making Your WebPage Dynamic</center>
     </h4>
-
-    Written by <br>
-    Avery R. Johnson
+    <div id="Signature">Written by<br>Avery R. Johnson</div>
 
     <Main>
-
         <br>
         <br>
             <p>While you can make cool WebPages just using HTML with CSS, there is a whole other world opened up by
                 introducing Javascript into a WebPage. JavaScript is a scripting language designed for the purpose of
                 working with WebPages. It allows you to change CSS and HTML information. In this lesson we will start learning the basics of intergrating JavaScript into your website, making your webpages more dynamic and interactive.</p>
-            Copy and Paste this code into your body
-            <pre class="codeeditorcontent">&ltscript&gt; <br>       alert("This is an alert")<br>   &lt/script&gt;</pre>
+                <br>
+            <div class="Copy-Paste-Heading">Copy and Paste this code into your body</div>
+            <pre class="codeeditorcontent"><div class="Example-Tag">&ltscript&gt;</div>    alert("This is an alert")<div class="Example-Tag">&lt/script&gt;</div></pre>
+            <br>
+            <p>The code you copy and pasted above executes a pop up alert on your browser. You have probably seen this on websites before, usually an annoying alert, telling you an error or problem. Right now, the code executes this as soon as the html reads the scripted code. This means the alert shows up as soon as the page loads, this is as you can guess, an annoying and not so amazing web design feature. We can fix this however, all we need to do is make our own function that will only send an alert upon a certain condition happening. To do this, first remove the script code from the html file so it no longer instnatly reads the alert function. Then, you will need to go into your JS folder and create a file within it named "script.js"</p>
+            <br>
+
+
     </Main>
 
 
     <Footer>
-
+        <a href="/Version10Group/Index.html" class="btn btn-outline-danger">Return to Home Page</a>
     </Footer>
 </Body>
 

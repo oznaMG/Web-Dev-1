@@ -3,18 +3,157 @@
 <!--Version 10.0 
 	Name: Jacob Schieffer
 	Started 1/13/2025
-  Completed 
+  Completed 1/16/2025
  -->
-
+  
 <head>
   <title>GitHub Account Info</title>
+    <!-- Homepage meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Version 5.0 - Index Bootstrap Examples">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/Style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom styles for this template -->
+  <style type="text/css">
+    h4{background-color: rgb(134, 115, 161);}
+    nav{background-color: aquamarine;}
+    body{background-color: rgb(255, 29, 141);}
+    main {text-align: left;}
+    h4 {text-align: center;}
+    tr {border: 5px;}
+  </style>
 </head>
 
 <body>
   <nav>
-    <li><a href="Index.html">Home</a></li>
-    <li style="float:right"><a class="active" href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home">Sign Up</a></li> 
+    <ul>
+      <a href="Index.html" target="_blank">
+        <button id="home" type="button" class="btn  btn-outline-primary btn-lg" onclick="alert('Redirecting...');" value="Click Me!">Home</button>
+      </a>
+      <a href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home" target="_blank">
+        <button style="float: right;" type="button" class="btn  btn-outline-success btn-lg" onclick="alert('Redirecting...');" value="Click Me!">Sign Up</button>
+      </a>
+    </ul>
   </nav>
-</body>
 
+<main>
+  <div class="a2-toggle-details-container"><div class="css-1gkhyq7-toggleDetails"><button data-testid="assignments-2-assignment-toggle-details" aria-controls="Expandable_0" aria-expanded="true" type="button" class="css-1ggnvx2-toggleDetails__toggle"><span class="css-10dz9lm-toggleDetails__summary"><span class="css-dwm2m9-toggleDetails__icon"><svg name="IconArrowOpenDown" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="css-1uh2md0-inlineSVG-svgIcon" style="width: 1em; height: 1em;"><g role="presentation"><path d="m.08 568.063 176.13-176.13 783.988 783.864 783.74-783.864 176.129 176.13-959.87 960.118z" fill-rule="evenodd"></path></g></svg></span><span class="css-f32ptg-toggleDetails__summaryText"><span wrap="normal" letter-spacing="normal" class="css-1fvrx9c-text">Details</span></span></span></button><div id="Expandable_0" class="css-gyi6rc-toggleDetails__details"><div class="css-a9o3ew-toggleDetails__content"><span dir="ltr" class="css-wxpmja-view"><div class="user_content enhanced" data-testid="assignments-2-assignment-toggle-details-text"><table border="0">
+    <p>&nbsp;</p>
+    <div id="Assignment">
+    <div id="apb-purpose">
+    <div id="intro-images" style="float: right; padding: 0 5%;">
+    <p style="text-align: center;">&nbsp;</p>
+    &nbsp;</div>
+    <h4><span style="font-size: 14pt;">What you will accomplish</span></h4>
+    <ul>
+    <li>Become acquainted with the problem of source control and the solution offered by GitHub</li>
+    </ul>
+    </div>
+    <div id="apb-intro">
+    <h4><span style="font-size: 14pt;">Introduction</span></h4>
+    <p>Version control is a powerful tool for developing any project or product. If you are collaborating with one or more other people, it is even more important. Have you ever found it difficult to keep papers well organized? What happens when 20 people all work on the same document?</p>
+    </div>
+    <p id="apb-procedure" style="clear: both;"></p>
+    <h4><span style="font-size: 14pt;">Procedure</span></h4>
+    <ol>
+    <li>GitHub is especially useful as a tool for collaboration when a large group of people are working on a development project where files depend on each other. <span style="color: #e03e2d;"><strong>Watch the video.</strong></span></li>
+    </ol>
+    <p><iframe title="YouTube video player" src="https://www.youtube.com/embed/2ReR1YJrNOM?si=Hx9jtti1KPPf31Sy" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></p>
+    <p><strong>Part I: Set up a GitHub repository</strong></p>
+    <ol start="2">
+    <li>Frequent changes and testing are important during development of a digital product. A <span style="border-bottom: 1px dashed;"><strong><span style="cursor: help;" title="A process to keep track of what changes were made to what files so that a specific version can be referred to and improvements in multiple versions can be merged together.">version control</span></strong></span> system allows a person to create software or any other product and keep track of those changes. A <strong>distributed version control</strong> system allows a group of people to work on the same project and keep track of everyone’s individual changes.
+    <p>There are many different distributed version control systems, including BitKeeper, Mercurial and git. Git was developed by Linus Torvalds for use during development of the Linux operating system kernel, and has since become the most widely used distributed version control software.</p>
+    <p>Git works by tracking a <strong>repository</strong>, which is a folder containing subfolders with files for a project. The files can be code, images, sound, or anything else. A developer can change the files and save them just like usual with the computer's operating system. When the developer wants to record a group of changes, they record it with a <strong>commit</strong>. A commit is a checkpoint in the development of a project.</p>
+    <p><strong>GitHub</strong> is an online git repository hosting service that makes it easy to collaborate on a project with multiple developers. GitHub consists of a web portal to your online repos and a local client program that can access both your online repos and your local repos. The local client lets you use git with either a graphical user interface or a command line interface.</p>
+    <p>There are three distinct parts to the software you will be using: The git shell (the command line for git), GitHub for Windows Client (the GUI for git on your computer) and the GitHub web interface (online at <a href="http://github.com/" class="external" target="_blank" rel="noreferrer noopener"><span> <strong>github.com</strong></span><span class="external_link_icon" style="margin-inline-start: 5px; display: inline-block; text-indent: initial; " role="presentation"><svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" style="width:1em; height:1em; vertical-align:middle; fill:currentColor">
+      <path d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z" fill-rule="evenodd"></path>
+    </svg>
+    <span class="screenreader-only">Links to an external site.</span></span></a>). You will also work with three more familiar tools. This document will indicate what you need for each step with the icons shown below:</p>
+    <p>&nbsp;</p>
+    <table border="1" cellpadding="4">
+    <tbody>
+    <tr>
+    <td style="text-align: center;"><strong>Symbol</strong></td>
+    <td style="text-align: center;"><strong>Name</strong></td>
+    <td style="text-align: center;"><strong>Purpose</strong></td>
+    </tr>
+    <tr>
+    <td style="text-align: center;">Client</td>
+    <td style="text-align: center;"><img src="https://shakopee.instructure.com/courses/161195/files/11103292/preview" alt="139 b client.png" width="74" height="60" data-api-endpoint="https://shakopee.instructure.com/api/v1/courses/161195/files/11103292" data-api-returntype="File"></td>
+    <td style="text-align: center;">
+    <p>This symbol means use the GitHub-for-Mac/Windows Client</p>
+    </td>
+    </tr>
+    <tr>
+    <td style="text-align: center;">Web</td>
+    <td style="text-align: center;"><img src="https://shakopee.instructure.com/courses/161195/files/11103719/preview" alt="139 c web.png" width="89" height="60" data-api-endpoint="https://shakopee.instructure.com/api/v1/courses/161195/files/11103719" data-api-returntype="File"></td>
+    <td style="text-align: center;">
+    <p>This symbol means use the GitHub web browser interface</p>
+    </td>
+    </tr>
+    <tr>
+    <td style="text-align: center;">Code Editor</td>
+    <td style="text-align: center;"><img src="https://shakopee.instructure.com/courses/161195/files/11103678/preview" alt="139 d ed.JPG" width="120" height="87" data-api-endpoint="https://shakopee.instructure.com/api/v1/courses/161195/files/11103678" data-api-returntype="File"></td>
+    <td style="text-align: center;">
+    <p>This symbol means use a code editor</p>
+    </td>
+    </tr>
+    <tr>
+    <td style="text-align: center;">OS Explorer</td>
+    <td style="text-align: center;"><img src="https://shakopee.instructure.com/courses/161195/files/11103428/preview" alt="139 f expl.png" width="51" height="38" data-api-endpoint="https://shakopee.instructure.com/api/v1/courses/161195/files/11103428" data-api-returntype="File"></td>
+    <td style="text-align: center;">
+    <p>This symbol means find the file in folders in the operating system</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p>&nbsp;</p>
+    a. Git tracks a collection of files. What is the collection called?
+    b. Git keeps track of old versions of files. Not every version that is saved is remembered, however. Git only remembers versions that are saved and _________</li>
+    </ol>
+    <p>3. <img src="https://shakopee.instructure.com/courses/161195/files/11103719/preview" alt="139 c web.png" width="89" height="60" data-api-endpoint="https://shakopee.instructure.com/api/v1/courses/161195/files/11103719" data-api-returntype="File"> Fork a repo. Your teacher has created a repository for your class. You need to <strong>fork</strong> it and <span style="border-bottom: 1px dashed;"><strong><span style="cursor: help;" title="A duplicate copy.">clone</span></strong></span> it to your computer.</p>
+    <p><strong>Create a fork of the repository</strong></p>
+    <p style="padding-left: 30px;">a. Go to <a href="http://github.com/" class="external" target="_blank" rel="noreferrer noopener"><span> <strong>github.com</strong> </span><span class="external_link_icon" style="margin-inline-start: 5px; display: inline-block; text-indent: initial; " role="presentation"><svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" style="width:1em; height:1em; vertical-align:middle; fill:currentColor">
+        <path d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z" fill-rule="evenodd"></path>
+    </svg>
+    <span class="screenreader-only">Links to an external site.</span></span></a> and login to your account.</p>
+    <p style="padding-left: 60px;"><img src="https://shakopee.instructure.com/courses/161195/files/11103664/preview" alt="139 g signin.png" width="517" height="112" data-api-endpoint="https://shakopee.instructure.com/api/v1/courses/161195/files/11103664" data-api-returntype="File"></p>
+    <p style="padding-left: 30px; text-align: center;">&nbsp;</p>
+    <p style="padding-left: 30px;">b.&nbsp; Once you are logged into github.com you can now fork the repository to your account.&nbsp;</p>
+    <p style="padding-left: 30px;"><span style="font-size: 18pt;"> <span style="color: #e03e2d;">Hour 1 -</span>&nbsp;<a href="https://github.com/MrLFinger/Web-Dev-1" class="external" target="_blank" rel="noreferrer noopener"><span>Select this repository</span><span class="external_link_icon" style="margin-inline-start: 5px; display: inline-block; text-indent: initial; " role="presentation"><svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" style="width:1em; height:1em; vertical-align:middle; fill:currentColor">
+        <path d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z" fill-rule="evenodd"></path>
+    </svg>
+    <span class="screenreader-only">Links to an external site.</span></span></a>.&nbsp;</span></p>
+    <p style="padding-left: 30px;"><span style="font-size: 18pt;"><span style="color: #e03e2d;">Hour 2 -</span>&nbsp;<a href="https://github.com/MrLFinger/Web-Dev-2" class="external" target="_blank" rel="noreferrer noopener"><span>Select this repository</span><span class="external_link_icon" style="margin-inline-start: 5px; display: inline-block; text-indent: initial; " role="presentation"><svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" style="width:1em; height:1em; vertical-align:middle; fill:currentColor">
+        <path d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z" fill-rule="evenodd"></path>
+    </svg>
+    <span class="screenreader-only">Links to an external site.</span></span></a></span></p>
+    <p style="padding-left: 30px;">When it opens in a new window select <strong>Fork</strong>(in the upper right) to make a fork of it in your account.</p>
+    <p style="text-align: center;"><img src="https://shakopee.instructure.com/courses/161195/files/11103297/preview" alt="139 i fork.PNG" width="1029" height="160" data-api-endpoint="https://shakopee.instructure.com/api/v1/courses/161195/files/11103297" data-api-returntype="File"></p>
+    <p style="text-align: left;">This will pop up and you will select your personal account to fork the repository to.&nbsp;</p>
+    <p style="text-align: center;"><img src="https://shakopee.instructure.com/courses/161195/files/11103527/preview" alt="1.1.1 fork.png" width="277" height="255" data-api-endpoint="https://shakopee.instructure.com/api/v1/courses/161195/files/11103527" data-api-returntype="File"></p>
+    <p style="text-align: center;">&nbsp;</p>
+    </div>
+    <p>After clicking on your user name you will see a forking graphic and it will bring you to your repository. &nbsp;Double check that you see this fork symbol as well as your username forked from #user.&nbsp;</p>
+    <p style="padding-left: 30px; text-align: center;"><img src="https://shakopee.instructure.com/courses/161195/files/11103483/download" alt="1.1.1 forked from.png" width="294" height="74" data-api-endpoint="https://shakopee.instructure.com/api/v1/courses/161195/files/11103483" data-api-returntype="File"></p>
+    <p style="padding-left: 30px;">&nbsp;</p></div></span></div></div></div></div>
+</main>
+</body>
 </html>
