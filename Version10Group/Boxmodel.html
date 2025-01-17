@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Explained</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 50px;
+        }
+
+        .box-model-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .box-model {
+            width: 200px;
+            height: 150px;
+            background-color: #f4f4f4;
+            border: 5px solid #333;
+            padding: 20px;
+            margin: 20px;
+            box-sizing: border-box; /* Important for Box Model explanation */
+        }
+
+        .box-model * {
+            box-sizing: border-box; /* Ensures elements inside also respect box model */
+        }
+
+        .slider-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .slider-label {
+            margin-bottom: 5px;
+        }
+
+        .box-model-values {
+            margin-top: 20px;
+        }
+
+        .text-explanation {
+            margin-top: 30px;
+        }
+
+        .box-model-info {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .box-model-info p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center">CSS Box Model Explained</h1>
+
+    <!-- Introduction Section -->
+    <div class="text-explanation">
+        <p>The CSS Box Model is a fundamental concept in web design. It describes the rectangular boxes generated for elements in the document tree. Each box is made up of four parts:</p>
+        <div class="box-model-info">
+            <p><strong>1. Content:</strong> The innermost part of the box where text or other media appears. This is where the element's actual content resides.</p>
+            <p><strong>2. Padding:</strong> The space between the content and the border. Padding is used to create space inside the element, between the content and its border.</p>
+            <p><strong>3. Border:</strong> A border surrounds the padding (if any). It’s a line that goes around the element and separates it from the outside.</p>
+            <p><strong>4. Margin:</strong> The space outside the border. It creates space between the element and surrounding elements. Margins push other elements away from the box.</p>
+        </div>
+        <p>The box model allows us to control the spacing, positioning, and sizing of elements on a webpage. All these parts together define the overall dimensions of the element.</p>
+    </div>
+
+    <div class="box-model-container">
+        <div class="box-model" id="boxModel">
+            <div class="content" id="content">
+                Content
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <div>
+            <label for="paddingSlider" class="slider-label">Padding</label>
+            <input type="range" id="paddingSlider" class="custom-range" min="0" max="50" value="20">
+        </div>
+        <div>
+            <label for="marginSlider" class="slider-label">Margin</label>
+            <input type="range" id="marginSlider" class="custom-range" min="0" max="50" value="20">
+        </div>
+        <div>
+            <label for="borderSlider" class="slider-label">Border Width</label>
+            <input type="range" id="borderSlider" class="custom-range" min="0" max="20" value="5">
+        </div>
+    </div>
+
+    <div class="box-model-values">
+        <p><strong>Padding:</strong> <span id="paddingValue">20px</span></p>
+        <p><strong>Margin:</strong> <span id="marginValue">20px</span></p>
+        <p><strong>Border Width:</strong> <span id="borderValue">5px</span></p>
+    </div>
+
+    <!-- Additional Explanation Section -->
+    <div class="text-explanation">
+        <p>Below is a visual representation of how the Box Model works. Adjust the sliders to change the padding, margin, and border to see how they affect the box's size and position.</p>
+        <p><strong>Note:</strong> When adjusting padding, the size of the content area changes, but the total size of the box is affected by both padding and border.</p>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Function to update box model properties
+    function updateBoxModel() {
+        // Get slider values
+        var padding = document.getElementById('paddingSlider').value;
+        var margin = document.getElementById('marginSlider').value;
+        var border = document.getElementById('borderSlider').value;
+
+        // Update the box model styles
+        var boxModel = document.getElementById('boxModel');
+        var content = document.getElementById('content');
+        
+        boxModel.style.padding = padding + "px";
+        boxModel.style.margin = margin + "px";
+        boxModel.style.borderWidth = border + "px";
+
+        // Update displayed values
+        document.getElementById('paddingValue').textContent = padding + "px";
+        document.getElementById('marginValue').textContent = margin + "px";
+        document.getElementById('borderValue').textContent = border + "px";
+
+        // Optionally, show content box dimensions
+        content.textContent = `Content: ${boxModel.clientWidth - parseInt(padding) * 2}px x ${boxModel.clientHeight - parseInt(padding) * 2}px`;
+    }
+
+    // Add event listeners to sliders
+    document.getElementById('paddingSlider').addEventListener('input', updateBoxModel);
+    document.getElementById('marginSlider').addEventListener('input', updateBoxModel);
+    document.getElementById('borderSlider').addEventListener('input', updateBoxModel);
+
+    // Initialize the box model on page load
+    window.onload = updateBoxModel;
+</script>
+
+</body>
+</html>
