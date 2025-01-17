@@ -3,7 +3,7 @@
 <!--Version 10
 
     Name: Matthew Lim
-    Date Completed: 1/13/25
+    Date Completed: 1/22/25
 -->
 
 <head>
@@ -14,6 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="SHS WebDev Version 5.0 - Index Bootstrap Examples">
+    <script src="JS/animation script.js"></script>
 
     <!-- CSS -->
     <!-- Bootstrap -->
@@ -31,11 +32,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
     <style type="text/css">
 
     h2{padding: 20px;}
-
+    
     footer {
     background-color: #2d3a3d;
     color: #fff;
@@ -45,7 +46,7 @@
     }
 
     body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
@@ -61,7 +62,8 @@
     padding: 50px 20px;
     }
 
-    header h1 {
+    h1 {
+    text-align: center;
     font-size: 3em;
     margin-bottom: 10px;
     }
@@ -81,7 +83,7 @@
     }
 
     section p {
-    font-size: 1.1em;
+    font-size: 1.3em;
     line-height: 1.8;
     max-width: 900px;
     margin: 0 auto;
@@ -93,10 +95,13 @@
     margin: 0 auto;
     }
 
+
+
     footer p {
     font-size: 1em;
     }
 
+    
     .mh-100 {color: blue;}
     
     </style>
@@ -112,15 +117,16 @@
     </header>
     
     <section id="intro">
-        <div class="container">
-            <h2>What are CSS Animations?</h2>
-            <p>CSS animations allow you to animate transitions between one CSS style to another. This can bring your web page to life with smooth effects and transitions. Animations can be triggered by user interactions or can run automatically.</p>
+        <div class="glow">
+            <h1 onmouseover="style.color='white'" onmouseout="style.color='black'"><b>What are CSS Animations?</b></h1>
         </div>
+
     </section>
 
     <section id="examples">
         <div class="container">
-            <h2>CSS Animation Examples</h2>
+            <p>CSS animations allow you to animate transitions between one CSS style to another. This can bring your web page to life with smooth effects and transitions. Animations can be triggered by user interactions or can run automatically.</p>
+            <h2><b>CSS Animation Examples</b></h2>
             <div class="example-grid">
                 <div class="example-card fade-in">
                     <h3>Fade In</h3>
@@ -141,60 +147,171 @@
             </div>
         </div>
 
-        <h2>What are CSS Card Animations?</h2>
+        <h2><b>What are CSS Card Animations?</b></h2>
 
         <p>CSS card animations can be used to animate images or boxes on a website. CSS card animations methods are often used to create interactive experiences when users click on items. With CSS card animations, you can add visual effects and transitions like flipping or changing the rotation of the card!</p>
 
-        <h2>What will you need to create CSS Card Animations?</h2>
+        <h2><b>What will you need to create CSS Card Animations?</b></h2>
 
 
         <p>First, you will need create a new called called gallery.html. Then open the repository link and copy all the code and paste into your gallery.html file. When you open the gallery.html file in a google browser, there should be no styling but your page should include pictures, links, and a description. </p>
 
         <a href="https://github.com/rmainhar/SHS_WebDevelopment/blob/master/Version4.0/user00/gallery.html" target="_blank">
 
-            <h2 class="mh-100">Repository link</h2>
+            <h2 class="mh-100"><b>Repository link</b></h2>
             </a>
 
-            <h2>How does this looks like?</h2>
-            <xmp>
-            <div id="gallery">
-                <div class="container">
-                    <div class="flipper">
-                        <div class="front">
-                            <img src="https://www.axiomtek.com/Download/Ptype3/en-US/ATX_Motherboard.jpg" alt="ATX_Motherboard">
-                            <p class="caption">Computer Part</p>
-                        </div>
-                        <div class="back">
-                            <a href="https://en.wikipedia.org/wiki/Motherboard" target="_blank">
-                            <h1>Motherboard</h1>
-                            </a>
-                            <p class="description">A motherboard is the main printed circuit board in general-purpose computers.</p>
-                     </div>
-                </div>
-            </div>
-            </xmp>
 
-            <div id="gallery">
-                <div class="container">
-                    <div class="flipper">
-                        <div class="front">
-                            <img src="https://www.axiomtek.com/Download/Ptype3/en-US/ATX_Motherboard.jpg" alt="ATX_Motherboard">
-                            <p class="caption">Computer Part</p>
-                        </div>
-                        <div class="back">
-                            <a href="https://en.wikipedia.org/wiki/Motherboard" target="_blank">
-                            <h1>Motherboard</h1>
-                            </a>
-                            <p class="description">A motherboard is the main printed circuit board in general-purpose computers.</p>
-                     </div>
-                </div>
-            </div>
-
-            <h4>As you can see, this looks straightforward with 1 big "div" gallery that holds the entire gallery, and 1 "div" container for each item - each having a front and back. However, it isn't a card and has no animations.</h4>
-
-            <h2>Creating a gallery.css file</h2>
+            <h2><b>1. Creating a gallery.css file</b></h2>
             <p>We will start from the top and work our way down. You can start by creating a new .css file and name it gallery.css The file is already linked in head of your .html file, so make sure you name it with correct spelling!</p>
 
+            <h2><b>2. Creating a ID!</b></h2>
+           
+            <h4>Copy and paste the code shown below into your gallery.css file</h4>
+                <xmp>
+            #gallery {
+                font-family: "Orbitron", sans-serif;
+                line-height: 1.5em;
+                text-align: center;
+              }
+                </xmp>
+
+            <h4>The most outer "div"(line #1 from above) has the id "gallery" so we will start by giving that "div" 3 basic styles; a font, a specific line height, and alignment of the text to the center.</h4>
+
+            <p><b>The added code should look like this:</b></p>
+            <img src="./Images/1.4d example code.jpg" class="w-100">
+
+            
+
+            <h2><b>3. Creating a container!</b></h2>
+                <h4>Copy and paste the code from below into your gallery.css file </h4>
+                    <xmp>
+                        .container {
+                            display: inline-block;
+                            margin: 3%;
+                            perspective: 1000px;
+                        }
+                    </xmp>
+            <h4>This is the "div" that has the class "container". We want the items to have a set width and height and be able to give them a margin and padding so we change the display to inline-block. When choosing a margin we can choose from a large variety of units, for this example we will use percentage. <b>Not much will really change except the margin size so an example won't be shown here.</b> </h4>
+            
+            <h2><b>4. Creating a flipper!</b></h2>
+            <h4>Copy and paste the code from below into your gallery.css file </h4>
+            <xmp>
+                .flipper {
+                    position: relative;    
+                    transition: 0.6s;
+                    transform-style: preserve-3d;
+                }
+            </xmp>
+
+            <h4>Moving to the "div" that has the class "flipper". Since the "flipper" is a child of the container we will use the relative position.  Using the relative position will mean we can position the "flipper" div relative inside of the "container" div.  The relative position is very straightforward, it just means that the element is positioned relative to its normal position. Transition will determine how long our animation will take, in this case 6 seconds. <b>This styling will not change anything at all for the time being so an example won't be provided.</b></h4>
+
+            <h2><b>5. Adding front and back cards!</b></h2>
+            <h4>Copy and paste the code from below into your gallery.css file.</h4>
+
+            <xmp>
+            .front, .back {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 250px;
+                height: 320px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                backface-visibility: hidden;
+                }
+
+            .front{
+                    z-index:2;
+                }
+                
+            .back{
+                    transform:rotateY(180deg);
+                }
+                </xmp>
+
+            <h4>The last 2 div's we will style are the "front" and "back".  We will use 3 different selectors 1 we will combine styling for the "front" and "back" and 1 each for seperate "front" and "back" styling. Backface-visibility is yet another obscure property.  When we turn an object around or transform it we can make sure we don't see the "backside" of that object.  In this case think of a playing card, when you flip it over you reveal the number/color/suit, when we hide the visibility we see nothing. Adding this code should result in a pile of messiness when opening the live sever!</h4>
+            <p><b>The added code should look like this:</b></p>
+            <img src="./Images/1.4d example code2.jpg" class="w-100">
+
+            <h2><b>6. Adding an image width!</b></h2>
+            <h4>Copy and paste the code from below into your gallery.css file.</h4>
+            <xmp>
+                img {
+                    width: 100%;
+                  }
+            </xmp>
+
+            <h4>The images are all over the place, 3 very different sizes, so adding this will change the size of the image to fit their container.</h4>
+            <p><b>The added code should look like this:</b></p>
+            <img src="./Images/1.4d example code3.jpg" class="w-100">
+
+            <h2><b>7. Seperating and adding animation to the cards!</b></h2>
+            <h4>Copy and paste the code from below into your gallery.css file.</h4>
+            <xmp>
+                .container, .front, .back {
+                    width: 250px;
+                    height: 320px;
+                }
+
+                .container:hover .flipper {
+                    transform: rotateY(180deg);
+                  }
+            </xmp>
+
+            <h4>To make the cards separated and not on top of each other let's give them a specific size. If you want to change the size here is where you can do that. Using the hover pseudo class here will make just a space between .container:hover and .flipper. This means that .flipper needs to be child of .container in order to work.</h4>
+            <p><b>The final code added should look like this for the front and back side of the card:</b></p>
+
+    
+
+            <div id="gallery">
+                <p>Hover over the images to get the answer</p>
+                <div class="boxer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="https://www.axiomtek.com/Download/Ptype3/en-US/ATX_Motherboard.jpg" alt="ATX_Motherboard">
+                            <p class="caption">Computer Part</p>
+                        </div>
+                        <div class="back">
+                            <a href="https://en.wikipedia.org/wiki/Motherboard" target="_blank">
+                                <h2 class="mh-100">Motherboard</h2>
+                            </a>
+                            <p class="description">A motherboard (also called mainboard, main circuit board, or mobo) is the main printed circuit board (PCB) in general-purpose computers and other expandable systems.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="boxer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="https://sc04.alicdn.com/kf/H2d9c1b6b8d5748efb5cc2fca2c0ae8e2U.jpg" alt="RAM Stick">
+                            <p class="caption">Computer Part</p>
+                        </div>
+                        <div class="back">
+                            <a href="https://en.wikipedia.org/wiki/Random-access_memory" target="_blank">
+                                <h2>RAM</h2>
+                            </a>
+                            <p class="description">Random-access memory is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="boxer">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="https://www.notebookcheck.net/fileadmin/Notebooks/NVIDIA/Turing/nvidia_TU117_chip.jpg" alt="NVIDIA GPU">
+                            <p class="caption">Computer Part</p>
+                        </div>
+                        <div class="back">
+                            <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" target="_blank">
+                                <h2 class="">GPU</h2>
+                            </a>
+                            <p class="description">A graphics processing unit (GPU) is a specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 onmouseover="style.color='green'" onmouseout="style.color='black'"><b>Congratulations, now you have animated cards!</b></h2>
     </section>
 
     <footer>
