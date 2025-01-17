@@ -164,5 +164,16 @@ img {
     }
   }
 
+  @keyframes erraticMove {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-50px, -50px); }
+    50% { transform: translate(50px, 100px); }
+    75% { transform: translate(-100px, -150px); }
+    100% { transform: translate(200px, 200px); }
+}
 
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
 
