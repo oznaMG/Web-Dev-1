@@ -16,6 +16,20 @@ h6 {
     border: 5px, double, red;
 }
 
-table {
+table >* {
     text-align: justify;
+}
+
+nav, footer {
+background-color: red;
+color: whitesmoke;
+word-spacing: 5px;
+}
+
+nav {
+    border-bottom: black, 5px, solid;
+}
+
+footer {
+    border-top: black, 5px, solid;
 }
