@@ -10,7 +10,6 @@
     <style>
         body {
             text-align: center;
-            /* Center all text in the body */
         }
 
         .code-block {
@@ -25,10 +24,141 @@
             font-size: 12px;
             text-align: center;
         }
+
+        /* MAIN NAVBAR */
+
+        main {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 5px, double, rgba(255, 154, 154, 0.917);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .navbar-brand {
+            /* TEXT ON THE NAVBAR - SOME THINGS WILL CAUSE ISSUES; WARNING */
+
+
+            padding-top: var(--bs-navbar-brand-padding-y);
+            padding-bottom: var(--bs-navbar-brand-padding-y);
+            margin-right: var(--bs-navbar-brand-margin-end);
+            font-size: var(--bs-navbar-brand-font-size);
+            color: var(--bs-navbar-brand-color);
+            color: #323232;
+            text-decoration: none;
+            white-space: nowrap;
+            position: sticky;
+
+
+
+
+        }
+
+        xmp {
+            padding-right: 100%;
+        }
+
+        .navbar {
+            /* MESSING WITH THIS CODE CAUSES THE NAVBAR TO HAVE ISSUES; WARNING */
+
+
+            z-index: 10000;
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: .5rem 1rem;
+        }
+
+        nav {
+            display: block;
+            unicode-bidi: isolate;
+        }
+
+        @media (min-width: 992px) {
+            .navbar-expand-lg {
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+            }
+        }
+
+        .bg-light {
+            background-color: #d6d6d6 !important;
+            /* YOU CAN CHANGE THE NAVBAR COLOR HERE */
+        }
+
+        .spacer {
+            background-color: #00000041;
+            width: 1px;
+            height: 3rem;
+        }
+
+        .otherspace {
+            background-color: #d6d6d6;
+            width: 5px;
+            height: 3rem;
+        }
+
+        /* END OF MAIN NAVBAR */
     </style>
 </head>
 
 <body>
+    <header> <!-- Navbar Copy; START -->
+        <nav class="navbar sticky-top fixed-top navbar-expand-lg navbar-light bg-light">
+
+            <div class="otherspace"></div>
+            <img style="margin-left: 33%;"
+                src="https://www.shakopee.k12.mn.us/cms/lib/MN01909221/Centricity/Domain/36/Saber%20Head%20PNG.png"
+                width="60" height="40" alt="Shakopee High School">
+            <div class="otherspace"></div>
+            <span style="color: #323232;">SHS - WebDev</span>
+            <div class="otherspace"></div>
+
+            <div class="otherspace"></div>
+            <div class="spacer"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="otherspace"></div>
+            <div class="otherspace"></div>
+            <div class="otherspace"></div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Index.html">- Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.shakopee.k12.mn.us/">- Shakopee Homepage <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header> <!-- Navbar Copy; END -->
+
+
     <main class="container mt-3">
         <h1>How to Create a List in HTML</h1>
         <!-- Instructions on creating lists in HTML -->
@@ -58,7 +188,7 @@
                 <pre>&lt;h3&gt;My Favorite Video Games&lt;/h3&gt;</pre>
             </div>
 
-            <h4>3. Create an unordered list</h4>
+            <h4>3. Create an unordered list and ordered list</h4>
             <p>Use the &lt;ul&gt; tag to create an unordered list, and the &lt;li&gt; tags for each list item:</p>
             <div class="code-block">
                 <pre>&lt;ul&gt;
@@ -67,6 +197,7 @@
     &lt;li&gt;Atomic Heart&lt;/li&gt;
 &lt;/ul&gt;</pre>
             </div>
+
 
             <h4>Full Example</h4>
             <p>Here is the full code example with all the steps combined:</p>
@@ -121,18 +252,20 @@
             <div class="code-block">
 
             </div>
-        
+
+
         </section>
     </main>
 
     <!-- Begin Footer -->
     <footer>
         <div>
-            Webpage made by <a href="https://github.com/ElPatronMoja" target="_blank">ElPatronMoja</a>
+            Webpage made by <a href="#" target="_blank">Your Name</a>
         </div>
     </footer>
+   
+   
     <!-- End Footer -->
-
 
     <!-- JavaScript for Bootstrap (optional) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>

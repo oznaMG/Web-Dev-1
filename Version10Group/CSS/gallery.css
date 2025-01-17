@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 section {
-    padding: 30px 20px;
+    padding: 60px 20px;
 }
 
 
@@ -96,6 +98,7 @@ section {
 }
 
 
+
 #gallery {
     font-family: "Orbitron", sans-serif;
     line-height: 1.5em;
@@ -163,6 +166,19 @@ img {
       text-shadow: 0 0 20px #fff, 0 0 30px #ee290b, 0 0 40px #f60707, 0 0 50px #f10606, 0 0 60px #f60303, 0 0 70px #f80202, 0 0 80px #ed0303;
     }
   }
+
+  @keyframes erraticMove {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-50px, -50px); }
+    50% { transform: translate(50px, 100px); }
+    75% { transform: translate(-100px, -150px); }
+    100% { transform: translate(200px, 200px); }
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
 
 
 
