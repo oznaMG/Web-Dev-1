@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 section {
-    padding: 30px 20px;
+    padding: 60px 20px;
 }
 
 
@@ -94,6 +96,7 @@ section {
     margin: 0 auto;
     padding: 0 20px;
 }
+
 
 
 #gallery {
