@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 10.0
@@ -35,23 +36,51 @@
     
 </head>
 
+<style></style>
+
+
 <body class ="text-center">
     
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav me-auto">
-                   
-                    <li class="nav-item">
-                        <a class="nav-link active">Navbar</a>
-                  
-    </nav>
-   
-        <button id="myButton">DON'T Hover Over Me</button>
+    <nav class="navbar sticky-top fixed-top navbar-expand-lg navbar-light bg-light">
+
+        <div class="otherspace"></div>
+        <img style="margin-left: 33%;"  src="https://www.shakopee.k12.mn.us/cms/lib/MN01909221/Centricity/Domain/36/Saber%20Head%20PNG.png" width="60" height="40" alt="Shakopee High School">
+        <div class="otherspace"></div>
+        <span style="color: #323232;">SHS - WebDev</span>
+        <div class="otherspace"></div>
+        
+        <div class="otherspace"></div>
+        <div class="spacer"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="otherspace"></div>
+            <div class="otherspace"></div>
+            <div class="otherspace"></div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="Index.html">- Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://www.shakopee.k12.mn.us/">- Shakopee Homepage <span class="sr-only">(current)</span></a>
+                </li>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+   <h1>Mouse Hover</h1>
+        <button style="color: red;" id="myButton">DON'T Hover Over Me</button>
         <script>
             const button = document.getElementById("myButton");
     
-            // Add a mouseover event listener to the button
             button.addEventListener("mouseover", () => {
                 alert("I SAID DON'T!");
             });
@@ -63,16 +92,153 @@
    <script>
         const button = document.getElementById("myButton");
 
-        // Add a mouseover event listener to the button
         button.addEventListener("mouseover", () => {
             alert("I SAID DON'T!");
         });
+    
+</xmp>
+
+
+<h1>Key Reader</h1>
+
+</script>
+
+<p style="color: red;" id="output">Key Tracker Will Show here...</p>
+<script>
+        const output = document.getElementById("output");
+
+        document.addEventListener("keydown", (event) =>{
+            output.textContent = `Key: ${event.key}, Code: ${event.code}`;
+            console.log(`Key pressed: ${event.key}, Code: ${event.code}`);
+        });
+
+    </script>
+
+
+<xmp
+<p id="output">Key Tracker Will Show here... </p>
+<script>
+        const output = document.getElementById("output");
+
+        document.addEventListener("keydown", (event) =>{
+            output.textContent = `Key: ${event.key}, Code: ${event.code}`;
+            console.log(`Key pressed: ${event.key}, Code: ${event.code}`);
+        });
+
     </script>
 </xmp>
 
+<h1>Active Clock</h1>
+
+<div style="color: red;" id= "clock">Time...</div>
+
+<script>
+
+    function updateClock() {
+        const clockElement = document.getElementById("clock");
+        const now = new Date();
+
+        const hours = String(now.getHours()).padStart(2, "0");
+        const minutes = String(now.getMinutes()).padStart(2, "0");
+        const seconds = String(now.getSeconds()).padStart(2, "0");
+
+        clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateClock, 1000);
+        (updateClock);
+
+</script>
+
+<xmp>
+    <div id= "clock">Time...</div>
+
+    <script>
+    
+        function updateClock() {
+            const clockElement = document.getElementById("clock");
+            const now = new Date();
+    
+            const hours = String(now.getHours()).padStart(2, "0");
+            const minutes = String(now.getMinutes()).padStart(2, "0");
+            const seconds = String(now.getSeconds()).padStart(2, "0");
+    
+            clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+            }
+    
+            setInterval(updateClock, 1000);
+            (updateClock);
+    
+    </script>
+    </xmp>
+
+    <h1>Weekday Finder</h1>
+    <p style="color: red;" id="demo"> </p>
+
+    <script>
+        let day;
+        switch (new Date().getDay()) {
+          case 0:
+            day = " like this Sunday";
+            break;
+          case 1:
+            day = " hate this Monday";
+            break;
+          case 2:
+            day = " kinda hate this Tuesday";
+            break;
+          case 3:
+            day = " am okay with this Wednesday";
+            break;
+          case 4:
+            day = " kinda like this Thursday";
+            break;
+          case 5:
+            day = " really like this Friday";
+            break;
+          case  6:
+            day = " love this Saturday";
+        }
+        document.getElementById("demo").innerHTML = "I" + day;
+        </script>
+        
+        <xmp>
+            
+            <p style="color: red;" id="demo"> </p>
+
+    <script>
+        let day;
+        switch (new Date().getDay()) {
+          case 0:
+            day = " like this Sunday";
+            break;
+          case 1:
+            day = " hate this Monday";
+            break;
+          case 2:
+            day = " kinda hate this Tuesday";
+            break;
+          case 3:
+            day = " am okay with this Wednesday";
+            break;
+          case 4:
+            day = " kinda like this Thursday";
+            break;
+          case 5:
+            day = " really like this Friday";
+            break;
+          case  6:
+            day = " love this Saturday";
+        }
+        document.getElementById("demo").innerHTML = "I" + day;
+        </script>
+
+        </xmp>
     <!---------------------------------- footer ------------->
 
     <!---------------------------------- footer ------------->
 </body>
 
 </html>
+
+
