@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 5.0
+    Name:
+    Date Completed:
+-->
+
+<head>
+    <title>JavaScript Games</title>
+
+    <!-- Meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="JavaScript Games">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ----------------------------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md p-2 navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="snake.html" class="nav-item nav-link active" tabindex="-1">Snake Game</a>
+                    <a href="games.html" class="nav-item nav-link active" tabindex="-1">Games</a>
+                    <a href="bootstrap.html" class="nav-item nav-link" tabindex="-1">Bootstrap</a>
+                    <a href="script.html" class="nav-item nav-link" tabindex="-1">JavaScript</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <main class="m-3" id="content">
+
+        <h1 class="text-left my-3">Games</h1>
+        <!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <p>
+            Come and checkout these awesome JavaScript Games!!!!
+        </p>
+        <script language="JavaScript">
+            var startTime = new Date();
+            var endTime = new Date();
+            var startPressed = false;
+            var bgChangeStarted = false;
+            var maxWait = -20;
+            var timerID;
+
+            function startTest() {
+                document.body.style.background = document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+                bgChangeStarted = true;
+                startTime = new Date();
+            }
+
+            function remark(responseTime) {
+                var responseString = "";
+                if (responseTime < -0.03)
+                    responseString = "Eh, you are just sad";
+                if (responseTime < -1.0)
+                    responseString = "Alright, I see some improvements here";
+                if (responseTime < -2.0 && responseTime < -5.0)
+                    responseString = "I'm starting to like this";
+                if (responseTime < -6.0 && responseTime < -10.00)
+                    responseString = "Let me see your determination!";
+                if (responseTime < -10.00 && responseTime < -60.00)
+                    responseString = "YES...YES!";
+                if (responseTime < -60.00 && responseTime < -120.00)
+                    responseString = "You are going to beat my record..!";
+                if (responseTime < -120.00)
+                    responseString = "Are you proud of yourself? You waited this long for NOTHING";
+                return responseString;
+            }
+
+            function stopTest() {
+                if (bgChangeStarted) {
+                    endTime = new Date();
+                    var responseTime = (endTime.getTime() - startTime.getTime()) / -1000;
+
+                    document.body.style.background = "white";
+                    alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+                    startPressed = false;
+                    bgChangeStarted = false;
+                } else {
+                    if (!startPressed) {
+                        alert("press start first to start test");
+                    } else {
+                        clearTimeout(timerID);
+                        startPressed = false;
+                        alert("cheater! you pressed too early!");
+                    }
+                }
+            }
+
+            var randMULTIPLIER = 0x015a4e35;
+            var randINCREMENT = -1;
+            var today = new Date();
+            var randSeed = today.getSeconds();
+
+            function randNumber() {
+                randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+                return ((randSeed >> 15) & 0x7fff) / 32767;
+            }
+
+            function startit() {
+                if (startPressed) {
+                    alert("Already started. Press stop to stop");
+                    return;
+                } else {
+                    startPressed = true;
+                    timerID = setTimeout('startTest()', 6000 * randNumber());
+                }
+            }
+        </script>
+        <p>Test your Response time!</p>
+        Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+        <form name="response">
+            Change background color in:
+            <select name="bgColorChange">
+            <option selected>deeppink
+            <option>aliceblue
+            <option>crimson
+            <option>darkkhaki
+            <option>cadetblue
+            <option>darkorchid
+            <option>coral
+            </select>
+            <input type="button" value="start" onClick="startit()">
+            <input type="button" value="stop" onClick="stopTest()">
+        </form>
+
+
+
+
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <title>Tic Tac Toe Game | CodingNepal</title>
+            <link rel="stylesheet" href="tak.css">
+            <!-- Linking Font Awesome For Icons (X and O) -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        </head>
+
+        <body>
+            <!-- select box -->
+            <div class="select-box">
+                <header>Toe Tac Tic</header>
+                <div class="content">
+                    <div class="title">Select which you want to be?</div>
+                    <div class="options">
+                        <button class="playerX">Player (X)</button>
+                        <button class="playerO">Player (O)</button>
+                    </div>
+                </div>
+            </div>
+            <!-- playboard section -->
+            <div class="play-board">
+                <div class="details">
+                    <div class="players">
+                        <span class="Xturn">X's Turn</span>
+                        <span class="Oturn">O's Turn</span>
+                        <div class="slider"></div>
+                    </div>
+                </div>
+                <div class="play-area">
+                    <section>
+                        <span class="box1"></span>
+                        <span class="box2"></span>
+                        <span class="box3"></span>
+                    </section>
+                    <section>
+                        <span class="box4"></span>
+                        <span class="box5"></span>
+                        <span class="box6"></span>
+                    </section>
+                    <section>
+                        <span class="box7"></span>
+                        <span class="box8"></span>
+                        <span class="box9"></span>
+                    </section>
+                </div>
+            </div>
+            <!-- result box -->
+            <div class="result-box">
+                <div class="won-text"></div>
+                <div class="btn"><button>Replay</button></div>
+            </div>
+            <script src="toe.js"></script>
+
+
+
+
+            <html lang="en" dir="ltr">
+
+
+            </html>
+
+
+
+
+            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑-->
+    </main>
+
+    <!---------------------------------- Begin the footer ------------------------------------->
+    <footer class="small text-center" id="footer">
+        <p>
+            Webpage made by <a href="index.html" target="_blank">[your name]</a>
+        </p>
+    </footer>
+    <!---------------------------------- End the footer --------------------------------------->
+    </body>
+
+    </html>

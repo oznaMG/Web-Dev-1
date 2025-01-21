@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Games Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Games Page">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Games</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-primary" type="button">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-3">
+        <h1>Games Page</h1>
+
+        <!-- Reaction Time Game -->
+        <section>
+            <h2>Reaction Time Game</h2>
+            <form name="response">
+                Change background color in:
+                <select name="bgColorChange">
+                    <option selected>deeppink
+                    <option>aliceblue
+                    <option>crimson
+                    <option>darkkhaki
+                    <option>cadetblue
+                    <option>darkorchid
+                    <option>coral
+                </select><br>
+                Select Difficulty:
+                <select name="difficulty" onchange="setDifficulty()">
+                    <option value="easy" selected>Easy
+                    <option value="medium">Medium
+                    <option value="hard">Hard
+                </select>
+                <input type="button" value="start" onClick="startit()">
+                <input type="button" value="stop" onClick="stopTest()">
+            </form>
+            <p id="score">Score: 0</p>
+        </section>
+
+        <!-- Math Quiz Game -->
+        <section>
+            <h2>Math Quiz Game</h2>
+            <button onclick="mathQuiz()">Start Math Quiz</button>
+        </section>
+
+        <!-- Memory Game -->
+        <section>
+            <h2>Memory Game</h2>
+            <button onclick="startMemoryGame()">Start Memory Game</button>
+        </section>
+
+        <script>
+            // Reaction Time Game JavaScript
+            var startTime = new Date();
+            var endTime = new Date();
+            var startPressed = false;
+            var bgChangeStarted = false;
+            var maxWait = 20;
+            var timerID;
+            var score = 0;
+
+            function startTest() {
+                document.body.style.background = document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+                bgChangeStarted = true;
+                startTime = new Date();
+            }
+
+            function remark(responseTime) {
+                var responseString = "";
+                if (responseTime < 0.20) responseString = "Well done!";
+                if (responseTime >= 0.20 && responseTime < 0.30) responseString = "Nice!";
+                if (responseTime >= 0.30 && responseTime < 0.40) responseString = "Could be better...";
+                if (responseTime >= 0.40 && responseTime < 0.50) responseString = "Keep practicing!";
+                if (responseTime >= 0.50 && responseTime < 0.80) responseString = "Have you been daydreaming again?";
+                if (responseTime >= 0.80 && responseTime < 1.1) responseString = "Did you fall asleep?";
+                return responseString;
+            }
+
+            function stopTest() {
+                if (bgChangeStarted) {
+                    endTime = new Date();
+                    var responseTime = (endTime.getTime() - startTime.getTime()) / 1000;
+                    document.body.style.background = "white";
+                    alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+                    score++;
+                    document.getElementById('score').innerText = "Score: " + score;
+                    startPressed = false;
+                    bgChangeStarted = false;
+                } else {
+                    if (!startPressed) {
+                        alert("Press start first to start the test");
+                    } else {
+                        clearTimeout(timerID);
+                        startPressed = false;
+                        alert("Cheater! You pressed too early!");
+                    }
+                }
+            }
+
+            var randMULTIPLIER = 0x015a4e35;
+            var randINCREMENT = 1;
+            var today = new Date();
+            var randSeed = today.getSeconds();
+
+            function randNumber() {
+                randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+                return ((randSeed >> 15) & 0x7fff) / 32767;
+            }
+
+            function startit() {
+                if (startPressed) {
+                    alert("Already started. Press stop to stop.");
+                    return;
+                } else {
+                    startPressed = true;
+                    timerID = setTimeout('startTest()', 6000 * randNumber());
+                }
+            }
+
+            function setDifficulty() {
+                var difficulty = document.response.difficulty.options[document.response.difficulty.selectedIndex].value;
+                if (difficulty == 'easy') {
+                    maxWait = 20;
+                } else if (difficulty == 'medium') {
+                    maxWait = 10;
+                } else if (difficulty == 'hard') {
+                    maxWait = 5;
+                }
+                alert("Difficulty set to " + difficulty);
+            }
+
+            // Math Quiz Game JavaScript
+            function mathQuiz() {
+                var num1 = Math.floor(Math.random() * 10) + 1;
+                var num2 = Math.floor(Math.random() * 10) + 1;
+                var answer = num1 + num2;
+
+                var userAnswer = prompt("What is " + num1 + " + " + num2 + "?");
+                if (userAnswer == answer) {
+                    alert("Correct!");
+                } else {
+                    alert("Wrong! The correct answer is " + answer);
+                }
+            }
+
+            // Memory Game JavaScript
+            var colors = ["red", "green", "blue", "yellow"];
+            var sequence = [];
+            var userSequence = [];
+            var level = 0;
+
+            function startMemoryGame() {
+                userSequence = [];
+                sequence.push(colors[Math.floor(Math.random() * colors.length)]);
+                alert("Watch the sequence: " + sequence.join(", "));
+                setTimeout(() => {
+                    document.body.style.background = "white";
+                    userTurn();
+                }, 1000 * sequence.length);
+            }
+
+            function userTurn() {
+                for (let i = 0; i < sequence.length; i++) {
+                    let color = prompt("What was color number " + (i + 1) + "?");
+                    userSequence.push(color);
+                }
+                checkSequence();
+            }
+
+            function checkSequence() {
+                for (let i = 0; i < sequence.length; i++) {
+                    if (sequence[i] != userSequence[i]) {
+                        alert("Game over! You reached level " + level);
+                        return;
+                    }
+                }
+                level++;
+                alert("Well done! Proceeding to level " + level);
+                startMemoryGame();
+            }
+        </script>
+    </main>
+</body>
+
+</html>

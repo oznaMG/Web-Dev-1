@@ -37,6 +37,7 @@
 
 <body>
     <main>
+        <h1 onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School</h1>
         <div id="built-in-functions">
             <!-- ALERT-->
             <script>
@@ -216,6 +217,238 @@
     <div id="container" style="height: 3000px; width: 1000px;">
         <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
     </div>
-</body>
+    <script language="JavaScript">
 
+        var startTime=new Date();
+        var endTime=new Date();
+        var startPressed=false;
+        var bgChangeStarted=false;
+        var maxWait=20;
+        var timerID;
+        
+        function startTest()
+        {
+         document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+         bgChangeStarted=true;
+         startTime=new Date();
+        }
+        
+        function remark(responseTime)
+        {
+         var responseString="";
+         if (responseTime < 0.20)
+         responseString="Well done!";
+         if (responseTime >= 0.20 && responseTime < 0.30)
+         responseString="Nice!";
+         if (responseTime >=0.40 && responseTime < 0.50)
+         responseString="Could be better...";
+         if (responseTime >=0.50 && responseTime < 0.80)
+         responseString="Keep practicing!";
+         if (responseTime >=0.80 && responseTime < 1.1)
+         responseString="Have you been day dreaming again?";
+         if (responseTime >=1.1)
+         responseString="Did you fall asleep?";
+         return responseString;
+        }
+        
+        function stopTest()
+        {
+         if(bgChangeStarted)
+         {
+         endTime=new Date();
+         var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+        
+         document.body.style.background="white"; 
+         alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+         startPressed=false;
+         bgChangeStarted=false;
+         }
+         else
+         {
+         if (!startPressed)
+         {
+         alert("press start first to start test");
+         }
+         else
+         { 
+         clearTimeout(timerID);
+         startPressed=false; 
+         alert("cheater! you pressed too early!");
+         } 
+         }
+        }
+        
+        var randMULTIPLIER=0x015a4e35;
+        var randINCREMENT=1;
+        var today=new Date();
+        var randSeed=today.getSeconds();
+        
+        function randNumber()
+        {
+         randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+         return((randSeed >> 15) & 0x7fff) / 32767;
+        }
+        
+        function startit()
+        {
+         if(startPressed)
+         {
+         alert("Already started. Press stop to stop");
+         return;
+         }
+         else
+         {
+         startPressed=true; 
+         timerID=setTimeout('startTest()', 6000*randNumber());
+         }
+        }
+    </script>
+
+
+
+<p>
+  Click on "Start" first, and wait until the background color changes. 
+  As soon as it changes, hit "stop!"
+</p>
+        <form name="response">
+        Change background color in: 
+        <select name="bgColorChange">
+        <option selected>deeppink
+        <option>aliceblue
+        <option>crimson
+        <option>darkkhaki
+        <option>cadetblue
+        <option>darkorchid
+        <option>coral
+        </select>
+        <input type="button" value="start" onClick="startit()">
+        <input type="button" value="stop" onClick="stopTest()">
+        </form>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper, Scissors</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rock, Paper, Scissors,Fire</h1>
+  <p>Choose your move:</p>
+  <button onclick="playGame('rock')">Rock</button>
+  <button onclick="playGame('paper')">Paper</button>
+  <button onclick="playGame('scissors')">Scissors</button>
+  <button onclick="playGame('Fire')">Fire</button>
+  <div id="result"></div>
+
+  <script>
+    function playGame(playerChoice) {
+      const choices = ['rock', 'paper', 'scissors','Fire'];
+      const computerChoice = choices[Math.floor(Math.random() * 3)];
+      let result = '';
+
+      if (playerChoice === computerChoice) {
+        result = 'It\'s a tie!';
+      } else if (
+        (playerChoice === 'Fire' && computerChoice === 'rock') ||
+        (playerChoice === 'rock' && computerChoice === 'scissors') ||
+        (playerChoice === 'paper' && computerChoice === 'rock') ||
+        (playerChoice === 'scissors' && computerChoice === 'paper')
+      ) {
+        result = 'You win!';
+      } else {
+        result = 'You lose!';
+      }
+
+      document.getElementById('result').innerHTML = `
+        You chose: ${playerChoice}<br>
+        Computer chose: ${computerChoice}<br>
+        ${result}
+      `;
+    }
+  </script>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      input {
+        padding: 5px;
+        font-size: 16px;
+        width: 80px;
+        text-align: center;
+      }
+      button {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      #message {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <h1>Number Guessing Game</h1>
+    <p>Guess the number between 1 and 1000:</p>
+    <input type="number" id="guess" min="1" max="1000" />
+    <button onclick="checkGuess()">Submit</button>
+    <div id="message"></div>
+
+    <script>
+      const randomNumber = Math.floor(Math.random() * 1000) + 1;
+      let attempts = 0;
+
+      function checkGuess() {
+        const userGuess = Number(document.getElementById('guess').value);
+        attempts++;
+        
+        const difference = Math.abs(randomNumber - userGuess);
+        
+       
+        const percentageDifference = Math.floor((difference / 1000) * 100);
+        
+        if (userGuess === randomNumber) {
+          document.getElementById('message').innerHTML = `
+            <strong>Congratulations!</strong> You guessed the number in ${attempts} attempts!
+          `;
+        } else {
+          document.getElementById('message').textContent = `You're off by ${percentageDifference}%! Try again.`;
+        }
+      }
+    </script>
+</body>
 </html>

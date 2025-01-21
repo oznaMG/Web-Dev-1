@@ -66,7 +66,7 @@ body{
 }
 
 footer {
-    color:#d1d1d1;
+    color:#ebbdbd;
     padding: 5px;
     position: relative;
     bottom: 100%;
@@ -74,12 +74,16 @@ footer {
     height: 100%;
     /*margin: auto;*/
     margin-top: auto;
-    background-color: #242727
+    background-color: #979797
 
 }
 
+footer a {
+    color:#dde2e2;
+}
+
 ul {
-    color:#7c0808;
+    color:#e7dfdf;
 }
 
 select {

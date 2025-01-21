@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 5.0
+    Name:Shabir Sadeqi 
+    Date Completed:01/09/2025
+-->
+
+<head>
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev JavaScript Practice">
+    <script src="JS/script.js"></script>
+    
+    
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md p-2 navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="games.html" class="nav-item nav-link" tabindex="-1">Games</a>
+                    <a href="bootstrap.html" class="nav-item nav-link" tabindex="-1">Bootstrap</a>
+                    <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                        tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
+
+    <main class="m-3" id="content">
+        <h1 class="text-left my-3">My JavaScript Examples</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <center>
+                        <p id="textChange"> My name is User ##</p>
+                    </center>
+                </div>
+                <div class="col-sm-4" style="background-color:orange;">
+                    <center><button type="button" onclick="changeText()">Click if you like</button></center>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(34, 20, 233);">
+                    <form onsubmit="confirmInput(event)" action="https://www.w3schools.com/">
+                        Enter your name: <input id="fname" type="text" size="20">
+                        <input type="submit">
+                    </form>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(112, 236, 16);">
+                    <button onclick="changeBackgroundColor()">Change Background Color</button>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(245, 255, 160);">
+                    <button onclick="toggleVisibility()">Toggle Content Visibility</button>
+                    <div id="toggleContent" style="display:none;">
+                        <p>This content can be shown or hidden.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(200, 100, 255);">
+                    <p id="countdown"></p>
+                    <button onclick="startCountdown()">Start Countdown</button>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(255, 165, 0);">
+                    <button onclick="changeTextColor()">Change Text Color</button>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(255, 192, 203);">
+                    <button onclick="toggleBackgroundColor()">Toggle Background Color</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer class="small text-center" id="footer">
+        <p>
+            Webpage made by <a href="index.html" target="_blank">[your name]</a>
+        </p>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>

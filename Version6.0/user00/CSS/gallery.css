@@ -22,7 +22,7 @@ color: 1000px;
 
 .Flipper {
   position: relative;
-  transition: 1.6s;
+  transition: .6s;
   transform-style: preserve-3d;
 }
 
@@ -42,7 +42,7 @@ color: 1000px;
 }
 
 .Back {
-  transform: rotateY(540deg);
+  transform: rotateY(180deg);
   background-color: rgb(160, 82, 45);
 }
 
@@ -56,7 +56,7 @@ img {
 }
 
 .Container:hover .Flipper {
-  transform: rotateY(540deg);
+  transform: rotateY(180deg);
 }
 
 a {

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 5.0
+    Name:
+    Date Completed:
+-->
+
+<head>
+    <title>Bootstrap Examples</title>
+
+    <!-- Homepage meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Version 5.0 - Index Bootstrap Examples">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            background: #c8cfd8;
+            margin-bottom: 15px;
+        }
+        
+        .demo-content.bg-alt {
+            background: #b71616;
+        }
+        body {background-color: #8d427e;}
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ----------------------------------->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Navigation Bar</title>
+        <style>
+            /* General reset */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            /* Navbar container */
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 20px;
+                background-color: #000000;
+            }
+    
+            /* Logo */
+            .logo a {
+                color: rgb(255, 193, 243);
+                font-size: 20px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+    
+            /* Navigation list */
+            .nav-list {
+                list-style: none;
+                display: flex;
+                align-items: center;
+            }
+    
+            .nav-list li {
+                margin-left: 20px;
+                position: relative;
+            }
+    
+            .nav-list li a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                padding: 8px 15px;
+                display: block;
+            }
+    
+
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+    
+            .dropdown-menu {
+                list-style: none;
+                position: absolute;
+                background-color: #444;
+                top: 100%;
+                left: 0;
+                min-width: 150px;
+                display: none;
+                padding: 10px 0;
+                border-radius: 5px;
+            }
+    
+            .dropdown-menu li {
+                padding: 8px 20px;
+            }
+    
+            .dropdown-menu li a {
+                color: white;
+                text-decoration: none;
+                display: block;
+            }
+    
+            .dropdown-menu li a:hover {
+                background-color: #575757;
+            }
+    
+            .search-container {
+                display: flex;
+                align-items: center;
+            }
+    
+            .search-container input {
+                padding: 8px;
+                border: none;
+                border-radius: 4px;
+                margin-right: 10px;
+            }
+    
+            .search-container button {
+                padding: 8px 15px;
+                border: none;
+                background-color: #575757;
+                color: white;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+    
+            .search-container button:hover {
+                background-color: #444;
+            }
+    
+            /* Hover effects */
+            .nav-list li a:hover {
+                background-color: #575757;
+            }
+    
+            .search-container input:focus {
+                outline: none;
+                border: 2px solid #575757;
+            }
+    
+            /* Responsive design */
+            @media (max-width: 768px) {
+                .navbar {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+    
+                .nav-list {
+                    flex-direction: column;
+                    width: 100%;
+                    margin-top: 20px;
+                }
+    
+                .nav-list li {
+                    margin: 10px 0;
+                    width: 100%;
+                }
+    
+                .search-container {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+    
+                .search-container input {
+                    width: 80%;
+                    margin-right: 10px;
+                }
+    
+                .search-container button {
+                    width: 20%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">Zak's Cook Book </a>
+                </div>
+                <ul class="nav-list">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <li class="dropdown">
+                        <a href="#">Recipes</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pizza.html">Pizza</a></li>
+                            <li><a href="burger.html">Burger</a></li>
+                            <li><a href="spaghetti.html">Spaghetti</a></li>
+                            <li><a href="chicken.html">Chicken</a></li>
+                        </ul>
+                    </li>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </ul>
+                <div class="search-container">
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </nav>
+        </header>
+    </body>
+    </html>
+    
+    <!---------------------------------- End the nav-bar ------------------------------------->
+    
+    <!---------Jumbotron---------------------------------------------->
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <title>Zak's Cook Book</title>
+  <style>
+   .container {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 40px;
+  justify-items: center; 
+  margin-top: 20px;
+}
+
+.block {
+  background: #ffffff;
+  border: 3px solid #ccc; 
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.block img {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 10px; 
+}
+
+.block-text {
+  margin-top: 20px; 
+}
+  </style>
+</head>
+<body>
+  <header class="p-5 bg-primary-subtle text-black" name="Jumbotron">
+    <h4>
+       <center>Spaghetti Recipes</div></center>
+    </h4>
+    <p class="lead"></p>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="block">
+        <img src="images/sp.jpeg" alt="Pizza">
+        <div class="block-text"></a></div>
+        
+        <h1>Spaghetti Recipes</h1>
+
+        <h2>1. Classic Spaghetti Bolognese</h2>
+        <p><strong>Ingredients:</strong></p>
+        <ul>
+          <li>1 lb ground beef</li>
+          <li>1 onion, chopped</li>
+          <li>2 garlic cloves, minced</li>
+          <li>1 can (14 oz) crushed tomatoes</li>
+          <li>1/4 cup red wine (optional)</li>
+          <li>1 tbsp tomato paste</li>
+          <li>2 tsp dried oregano</li>
+          <li>1/4 tsp salt</li>
+          <li>1/4 tsp pepper</li>
+          <li>1 lb spaghetti</li>
+          <li>Grated Parmesan cheese (optional)</li>
+        </ul>
+      
+        <p><strong>Steps:</strong></p>
+        <ol>
+          <li>In a large pan, heat a bit of olive oil over medium heat and cook the onion and garlic until softened.</li>
+          <li>Add the ground beef to the pan and cook until browned. Drain any excess fat.</li>
+          <li>Stir in the crushed tomatoes, red wine (if using), tomato paste, oregano, salt, and pepper. Bring to a simmer and cook for 20-30 minutes, stirring occasionally.</li>
+          <li>While the sauce is simmering, cook the spaghetti according to package directions. Drain and set aside.</li>
+          <li>Serve the Bolognese sauce over the cooked spaghetti. Garnish with grated Parmesan cheese if desired.</li>
+        </ol>
+      </div>
+      <div class="block">
+        <img src="images/whi.jpeg" alt="Burger">
+        <div class="block-text"></a></div>
+        <h2>2. Spaghetti Aglio e Olio</h2>
+        <p><strong>Ingredients:</strong></p>
+        <ul>
+          <li>1 lb spaghetti</li>
+          <li>1/4 cup olive oil</li>
+          <li>4 garlic cloves, thinly sliced</li>
+          <li>1/4 tsp red pepper flakes</li>
+          <li>1/4 cup fresh parsley, chopped</li>
+          <li>Salt and pepper to taste</li>
+          <li>Grated Parmesan cheese (optional)</li>
+        </ul>
+      
+        <p><strong>Steps:</strong></p>
+        <ol>
+          <li>Cook the spaghetti according to package instructions. Drain, reserving 1/2 cup of pasta water.</li>
+          <li>In a large pan, heat the olive oil over medium heat. Add the garlic and red pepper flakes, and cook until the garlic is golden brown (about 2-3 minutes).</li>
+          <li>Add the cooked spaghetti to the pan and toss to coat. Add a little reserved pasta water if the pasta seems dry.</li>
+          <li>Stir in the fresh parsley and season with salt and pepper to taste.</li>
+          <li>Serve hot, with grated Parmesan cheese if desired.</li>
+        </ol>
+      
+      </div>
+      <div class="block">
+        <img src="images/mea.jpeg" alt="Spaghetti">
+        <div class="block-text"></a></div>
+        <h2>3. Spaghetti Carbonara</h2>
+        <p><strong>Ingredients:</strong></p>
+        <ul>
+          <li>1 lb spaghetti</li>
+          <li>4 large eggs</li>
+          <li>1 cup grated Pecorino Romano cheese</li>
+          <li>8 oz pancetta or bacon, diced</li>
+          <li>2 garlic cloves, minced</li>
+          <li>Salt and pepper to taste</li>
+          <li>Fresh parsley for garnish (optional)</li>
+        </ul>
+      
+        <p><strong>Steps:</strong></p>
+        <ol>
+          <li>Cook the spaghetti according to package instructions. Drain, reserving 1/2 cup of pasta water.</li>
+          <li>In a bowl, whisk together the eggs and grated Pecorino Romano cheese. Set aside.</li>
+          <li>In a pan, cook the pancetta or bacon over medium heat until crispy. Remove the pan from heat and add the minced garlic, cooking for about 30 seconds.</li>
+          <li>Add the drained spaghetti to the pan with pancetta and toss to coat in the bacon fat.</li>
+          <li>Slowly pour the egg and cheese mixture over the pasta, stirring quickly to create a creamy sauce. If the pasta seems too dry, add a bit of reserved pasta water to loosen it up.</li>
+          <li>Season with salt and pepper and garnish with fresh parsley if desired. Serve immediately.</li>
+        </ol>
+      
+      </div>
+      <div class="block">
+        <img src="images/gre.jpeg" alt="Chicken">
+        <div class="block-text"></a></div>
+        <h2>4. Spaghetti with Pesto</h2>
+        <p><strong>Ingredients:</strong></p>
+        <ul>
+          <li>1 lb spaghetti</li>
+          <li>1 cup fresh basil leaves</li>
+          <li>1/4 cup pine nuts</li>
+          <li>2 garlic cloves</li>
+          <li>1/2 cup extra virgin olive oil</li>
+          <li>1/2 cup grated Parmesan cheese</li>
+          <li>Salt and pepper to taste</li>
+        </ul>
+      
+        <p><strong>Steps:</strong></p>
+        <ol>
+          <li>Cook the spaghetti according to package instructions. Drain, reserving 1/2 cup of pasta water.</li>
+          <li>In a food processor, blend the basil, pine nuts, garlic, and Parmesan cheese until smooth.</li>
+          <li>While the food processor is running, slowly add the olive oil until the pesto reaches a smooth, spreadable consistency. Season with salt and pepper to taste.</li>
+          <li>Toss the cooked spaghetti with the pesto sauce, adding reserved pasta water if needed to thin the sauce.</li>
+          <li>Serve hot, garnished with extra Parmesan cheese if desired.</li>
+        </ol>
+      
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
+       
+        <!---------Three Column Layouts------------------------------------>
+       
+        <!---------Table-Striped------------------------------------------->
+        <div class="container mt-3" name="table-striped">
+        </div>
+
+        <!---------List-Group----------------------------------------------
+
+        -------Form Button--------------------------------------------->
+        <div class="container mt-3 vstack" name="form-button">
+        </div>
+    </main>
+    <footer class="bg-info text-center">
+        <div class="container p-4">
+            
+
+            <section>
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2"><strong>Sign up for our newsletter</strong></p> 
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form5Example2" class="form-control" />
+                                <label class="form-label" for="form5Example2">Email address</label>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-4">Subscribe</button>
+                   
+                </form>
+            </section>
+
+            <section class="mb-4">
+                <p style="font-size: 2rem; font-weight: bold;">
+                    Master the Art of Cooking
+            </section>
+        </div>
+        <section class="mb-4">
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="https://www.twitter.com" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="https://www.google.com" role="button" target="_blank"><i class="fab fa-google"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://www.instagram.com" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com" role="button" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="https://www.github.com" role="button" target="_blank"><i class="fab fa-github"></i></a>
+        </section>
+    
+    </footer>
+    <!-- Footer Section End -->
+</body>
+</html>
+<section class="mb-4">
+    <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="https://www.twitter.com" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="https://www.google.com" role="button" target="_blank"><i class="fab fa-google"></i></a>
+    <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://www.instagram.com" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com" role="button" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="https://www.github.com" role="button" target="_blank"><i class="fab fa-github"></i></a>
+</section>

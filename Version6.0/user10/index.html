@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf's Favorite TV Shows</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Linking to external CSS file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome icons for social links -->
+</head>
+<body>
+    <!-- Navbar using Bootstrap   -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="whitecollar.html">White Collar</a>
+        <a href="moneyheist.html">Money Heist</a>
+        <a href="breakingbad.html">Breaking Bad</a>
+        <a href="ozarks.html">Ozarks</a>
+        <a href="prisonbreak.html">Prison Break</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+
+    <!-- Hero Bootstrap) -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1 class="text-center text-white pt-5">Welcome to My Favorite TV Shows</h1> <!-- Bootstrap classes for centering and text styling -->
+        </div>
+    </section>
+  
+    <!-- Main Content Section: Grid layout for TV shows using Bootstrap -->
+    <div class="container my-5"> <!-- 'container' for responsive layout and 'my-5' for vertical spacing -->
+        <h2 class="text-center mb-4">Explore My Favorite TV Shows</h2> <!-- Bootstrap classes for text centering and spacing -->
+        <div class="row g-4"> <!-- Bootstrap grid system: 'row' for rows and 'g-4' for spacing between columns -->
+
+            <!-- Card: White Collar (Bootstrap card component) -->
+            <div class="col-md-4"> <!-- 'col-md-4' creates a responsive 3-column grid on medium screens and above -->
+                <div class="card h-100"> <!-- 'card' is a Bootstrap component; 'h-100' makes the card height 100% of the container -->
+                    <img src="images/whitecollar.jpg" class="card-img-top img-fluid" alt="White Collar"> <!-- 'img-fluid' makes image responsive -->
+                    <div class="card-body">
+                        <h5 class="card-title text-center">White Collar</h5> <!-- 'text-center' centers the title -->
+                        <p class="card-text">A witty and charming con artist teams up with an FBI agent to catch white-collar criminals.</p>
+                        <div class="d-flex justify-content-center"> <!-- 'd-flex' and 'justify-content-center' center the button horizontally -->
+                            <a href="whitecollar.html" class="btn btn-primary">Read More</a> <!-- 'btn' and 'btn-primary' for styled button -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            \
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/moneyheist.jpg" class="card-img-top img-fluid" alt="Money Heist">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Money Heist</h5>
+                        <p class="card-text">A criminal mastermind leads a group of robbers in an epic heist with twists and turns.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="moneyheist.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/breakingbad.jpg" class="card-img-top img-fluid" alt="Breaking Bad">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Breaking Bad</h5>
+                        <p class="card-text">A high school chemistry teacher turned methamphetamine manufacturer embarks on a dangerous journey.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="breakingbad.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/ozarks.jpg" class="card-img-top img-fluid" alt="Ozarks">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Ozarks</h5>
+                        <p class="card-text">A financial planner relocates his family to the Ozarks and becomes involved in money laundering for a drug cartel.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="ozarks.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/prisonbreak.jpg" class="card-img-top img-fluid" alt="Prison Break">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Prison Break</h5>
+                        <p class="card-text">A man gets himself incarcerated in a prison to help his wrongfully imprisoned brother escape.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="prisonbreak.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  
+    <!-- About Section -->
+    <div class="container">
+        <h1>Welcome to My Favorite TV Shows</h1>
+        <p>This website is dedicated to sharing my favorite TV shows: White Collar, Money Heist, Breaking Bad, Ozarks, and Prison Break.</p>
+
+        <!-- Social Media Links -->
+        <h2>Social Media Links</h2>
+        <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+        <a href="https://www.tiktok.com" target="_blank"><img src="images/tiktok-icon.png" alt="TikTok"></a>
+    </div>
+
+    <!-- Footer Section with Font Awesome  for social media links -->
+    <footer>
+        <p>Follow me on:</p>
+        <a href="https://instagram.com" target="_blank" class="mx-2"> <!-- 'mx-2' adds horizontal margin for spacing -->
+            <i class="fab fa-instagram fa-2x"></i> <!-- Font Awesome icon with size 2x -->
+        </a>
+        <a href="https://twitter.com" target="_blank" class="mx-2">
+            <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="https://tiktok.com" target="_blank" class="mx-2">
+            <i class="fab fa-tiktok fa-2x"></i>
+        </a>
+        <p>&copy; 2025 Yusuf Diriye</p>
+    </footer>
+</body>
+</html>

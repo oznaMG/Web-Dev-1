@@ -1,5 +1,5 @@
 .button {
-	background-color: #4CAF50;
+	background-color: #ff0000;
 	border: none;
 	color: white;
 	padding: 20px;
@@ -11,81 +11,53 @@
 	cursor: pointer;
 }
 
-.button-smallradius {
+.buttonsmallradius {
 	border-radius: 8px;
 }
 
-.button-largeradius {
+.button2 {
 	border-radius: 30%;
+	border: 20px
+}
+.black { 
+	background-color: black
 }
 
-.red {
+.red:hover {
 	background-color: #ff0000;
+	transform: scale(102%);
+	color: #8842d5;
+	border: 20px
 }
 
-td {
-	padding: 20px;
+
+.buttonyellow {
+background-color: yellow;
+color: gold;
+border-radius: 35px;
 }
 
-table {
+
+
+td{
+	padding:20px;
+}
+
+table{
 	margin-left: auto;
 	margin-right: auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	text-align: center;
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
 }
 
-.myButton {
-	box-shadow: 3px 4px 0px 0px #8a2a21;
-	background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-	background-color: #c62d1f;
-	border-radius: 18px;
-	border: 1px solid #d02718;
-	display: inline-block;
-	cursor: pointer;
-	color: #ffffff;
-	font-family: Arial;
-	font-size: 17px;
-	padding: 7px 25px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #810e05;
-}
 
-.myButton:hover {
-	background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-	background-color: #f24437;
-}
 
-.myButton:active {
-	position: relative;
-	top: 2px;
-}
 
-.button5 {
-	display: inline-block;
-	padding: 17px 27px;
-	font-size: 16px;
-	cursor: pointer;
-	color: white;
-	background-color: purple;
-	border: none;
-	-webkit-transition-duration: 0.4s;
-	transition-duration: 0.4s;
-	border-radius: 8px;
-	box-shadow: 0 10px #998;
-}
 
-.button5:active {
-	background-color: #8842d5;
-	box-shadow: 0 6px #667;
-	transform: translateY(5px);
-}
+
+
 
 .title {
 	color: red;

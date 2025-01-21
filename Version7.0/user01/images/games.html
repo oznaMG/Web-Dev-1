@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 7.0 
+    Name:  
+    Date Completed: 
+-->
+
+<head>
+    <title>Dynamic Webpage</title>
+
+    <!-- Meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Introduction to JavaScript">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* Internal Styling Here */
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your NavBar ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="games.html" class="nav-link">Games</a>
+                    </li>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your NavBar ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-primary" type="button">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid mt-3">
+        <div id="built-in-functions">
+            <!-- ALERT-->
+            <script>
+                alert('Go Sabers!');
+            </script>
+            <!--PRINT-->
+            <script>
+                function printWindow() {
+                    window.print();
+                }
+            </script>
+            <!--LENGTH-->
+            <script>
+                function getLength() {
+                    document.getElementById("length").innerHTML = document.title.length;
+                }
+            </script>
+            <!-- FOCUS-->
+            <script>
+                function getFocus() {
+                    document.getElementById("focusButton").focus();
+                }
+            </script>
+            <!-- CLICK-->
+            <script>
+                function clickSimulation() {
+                    document.getElementById("Check").click();
+                }
+            </script>
+            <script>
+                function getDate() {
+                    document.getElementById("date").innerHTML = Date();
+                }
+            </script>
+
+            <div class="container-fluid mt-3 mb-3">
+                <div class="row">
+                    <!--PRINT-->
+                    <div class="col-md-1">
+                        <button class="btn btn-dark btn-md" value="print this page" onclick="printWindow()">Print this
+                            page</button>
+                    </div>
+                    <!--LENGTH-->
+                    <div class="col-md-3">
+                        <button class="btn btn-dark btn-md" onclick="getLength()">The title has this many
+                            characters</button>
+                    </div>
+                    <div class="col-md-1">
+                        <p id="length"></p>
+                    </div>
+                    <!--FOCUS-->
+                    <div class="col-md-1">
+                        <button class="btn btn-dark btn-md" onclick="getFocus()">Focus</button>
+                    </div>
+                    <!-- CLICK-->
+                    <div class="col-md-1">
+                        <form>
+                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
+                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
+                        </form>
+                    </div>
+                    <!--DATE-->
+                    <div class="col-md-1">
+                        <button class="btn btn-dark btn-md" onclick="getDate()">Get Date</button>
+                    </div>
+                    <div class="col-md-3">
+                        <p id="date"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5">
+                    <h1>Heading for a long list</h1>
+                    <ol id="nestedList">
+                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                        <li>Aliquam tincidunt mauris eu risus.</li>
+                        <li>Vestibulum auctor dapibus neque.
+                            <ol>
+                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                                <li>Aliquam tincidunt mauris eu risus.
+                                    <ol>
+                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            <ol>
+                                                <li>Lorem ipsum dolor sit amet, consectetuer.</li>
+                                            </ol>
+                                        </li>
+                                        <li>Aliquam tincidunt mauris eu risus.</li>
+                                        <li>Vestibulum auctor dapibus neque.</li>
+                                    </ol>
+                                </li>
+                                <li>Vestibulum auctor dapibus neque.</li>
+                                <li>Aliquam tincidunt mauris eu risus.</li>
+                            </ol>
+                        </li>
+                        <li>Aliquam tincidunt mauris eu risus.</li>
+                        <li>Vestibulum auctor dapibus neque.</li>
+                    </ol>
+
+                </div>
+
+                <div class="col-md-2 text-center">
+                    <button class="btn btn-danger btn-lg mt-3 container" onclick="firstSelector()">Try it
+                        1</button>
+
+                    <button class="btn btn-info btn-lg mt-3 container" onclick="secondSelector()">Try it
+                        2</button>
+
+                    <button class="btn btn-secondary btn-lg mt-3 container" onclick="thirdSelector()">Try it
+                        3</button>
+
+                    <button class="btn btn-primary btn-lg mt-3 container" onclick="window.location.reload()">Try
+                        it
+                        4</button>
+                </div>
+
+                <div class="col-md-5" id="shoppingList">
+                    <h1>My shopping list</h1>
+
+                    <div>
+                        <label for="item">Enter a new item:</label>
+                        <input type="text" name="item" id="item">
+                        <button id="aggregating-list">Add item</button>
+                    </div>
+
+                    <ul>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <script id="lists">
+            function firstSelector() {
+                document.querySelector("#nestedList>li").style.backgroundColor = "#dc3545";
+            }
+
+            function secondSelector() {
+                var x = document.querySelectorAll("#nestedList>li");
+                var i;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.backgroundColor = "#17a2b8";
+                }
+            }
+
+            function thirdSelector() {
+                document.querySelector("#nestedList ol li").style.backgroundColor = "#6c757d";
+            }
+        </script>
+        <script id="shopping">
+            const list = document.querySelector('#shoppingList');
+            const input = document.getElementById('item');
+            const button = document.getElementById('aggregating-list');
+
+            button.onclick = function() {
+                let myItem = input.value;
+                input.value = '';
+
+                const listItem = document.createElement('li');
+                const listText = document.createElement('span');
+                const listBtn = document.createElement('button');
+
+                listItem.appendChild(listText);
+                listText.textContent = myItem;
+                listItem.appendChild(listBtn);
+                listBtn.textContent = 'Delete';
+                list.appendChild(listItem);
+
+                listBtn.onclick = function(e) {
+                    list.removeChild(listItem);
+                }
+
+                input.focus();
+            }
+        </script>
+    </main>
+    <div id="container" style="height: 3000px; width: 1000px;">
+        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
+    </div>
+    
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch the Dot Game</title>
+  <p>I changed how fast the ball moves</p>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+    }
+    canvas {
+      border: 2px solid #333;
+      margin-top: 20px;
+    }
+    #score {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Catch the Dot!</h1>
+  <p>Click the moving dot to score points!</p>
+  <canvas id="gameCanvas" width="500" height="500"></canvas>
+  <div id="score">Score: 0</div>
+
+  <script>
+    // Game Setup
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Dot properties
+    let dotX = Math.random() * canvas.width;
+    let dotY = Math.random() * canvas.height;
+    const dotRadius = 15;
+
+    // Score
+    let score = 0;
+
+    // Function to draw the dot
+    function drawDot() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas
+      ctx.beginPath();
+      ctx.arc(dotX, dotY, dotRadius, 0, Math.PI * 2);
+      ctx.fillStyle = '#ff6347';
+      ctx.fill();
+      ctx.closePath();
+    }
+
+    // Function to move the dot randomly
+    function moveDot() {
+      dotX = Math.random() * (canvas.width - dotRadius * 2) + dotRadius;
+      dotY = Math.random() * (canvas.height - dotRadius * 2) + dotRadius;
+      drawDot();
+    }
+
+    // Event listener for clicks
+    canvas.addEventListener('click', (event) => {
+      const rect = canvas.getBoundingClientRect();
+      const mouseX = event.clientX - rect.left;
+      const mouseY = event.clientY - rect.top;
+
+      // Check if the click is inside the dot
+      const distance = Math.sqrt(
+        (mouseX - dotX) ** 2 + (mouseY - dotY) ** 2
+      );
+      if (distance < dotRadius) {
+        score++;
+        document.getElementById('score').textContent = `Score: ${score}`;
+        moveDot();
+      }
+    });
+
+    // Start the game
+    drawDot();
+    setInterval(moveDot, 1000); // Move the dot every second
+  </script>
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picture Memory Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    #game-board {
+      display: grid;
+      grid-template-columns: repeat(4, 100px);
+      grid-gap: 10px;
+      justify-content: center;
+      margin: 20px auto;
+    }
+    .card {
+      width: 100px;
+      height: 100px;
+      background-color: #007bff;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: white;
+    }
+    .card img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      display: none;
+    }
+    .matched {
+      background-color: #28a745;
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+  <h1>Picture Memory Game</h1>
+  <p>Click on tiles to match the pictures!</p>
+  <p> I changed the color and the sizes of the board</p>
+  <div id="game-board"></div>
+
+  <script>
+    // Image URLs
+    const images = [
+      'https://via.placeholder.com/100/FF0000', // Red
+      'https://via.placeholder.com/100/00FF00', // Green
+      'https://via.placeholder.com/100/0000FF', // Blue
+      'https://via.placeholder.com/100/FFFF00', // Yellow
+      'https://via.placeholder.com/100/FF00FF', // Magenta
+      'https://via.placeholder.com/100/00FFFF', // Cyan
+      'https://via.placeholder.com/100/FFA500', // Orange
+      'https://via.placeholder.com/100/800080', // Purple
+    ];
+
+    // Double the images and shuffle them
+    const shuffledImages = [...images, ...images].sort(() => Math.random() - 0.5);
+
+    const gameBoard = document.getElementById('game-board');
+    let firstCard = null;
+    let secondCard = null;
+    let lockBoard = false;
+
+    // Create cards
+    shuffledImages.forEach((image, index) => {
+      const card = document.createElement('div');
+      card.classList.add('card');
+      card.setAttribute('data-id', index);
+
+      const img = document.createElement('img');
+      img.src = image;
+
+      card.appendChild(img);
+      gameBoard.appendChild(card);
+
+      // Card click event
+      card.addEventListener('click', () => {
+        if (lockBoard || card.classList.contains('matched')) return;
+
+        card.firstChild.style.display = 'block'; // Show the image
+
+        if (!firstCard) {
+          firstCard = card; // Select first card
+        } else if (firstCard !== card) {
+          secondCard = card; // Select second card
+          lockBoard = true; // Temporarily lock the board
+
+          // Check for match
+          if (
+            firstCard.firstChild.src === secondCard.firstChild.src
+          ) {
+            // Match found
+            firstCard.classList.add('matched');
+            secondCard.classList.add('matched');
+            resetSelection();
+          } else {
+            // No match, hide images after a short delay
+            setTimeout(() => {
+              firstCard.firstChild.style.display = 'none';
+              secondCard.firstChild.style.display = 'none';
+              resetSelection();
+            }, 1000);
+          }
+        }
+      });
+    });
+
+    // Reset card selection
+    function resetSelection() {
+      firstCard = null;
+      secondCard = null;
+      lockBoard = false;
+    }
+  </script>
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    #game-container {
+      margin-top: 20px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Guess the Number Game</h1>
+  <p>Guess a number between 1 and 100!</p>
+  <div id="game-container">
+    <input type="number" id="guess" placeholder="Enter your guess">
+    <button onclick="checkGuess()">Submit</button>
+    <div id="message"></div>
+  </div>
+
+  <script>
+    // Generate a random number between 1 and 100
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    let attempts = 0;
+
+    // Function to check the user's guess
+    function checkGuess() {
+      const userGuess = parseInt(document.getElementById('guess').value);
+      const message = document.getElementById('message');
+      attempts++;
+
+      if (isNaN(userGuess)) {
+        message.textContent = "Please enter a valid number!";
+      } else if (userGuess < 1 || userGuess > 100) {
+        message.textContent = "Your guess must be between 1 and 100!";
+      } else if (userGuess < randomNumber) {
+        message.textContent = "Too low! Try again.";
+      } else if (userGuess > randomNumber) {
+        message.textContent = "Too high! Try again.";
+      } else {
+        message.textContent = `Congratulations! You guessed it in ${attempts} attempts.`;4
+      }
+
+      document.getElementById('guess').value = ""; // Clear the input field
+    }
+  </script>
+  
+</body>
+</html>
+
+</html>

@@ -1,0 +1,117 @@
+@import url(login.css);
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255, 0, 232);
+}
+
+
+.button_login {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: auto;
+    width: 250px;
+    position:absolute;
+    right:0;
+    cursor: pointer;
+}
+
+.button1 {
+    border-radius: 8px;
+}
+
+.button2 {
+    border-radius: 30%;
+}
+
+.red {
+    background-color: #ff0000
+}
+
+td {
+    padding: 20px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: wavy;
+}
+
+p {
+    color: #FF00E8;
+    font-family: Arial, Helvetica, sans-serif;
+    text-rendering: auto;
+}
+
+span {
+    color: #FF00E8;
+    text-rendering: auto;
+}
+
+.title-large {
+    font-size: 2rem;
+}
+
+.title-small {
+    font-size: .5rem;
+}
+
+#footerTable > *{
+    text-shadow: 12;
+    width: max-content;
+    height: auto;
+}
+
+#FooterSHIFT>* {
+    background-color: black;
+    justify-content: center;
+}
+
+
+
+.container{
+    background-color: black;
+    padding: 20px;
+    color-scheme: normal;
+    border-color:#FF00E8;
+    border-width: 2%, 4%, 4%, 2%;
+    border-style: groove;
+    display: block;
+    margin: 5cm;
+    transform: skewX(-30deg);
+}
+
+
+.container:hover {
+    box-shadow: #9c0790 -5px 10px;
+    animation: fade 3s infinite alternate;
+}
+
+@keyframes fade {
+    from {box-shadow: #9c0790 -5px 10px;}
+    to {box-shadow: #2e122c -5px 10px;}
+  }
+
+.container>* {
+    transform: SkewX(30deg);
+}
+
+.nav-item, .nav-item-active, span.navbar-text {
+    display:inline-block;
+    margin: 0 20px;
+}

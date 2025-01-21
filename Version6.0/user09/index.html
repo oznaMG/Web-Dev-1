@@ -36,13 +36,10 @@
         .demo-content {
             padding: 15px;
             font-size: 18px;
-            background: #000000;
+            background: #ffffff00;
             margin-bottom: 15px;
         }
 
-        .demo-content.bg-alt {
-            background: #000000;
-        }
 
         .table-striped>tbody>tr:nth-of-type(odd)>* {
             --bs-table-color-type: var(--bs-table-striped-color);
@@ -51,9 +48,6 @@
 
         }
 
-        footer {
-            background-color: rgb(46, 43, 43);
-        }
     </style>
 
     <link rel="icon" type="image/x-icon" href="images/Saber News Favicon.png">
@@ -71,49 +65,56 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
                 <li>
                     <a class="nav-link" href="about.html">About</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="top-list">
-        <main>
+
+
+    <main>
+        <div class="top-list">
             <h2>NEW STORIES</h2>
-            <a href="beware_the_snow.html">
-                <div class="card">
-                    <img src="images/Snow.jpeg" alt="News Story" style="width:231px;height:187px;">
-                    <div class="nameplate">
-                        <h4><b>Beware</b></h4>
-                        <h4><b>The Snow</b></h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div><a href="snow_warning.html">
+                            <div class="card">
+                                <img src="images/Snow.jpeg" alt="News Story" style="width:231px;height:187px;">
+                                <div class="nameplate">
+                                    <h4><b>Snow</b></h4>
+                                    <h4><b>Warning</b></h4>
+                                </div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="demo-content bg-alt"><a href="bus_breaks_down.html">
+                            <div class="card">
+                                <img src="images/Bus.jpeg" alt="News Story" style="width:231px;height:187px;">
+                                <div class="nameplate">
+                                    <h4><b>Bus Breaks</b></h4>
+                                    <h4><b>Down</b></h4>
+                                </div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="demo-content bg-alt">
+                        <a href="academies_being_selected.html">
+                            <div class="card">
+                                <img src="images/Academies.png" alt="News Story" style="width:231px;height:187px;">
+                                <div class="nameplate">
+                                    <h4><b>Academies Being</b></h4>
+                                    <h4><b>Selected</b></h4>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </a>
-            <a href="girls_hockey.html">
-                <div class="card">
-                    <img src="images/TEMPLATE STORY.png" alt="News Story" style="width:231px;height:187px;">
-                    <div class="nameplate">
-                        <h4><b>TEMPLATE</b></h4>
-                        <h4><b>STORY</b></h4>
-                    </div>
-                </div>
-            </a><a href="music/music.html">
-                <div class="card">
-                    <img src="images/TEMPLATE STORY.png" alt="News Story" style="width:231px;height:187px;">
-                    <div class="nameplate">
-                        <h4><b>TEMPLATE</b></h4>
-                        <h4><b>STORY</b></h4>
-                    </div>
-                </div>
-            </a>
-    </div>
+            </div>
+        </div>
 
-    <div class="anouncements">
-
-    </div>
     </main>
     <!---------Flexible Layouts--------->
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
@@ -147,6 +148,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <!--Grid column-->
 
                 <!--Grid column-->

@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadHaven - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body class="dark-theme">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ReadHaven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="manga.html">Manga</a></li>
+                            <li><a class="dropdown-item" href="manhwa.html">Manhwa</a></li>
+                            <li><a class="dropdown-item" href="manhua.html">Manhua</a></li>
+                            <li><a class="dropdown-item" href="novels.html">Novels</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    
+    <!-- Carousel Section -->
+    <div id="featuredCarousel" class="carousel " "">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-image-container">
+                    <img src="https://m.media-amazon.com/images/I/71QYLrc-IQL.jpg" class="d-block small-carousel-image" alt="Naruto">
+                </div>
+                <div class="carousel-caption">
+                    <h5>Naruto</h5>
+                    <p>A young ninja's journey to become the Hokage.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Read</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-image-container">
+                    <img src="https://shop.delivered.co.kr/cdn/shop/products/10296079548714338_650116017.jpg" class="d-block small-carousel-image" alt="Tower of God">
+                </div>
+                <div class="carousel-caption">
+                    <h5>Tower of God</h5>
+                    <p>The quest to reach the top of the tower.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Read</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-image-container">
+                    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1598306103i/55106978.jpg" class="d-block small-carousel-image" alt="Tales of Demons and Gods">
+                </div>
+                <div class="carousel-caption">
+                    <h5>Tales of Demons and Gods</h5>
+                    <p>A reincarnated hero seeks revenge.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" 
+             class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+            class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+
+   <!-- Popular Picks Section -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4 text-light">Popular Picks</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Popular Pick 1 -->
+        <div class="col">
+            <div class="card popular-pick">
+                <img src="https://m.media-amazon.com/images/I/71QYLrc-IQL.jpg" class="card-img-top popular-img" alt="Naruto">
+                <div class="card-body">
+                    <h5 class="card-title popular-title">Naruto</h5>
+                    <p class="card-text popular-description">A legendary ninja seeking to become the Hokage.</p>
+                    <a href="#" class="btn btn-light">Read</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular Pick 2 -->
+        <div class="col">
+            <div class="card popular-pick">
+                <img src="https://shop.delivered.co.kr/cdn/shop/products/10296079548714338_650116017.jpg" class="card-img-top popular-img" alt="Tower of God">
+                <div class="card-body">
+                    <h5 class="card-title popular-title">Tower of God</h5>
+                    <p class="card-text popular-description">Climb the tower and reach the top for everything.</p>
+                    <a href="#" class="btn btn-light">Read</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular Pick 3 -->
+        <div class="col">
+            <div class="card popular-pick">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1598306103i/55106978.jpg" class="card-img-top popular-img" alt="Tales of Demons and Gods">
+                <div class="card-body">
+                    <h5 class="card-title popular-title">Tales of Demons and Gods</h5>
+                    <p class="card-text popular-description">A hero reincarnated, seeking revenge on his enemies.</p>
+                    <a href="#" class="btn btn-light">Read</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 ReadHaven. All Rights Reserved.</p>
+            <p><i class="fas fa-envelope"></i> contact@readhaven.com</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+

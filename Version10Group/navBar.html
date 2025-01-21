@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 5.0
+    Name: Benjamin Gamberg
+    Date Completed:
+-->
+
+<head>
+    <title>Navbar - Information</title>
+
+    <!-- Homepage meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Version 5.0 - Index Bootstrap Examples">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <style type="text/css"> 
+
+
+.text-placeholder {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #323232;
+    padding: 10px;
+    border: 1px solid;
+    border-color: #F0F4F1;
+    background-color: #f0f4f1a7;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+        div {
+            display: block;
+
+        }
+        body {
+
+            font-family: htmlcenterfont regular, sans-serif;
+            color: #323232;
+            
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1;
+            text-align: left;
+        }
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .base {
+            width: 100%;
+        }
+        .row {
+            padding-top: 48px;
+            display: flex;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        body>div>div>div>main {
+
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    
+        .title {
+            font-size: 17px;
+            line-height: 1.5;
+            background-color: #fff;
+
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-bottom: .5rem;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-top: 0;
+            margin-bottom: .5rem;
+            font-family: htmlcenterfont regular, sans-serif;
+        }
+        h1, h3 {
+            display: block;
+            font-size: 2em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            font-weight: 50;
+
+        }
+
+        .h3, h3 {
+            font-size: 1.75rem;
+        }
+
+        p {
+        display: block;
+
+        font-weight: 50;
+
+        margin-top: 0;
+        margin-bottom: 1rem;
+}
+code {
+    font-size: 80%;
+    color: #e83e8c;
+    word-wrap: break-word;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 1em;
+    font-weight: 50;
+}
+.bb {
+    font-weight: 40;
+}
+.highlight {
+    padding: 5px;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #d8d8d8ca;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(91, 91, 91, 0.677);
+}
+
+figure {
+   display: block;
+   position: left;
+   margin-right: 90%;
+}
+/* pre {
+    font-family: monospace;
+    white-space: pre;
+} */
+
+.nt {
+    color: #2f6f9f;
+}
+.na {
+    color: #4f9fcf;
+}
+.s {
+    color: #d44950;
+}
+.c {
+    color: #999;
+}
+.ben{
+    color: red
+}
+.nav-def {
+    color: #323232;
+    font-weight: 50
+    
+}
+.ma{
+    color: #ff4444;
+    position: left;
+    margin-right: 90%;
+}
+
+.bd-clipboard {
+  display: flex;
+  float: right;
+  padding-left: 90%;
+
+}
+
+.bd-clipboard + .highlight {
+  margin-top: 0;
+}
+
+.btn-clipboard {
+  padding-left: 80%;
+  top: .5rem;
+  right: .5rem;
+  z-index: 10;
+  display: block;
+  padding: .25rem .5rem;
+  font-size: 75%;
+  color: #818a91;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  border-radius: .25rem;
+}
+
+.btn-clipboard:hover {
+  color: #fff;
+  background-color: #027de7;
+}
+
+.subject-tut {
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+.content h3 {
+    border-bottom: 1px solid #CCC;
+}
+
+.form-control {
+    display: block;
+    width: 50%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+    
+}
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="base">
+        <div class="container">
+            <div class="row"></div>
+                <main>
+                    <div class="title"></div>
+                        <h1> Navbar description</h1>
+                            <div class="content">
+                            <div class="text-placeholder">
+                               by <span class="ben">Benjamin</span> | Shakopee High School (SHS) |
+                            </div>
+                            <div class="desc-text">
+                                <p>A navbar (navigation bar) is a user interface element that typically appears at the top or side of a webpage, providing links or buttons for easy navigation to different sections or pages of a website or application.</p>
+                           
+                            </div>
+                            <br>
+
+
+                            <h3> Elements of Navbar:</h3>
+                            <p>
+   
+                                <p class="subject-tut">Create Navbar: <code><bb>&lt;nav&gt; <span class="nav-def">Content</span> &lt;/nav&gt; </bb></code></p>
+                                <P> Using this element: "<code>&lt;nav&gt;</code>" and "<code>&lt;/nav&gt;</code>" Creates a Navbar which can be used to create a header. Down below is an Example on how to use the Element: </P>
+                                <div class="highlight">
+                                    <pre>
+                                        <code>
+                                        <button class="btn-clipboard" title data-original-title="Copy to clipboard">Copy</button>
+                                        <div class="nt">&lt;nav </span><span class="na">class=</span><span class="s">"navbar navbar-dark bg-dark"</span><span class="nt">&gt;</span> 
+  
+                                        <div class="c">    &lt;!-- Navbar content --!&gt;</div>
+                                        <div class="nt"> &lt;/nav&gt; </div>
+                                        </code>
+                                    </pre>
+                                </div>
+                                
+                            <br>
+                            <p>
+                                <br>
+                                <p class="subject-tut"> Branding: <code><bb>.navbar-brand</bb></code></p>
+                                <p>Adding images to the <code>.navbar-brand</code> will likely always require custom styles or utilities to properly size. Here are some examples to demonstrate.</p>
+                                <br>
+                                <nav class="highlight">
+                                    <a class="navbar-brand" href="#">
+                                      <img src="https://www.shakopee.k12.mn.us/cms/lib/MN01909221/Centricity/Domain/36/Saber%20Head%20PNG.png" width="60" height="40" alt="">
+                                       Shakopee High School
+                                    </a>
+                                  </nav>
+                                   
+                                <div class="highlight">
+                                    <pre>
+                                        <code>
+                                            <p>Example Code:</p>
+                                        <button class="btn-clipboard" title data-original-title="Copy to clipboard">Copy</button>
+                                        <div class="nt">&lt;nav </span><span class="na">class=</span><span class="s">"navbar navbar-light bg-light"</span><span class="nt">&gt;</span>
+                                        <div class="nt">    &lt;a </span><span class="na">class=</span><span class="s">"navbar-brand" </span><span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                                        <div class="nt">     &lt;img <span class="na">src=</span><span class="s">"https://www.shakopee.k12.mn.us/cms/lib/MN01909221/Centricity/Domain/36/Saber%20Head%20PNG.png"</span><span class="na"> width=</span><span class="s">"30"</span><span class="na"> height=</span><span class="s">"30"</span><span class="na"> class=</span><span class="s">"d-inline-block align-top"</span><span class="na"> alt=</span><span class="s">""</span></div><span class="nt">&gt;</span>
+                                        <p>          &lt;! Optional Text --&gt;</p>
+
+                                        <div class="nt">    &lt;/a&gt; </div>
+                                        <div class="nt">&lt;/nav&gt; </div>
+                                        </code>
+                                    </pre>
+                                </div>
+                                <br>
+                                <p class="subject-tut">Forms: <code><bb>.form-inline</bb></code></p>
+                                <p>Place various form controls and components within a navbar with <code>.form-inline</code>.</p>
+                                <br>
+                                <nav class="highlight">
+                                    <form class="form-inline">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="margin-right: 50%;">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                    </form>
+                                </nav>
+                            </p>
+
+
+                            
+
+                            
+                            </p>
+                            
+                        </div>
+                </main>
+
+    </div>
+
+    </div>
+    <Nav>
+
+        <main>
+
+        </main>
+    </Nav>
+
+
+    <footer>
+        1
+    </footer>
+</body>

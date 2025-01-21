@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Dodger</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: black;
+            color: white;
+        }
+
+        #gameCanvas {
+            display: block;
+            margin: 0 auto;
+            background: #111;
+        }
+
+        #stats {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="stats">
+        <div>Shields: <span id="shieldCount">0</span></div>
+        <div>Speed: <span id="speedDisplay">5</span></div>
+    </div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        const shieldCountDisplay = document.getElementById('shieldCount');
+        const speedDisplay = document.getElementById('speedDisplay');
+
+        let gameState = {
+            player: {
+                x: canvas.width / 2,
+                y: canvas.height - 100,
+                width: 50,
+                height: 50,
+                color: 'cyan',
+                speed: 5,
+                baseSpeed: 100,
+                maxSpeed: 15,
+                smoothMovement: { left: false, right: false }
+            },
+            blocks: [],
+            shields: 0,
+            speedModifier: 0,
+            blockSpeed: 2,
+            blockSpawnRate: 1000,
+            gameOver: false
+        };
+
+        function resetGame() {
+            gameState.player.x = canvas.width / 2;
+            gameState.player.y = canvas.height - 100;
+            gameState.player.speed = gameState.player.baseSpeed;
+            gameState.speedModifier = 0;
+            gameState.shields = 0;
+            gameState.blockSpeed = 2;
+            gameState.blocks = [];
+            gameState.gameOver = false;
+        }
+
+        function spawnBlock() {
+            const colors = ['red', 'green', 'blue'];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            gameState.blocks.push({
+                x: Math.random() * (canvas.width - 30),
+                y: -30,
+                width: 30,
+                height: 30,
+                color: color
+            });
+        }
+
+        function drawPlayer() {
+            const { player } = gameState;
+            ctx.fillStyle = player.color;
+            ctx.fillRect(player.x, player.y, player.width, player.height);
+        }
+
+        function drawBlocks() {
+            gameState.blocks.forEach(block => {
+                ctx.fillStyle = block.color;
+                ctx.fillRect(block.x, block.y, block.width, block.height);
+            });
+        }
+
+        function updateBlocks() {
+            gameState.blocks.forEach((block, index) => {
+                block.y += gameState.blockSpeed;
+
+                if (
+                    block.x < gameState.player.x + gameState.player.width &&
+                    block.x + block.width > gameState.player.x &&
+                    block.y < gameState.player.y + gameState.player.height &&
+                    block.y + block.height > gameState.player.y
+                ) {
+                    if (block.color === 'red') {
+                        if (gameState.shields > 0) {
+                            gameState.shields--;
+                            gameState.blocks.splice(index, 1);
+                        } else {
+                            gameState.gameOver = true;
+                            resetGame();
+                        }
+                    } else if (block.color === 'green') {
+                        gameState.shields++;
+                        gameState.blocks.splice(index, 1);
+                    } else if (block.color === 'blue') {
+                        gameState.speedModifier = Math.min(
+                            gameState.speedModifier + 0.5,
+                            gameState.player.maxSpeed - gameState.player.baseSpeed
+                        );
+                        gameState.blocks.splice(index, 1);
+                    }
+                }
+
+                if (block.y > canvas.height) {
+                    gameState.blocks.splice(index, 1);
+                }
+            });
+        }
+
+        function updateStats() {
+            shieldCountDisplay.innerText = gameState.shields;
+            speedDisplay.innerText = (gameState.player.baseSpeed + gameState.speedModifier).toFixed(1);
+        }
+
+        function updatePlayerPosition() {
+            const { player } = gameState;
+            if (player.smoothMovement.left) {
+                player.x = Math.max(0, player.x - (player.baseSpeed + gameState.speedModifier) / 2);
+            }
+            if (player.smoothMovement.right) {
+                player.x = Math.min(canvas.width - player.width, player.x + (player.baseSpeed + gameState.speedModifier) / 2);
+            }
+
+            // Gradually reduce speed modifier
+            if (gameState.speedModifier > 5) {
+                gameState.speedModifier = Math.max(0, gameState.speedModifier - 0.01);
+            }
+        }
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawPlayer();
+            drawBlocks();
+        }
+
+        function update() {
+            if (!gameState.gameOver) {
+                updatePlayerPosition();
+                updateBlocks();
+                updateStats();
+            }
+        }
+
+        function gameLoop() {
+            update();
+            draw();
+            requestAnimationFrame(gameLoop);
+        }
+
+        setInterval(() => {
+            if (!gameState.gameOver) {
+                spawnBlock();
+                gameState.blockSpeed += 0.05;
+            }
+        }, gameState.blockSpawnRate);
+
+        window.addEventListener('keydown', event => {
+            if (event.key === 'ArrowLeft') {
+                gameState.player.smoothMovement.left = true;
+            } else if (event.key === 'ArrowRight') {
+                gameState.player.smoothMovement.right = true;
+            }
+        });
+
+        window.addEventListener('keyup', event => {
+            if (event.key === 'ArrowLeft') {
+                gameState.player.smoothMovement.left = false;
+            } else if (event.key === 'ArrowRight') {
+                gameState.player.smoothMovement.right = false;
+            }
+        });
+
+        resetGame();
+        gameLoop();
+    </script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 5.0
+    Name:
+    Date Completed:
+-->
+
+<head>
+    <title>Bootstrap Examples</title>
+
+    <!-- Homepage meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Version 5.0 - Index Bootstrap Examples">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            background: #c8cfd8;
+            margin-bottom: 15px;
+        }
+        
+        .demo-content.bg-alt {
+            background: #b71616;
+        }
+        body {background-color: #8d427e;}
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ----------------------------------->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Navigation Bar</title>
+        <style>
+            /* General reset */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            /* Navbar container */
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 20px;
+                background-color: #000000;
+            }
+    
+            /* Logo */
+            .logo a {
+                color: rgb(255, 193, 243);
+                font-size: 20px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+    
+            /* Navigation list */
+            .nav-list {
+                list-style: none;
+                display: flex;
+                align-items: center;
+            }
+    
+            .nav-list li {
+                margin-left: 20px;
+                position: relative;
+            }
+    
+            .nav-list li a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                padding: 8px 15px;
+                display: block;
+            }
+    
+
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+    
+            .dropdown-menu {
+                list-style: none;
+                position: absolute;
+                background-color: #444;
+                top: 100%;
+                left: 0;
+                min-width: 150px;
+                display: none;
+                padding: 10px 0;
+                border-radius: 5px;
+            }
+    
+            .dropdown-menu li {
+                padding: 8px 20px;
+            }
+    
+            .dropdown-menu li a {
+                color: white;
+                text-decoration: none;
+                display: block;
+            }
+    
+            .dropdown-menu li a:hover {
+                background-color: #575757;
+            }
+    
+            .search-container {
+                display: flex;
+                align-items: center;
+            }
+    
+            .search-container input {
+                padding: 8px;
+                border: none;
+                border-radius: 4px;
+                margin-right: 10px;
+            }
+    
+            .search-container button {
+                padding: 8px 15px;
+                border: none;
+                background-color: #575757;
+                color: white;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+    
+            .search-container button:hover {
+                background-color: #444;
+            }
+    
+            /* Hover effects */
+            .nav-list li a:hover {
+                background-color: #575757;
+            }
+    
+            .search-container input:focus {
+                outline: none;
+                border: 2px solid #575757;
+            }
+    
+            /* Responsive design */
+            @media (max-width: 768px) {
+                .navbar {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+    
+                .nav-list {
+                    flex-direction: column;
+                    width: 100%;
+                    margin-top: 20px;
+                }
+    
+                .nav-list li {
+                    margin: 10px 0;
+                    width: 100%;
+                }
+    
+                .search-container {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+    
+                .search-container input {
+                    width: 80%;
+                    margin-right: 10px;
+                }
+    
+                .search-container button {
+                    width: 20%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">Zak's Cook Book </a>
+                </div>
+                <ul class="nav-list">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <li class="dropdown">
+                        <a href="#">Recipes</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pizza.html">Pizza</a></li>
+                            <li><a href="burger.html">Burger</a></li>
+                            <li><a href="spaghetti.html">Spaghetti</a></li>
+                            <li><a href="chicken.html">Chicken</a></li>
+                        </ul>
+                    </li>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </ul>
+                <div class="search-container">
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </nav>
+        </header>
+    </body>
+    </html>
+    
+    <!---------------------------------- End the nav-bar ------------------------------------->
+    
+    <!---------Jumbotron---------------------------------------------->
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <title>Zak's Cook Book</title>
+  <style>
+   .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px; 
+  justify-items: center; 
+  margin-top: 20px;
+}
+
+.block {
+  background: #ffffff;
+  border: 3px solid #ccc; 
+  border-radius: 15px; 
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem; 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.block img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.block-text {
+  margin-top: 20px;
+}
+  </style>
+</head>
+<body>
+  <header class="p-5 bg-primary-subtle text-black" name="Jumbotron">
+    <h4>
+       <center>Burger Recipes</div></center>
+    </h4>
+    <p class="lead"></p>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="block">
+        <img src="images/clas.jpeg" alt="Pizza">
+        <div class="block-text"></a></div>
+        
+        
+
+        <h2>1. Classic Cheeseburger</h2>
+        <p><strong>Ingredients:</strong></p>
+        <ul>
+          <li>1 lb ground beef (80/20 ratio)</li>
+          <li>4 hamburger buns</li>
+          <li>4 slices cheddar cheese</li>
+          <li>Salt and pepper to taste</li>
+          <li>Lettuce, tomato, pickles (optional)</li>
+          <li>Ketchup, mustard, mayonnaise (optional)</li>
+        </ul>
+      
+        <p><strong>Steps:</strong></p>
+        <ol>
+          <li>Preheat your grill to medium-high heat.</li>
+          <li>Form the ground beef into 4 patties. Season each patty with salt and pepper.</li>
+          <li>Place the patties on the grill and cook for 4-5 minutes on each side for medium doneness.</li>
+          <li>In the last minute of cooking, place a slice of cheddar cheese on each patty to melt.</li>
+          <li>Toast the hamburger buns on the grill for about 1 minute.</li>
+          <li>Assemble the burger by placing the patty on the bottom bun, and adding lettuce, tomato, pickles, and condiments if desired. Top with the other half of the bun.</li>
+          <li>Serve hot and enjoy!</li>
+        </ol>
+      
+      </div>
+      <div class="block">
+        <img src="images/bbq bacon.jpg" alt="Burger">
+        <div class="block-text"></a></div>
+        <h2>2. BBQ Bacon Burger</h2>
+        <p><strong>Ingredients:</strong></p>
+        <ul>
+          <li>1 lb ground beef (80/20 ratio)</li>
+          <li>4 hamburger buns</li>
+          <li>4 slices cheddar cheese</li>
+          <li>4 slices cooked bacon</li>
+          <li>1/4 cup BBQ sauce</li>
+          <li>Lettuce and onion (optional)</li>
+        </ul>
+      
+        <p><strong>Steps:</strong></p>
+        <ol>
+          <li>Preheat your grill to medium-high heat.</li>
+          <li>Form the ground beef into 4 patties. Season with salt and pepper.</li>
+          <li>Grill the patties for 4-5 minutes per side for medium doneness.</li>
+          <li>Place a slice of cheddar cheese on each patty during the last minute of grilling to melt.</li>
+          <li>Toast the buns on the grill for 1 minute.</li>
+          <li>Assemble the burger by spreading BBQ sauce on the bottom bun. Add the cheeseburger patty, bacon, lettuce, and onion if desired. Top with the other half of the bun.</li>
+          <li>Serve hot and enjoy!</li>
+        </ol>
+      
+      </div>
+      <div class="block">
+        <img src="images/heal.jpg" alt="Spaghetti">
+        <div class="block-text"></a></div>
+        <h2>3. Veggie Burger</h2>
+        <p><strong>Ingredients:</strong></p>
+        <ul>
+          <li>1 can (15 oz) black beans, drained and mashed</li>
+          <li>1/2 cup breadcrumbs</li>
+          <li>1/4 cup grated carrots</li>
+          <li>1/4 cup chopped onions</li>
+          <li>1 egg</li>
+          <li>Salt and pepper to taste</li>
+          <li>4 whole wheat hamburger buns</li>
+          <li>Optional toppings: lettuce, tomato, avocado, cheese</li>
+        </ul>
+      
+        <p><strong>Steps:</strong></p>
+        <ol>
+          <li>In a bowl, mix together the mashed black beans, breadcrumbs, grated carrots, chopped onions, egg, salt, and pepper until well combined.</li>
+          <li>Form the mixture into 4 patties.</li>
+          <li>Heat a non-stick skillet over medium heat and cook the patties for 4-5 minutes on each side until golden brown and heated through.</li>
+          <li>Toast the whole wheat buns for 1 minute in the skillet or in the oven.</li>
+          <li>Assemble the veggie burger by placing the patty on the bottom bun, and topping with your choice of lettuce, tomato, avocado, and cheese.</li>
+          <li>Serve hot and enjoy!</li>
+        </ol>
+      </div>
+      <div class="block">
+        <img src="images/jala.jpeg" alt="Chicken">
+        <div class="block-text"></a></div>
+
+        <h2>4. Spicy Jalapeno Burger</h2>
+        <p><strong>Ingredients:</strong></p>
+        <ul>
+          <li>1 lb ground beef (80/20 ratio)</li>
+          <li>4 hamburger buns</li>
+          <li>4 slices pepper jack cheese</li>
+          <li>4 fresh jalapenos, sliced</li>
+          <li>1/4 cup mayonnaise</li>
+          <li>1 tbsp sriracha sauce</li>
+          <li>Salt and pepper to taste</li>
+          <li>Lettuce and tomato (optional)</li>
+        </ul>
+      
+        <p><strong>Steps:</strong></p>
+        <ol>
+          <li>Preheat your grill to medium-high heat.</li>
+          <li>Form the ground beef into 4 patties and season with salt and pepper.</li>
+          <li>Grill the patties for 4-5 minutes on each side for medium doneness.</li>
+          <li>During the last minute of grilling, place a slice of pepper jack cheese on each patty to melt.</li>
+          <li>Toast the hamburger buns on the grill for about 1 minute.</li>
+          <li>In a small bowl, mix mayonnaise and sriracha sauce to create a spicy mayo sauce.</li>
+          <li>Assemble the burger by spreading the spicy mayo on the bottom bun, then adding the cheeseburger patty, sliced jalapenos, lettuce, and tomato. Top with the other half of the bun.</li>
+          <li>Serve hot and enjoy!</li>
+        </ol>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
+       
+        <!---------Three Column Layouts------------------------------------>
+       
+        <!---------Table-Striped------------------------------------------->
+        <div class="container mt-3" name="table-striped">
+        </div>
+
+        <!---------List-Group----------------------------------------------
+
+        -------Form Button--------------------------------------------->
+        <div class="container mt-3 vstack" name="form-button">
+        </div>
+    </main>
+    <footer class="bg-info text-center">
+        <div class="container p-4">
+            
+
+            <section>
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2"><strong>Sign up for our newsletter</strong></p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form5Example2" class="form-control" />
+                                <label class="form-label" for="form5Example2">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-4">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section class="mb-4">
+                <p style="font-size: 2rem; font-weight: bold;">
+                    Master the Art of Cooking
+            </section>
+        </div>
+        <section class="mb-4">
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="https://www.twitter.com" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="https://www.google.com" role="button" target="_blank"><i class="fab fa-google"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://www.instagram.com" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com" role="button" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="https://www.github.com" role="button" target="_blank"><i class="fab fa-github"></i></a>
+        </section>
+        
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2025 Copyright:
+        </div>
+    </footer>
+
+    <!-- Footer Section End -->
+</body>
+
+</html>
+<section class="mb-4">
+    <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="https://www.twitter.com" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="https://www.google.com" role="button" target="_blank"><i class="fab fa-google"></i></a>
+    <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://www.instagram.com" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com" role="button" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="https://www.github.com" role="button" target="_blank"><i class="fab fa-github"></i></a>
+</section>

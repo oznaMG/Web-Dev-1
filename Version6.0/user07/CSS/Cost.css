@@ -15,7 +15,7 @@ header {
 body {
     background-color: #cfd2d292;
 }
-a {
+li>a {
 	text-decoration: none;
 	color: #4A4A4A;
 	transition: 0.8s;
@@ -27,7 +27,7 @@ main {
 	padding-right: 20px;
     text-align: center;
 }
-a:hover {
+main>a:hover {
 	background-color: #a3a1a1;
 }
 
@@ -67,7 +67,8 @@ a:hover {
   
   .cards .card:hover {
     transform: scale(1.1, 1.1);
-    color: #FFFFFF;
+    color: #1d0606;
+    
   }
   
   .cards:hover > .card:not(:hover) {
@@ -122,11 +123,6 @@ a:hover {
     left: -30px;
   }
   
-  button:active:before {
-    background: #34ff88;
-    transition: background 0s;
-  }
-
   .Browse {
     --color: #797979;
     font-family: inherit;
@@ -405,13 +401,22 @@ div>a{
 .footerList li {
 	list-style-type: none;
 	display: inline;
-	padding-left: 30px; /* Remove the indent */
+	padding-left: 30px; 
 	/* margin-left: 20px; */
 }
 
 .footerLink {
 	font-size: 20px;
 	font-weight: 500;
+}
+.footerLink {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
 }
 
 
@@ -497,3 +502,72 @@ div>a{
     display: grid;
     place-items: center;
   }
+
+
+  /* Youtube Challenge
+        CSS styling video might help, About Polygons and ways to edit them.
+  */
+
+.container {
+    display: flex;
+  }
+  
+  .Btn {
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: 10px;
+  }
+  
+
+  
+  .youtube {
+    background-color: #ff0000;
+  }
+  
+
+  
+  .Btn:hover {
+    width: 110px;
+    transition-duration: 0.4s;
+    border-radius: 30px;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: 0.4s;
+  }
+  
+  .Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: 0.3s
+  }
+  .Btn:hover {
+    background-color: #ff0000;
+  }
+  
+  .text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: 0.4s;
+  }
+  
+  .svgIcon {
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: rgb(255, 255, 255);
+  }
+  

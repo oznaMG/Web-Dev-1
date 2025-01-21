@@ -6,7 +6,7 @@
 -->
 
 <head>
-    <title>Dynamic Webpage</title>
+    <title>Dynamic Webpage at 8:58 on a monday, how exciting</title>
 
     <!-- Meta data -->
     <meta charset="utf-8">
@@ -33,6 +33,11 @@
     <style>
         /* Internal Styling Here */
     </style>
+
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<script src="script.js" defer></script>
 
 </head>
 
@@ -65,9 +70,7 @@
     <main class="container-fluid mt-3">
         <div id="built-in-functions">
             <!-- ALERT-->
-            <script>
-                alert('Go Sabers!');
-            </script>
+            <h1 onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School</h1>
             <!--PRINT-->
             <script>
                 function printWindow() {
@@ -197,53 +200,26 @@
 
             </div>
         </div>
-        <script id="lists">
-            function firstSelector() {
-                document.querySelector("#nestedList>li").style.backgroundColor = "#dc3545";
-            }
-
-            function secondSelector() {
-                var x = document.querySelectorAll("#nestedList>li");
-                var i;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.backgroundColor = "#17a2b8";
-                }
-            }
-
-            function thirdSelector() {
-                document.querySelector("#nestedList ol li").style.backgroundColor = "#6c757d";
-            }
-        </script>
-        <script id="shopping">
-            const list = document.querySelector('#shoppingList');
-            const input = document.getElementById('item');
-            const button = document.getElementById('aggregating-list');
-
-            button.onclick = function() {
-                let myItem = input.value;
-                input.value = '';
-
-                const listItem = document.createElement('li');
-                const listText = document.createElement('span');
-                const listBtn = document.createElement('button');
-
-                listItem.appendChild(listText);
-                listText.textContent = myItem;
-                listItem.appendChild(listBtn);
-                listBtn.textContent = 'Delete';
-                list.appendChild(listItem);
-
-                listBtn.onclick = function(e) {
-                    list.removeChild(listItem);
-                }
-
-                input.focus();
-            }
-        </script>
+        
     </main>
     <div id="container" style="height: 3000px; width: 1000px;">
         <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
     </div>
+
+
+    <div class="wrapper">
+        <div class="game-details">
+          <span class="score">Score: 0</span>
+          <span class="high-score">High Score: 0</span>
+        </div>
+        <div class="play-board"></div>
+        <div class="controls">
+          <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+          <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+          <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+          <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+        </div>
+      </div>
 </body>
 
 </html>

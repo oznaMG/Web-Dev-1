@@ -39,7 +39,7 @@
  .front{
     z-index:2;
  }
-
+.
  .back{
     transform:rotateY(180deg);
  }
@@ -70,4 +70,3 @@
   } <style>
   @import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
   </style>
-  
