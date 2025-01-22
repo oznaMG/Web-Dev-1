@@ -3,8 +3,8 @@
 <!--Version 10
 
     Name: Matthew Lim
-    Date Completed: 1/22/25
--->
+
+    Date Completed: 1/17/25
 
 <head>
     <title>CSS Animations</title>
@@ -38,15 +38,13 @@
     h2{padding: 20px;}
     
     footer {
-    background-color: #2d3a3d;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    }
+            font-size: 22px;
+            text-align: center;
+            color:black;
+        }
 
     body {
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
@@ -56,14 +54,13 @@
 
 
     header {
-    background-color: #2d3a3d;
+    background-color: #000000;
     color: #fff;
     text-align: center;
     padding: 50px 20px;
     }
 
-    h1 {
-    text-align: center;
+    header h1 {
     font-size: 3em;
     margin-bottom: 10px;
     }
@@ -95,16 +92,188 @@
     margin: 0 auto;
     }
 
-
-
     footer p {
     font-size: 1em;
     }
-
     
     .mh-100 {color: blue;}
+
+   
+    .card {
+            width: 270px;
+            height: 200px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: erraticMove 3s infinite;
+    }
+
+
+    .card2 {
+            width: 270px;
+            height: 200px;
+            background-color: #fafafa;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 15px;
+            perspective: 1000px;
+            transition: transform 1s ease-in-out;
+        }
+
+    .card2:hover {
+            transform: rotateY(1800deg);
+    }
+
+    .container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+            
+    }
+
+    .card3 {
+      width: 270px;
+      height: 200px;
+      text-align: center;
+      background: rgb(255, 255, 255);
+      transition: transform 0.01s, background-color 0.01s;
+      
+    }
+    .card3:hover {
+      transform: rotate(20deg) scale(1.5);
+      background-color: rgb(255, 1, 1);
+    }
+
+    .card4 {
+        width: 270px;
+        height: 200px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        text-align: center;
+        animation: flash 0.3s infinite;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card4:hover {
+      transform: rotateY(360deg);
+    }
+
+
+    /* MAIN NAVBAR */
+
+    main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 5px, double, rgba(255, 255, 255, 0.917);
+    text-align: center;
+    padding: 10px;
+    }
+
+    .navbar-brand { /* TEXT ON THE NAVBAR - SOME THINGS WILL CAUSE ISSUES; WARNING */
+
+
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right: var(--bs-navbar-brand-margin-end);
+    font-size: var(--bs-navbar-brand-font-size);
+    color: var(--bs-navbar-brand-color);
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    position: sticky;  
+    }
+
+
+    .navbar {  /* MESSING WITH THIS CODE CAUSES THE NAVBAR TO HAVE ISSUES; WARNING */  
+    z-index: 10000;
+    position:fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    } 
     
-    </style>
+    nav {
+    display: block;
+    unicode-bidi: isolate;
+    }
+
+    @media (min-width: 992px) {
+    .navbar-expand-lg {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+}
+
+.bg-light {
+    background-color: #ffffff !important;  /* YOU CAN CHANGE THE NAVBAR COLOR HERE */
+}
+
+.spacer {
+    background-color: #00000041;
+    width: 1px;
+    height: 3rem;
+}
+.otherspace {
+    background-color:#b52929;
+    width: 5px;
+    height: 3rem;
+}
+   
+    
+</style>
+
+<header>  <!-- Navbar Copy; START -->
+    <nav class="navbar sticky-top fixed-top navbar-expand-lg navbar-light bg-light">
+
+    <div class="otherspace"></div>
+    <img style="margin-right: 83%;"  src="https://www.shakopee.k12.mn.us/cms/lib/MN01909221/Centricity/Domain/36/Saber%20Head%20PNG.png" width="60" height="40" alt="Shakopee High School">
+    <div class="otherspace"></div>
+    <span style="color: #000000;">SHS - WebDev</span>
+    <div class="otherspace"></div>
+    
+    <div class="otherspace"></div>
+    <div class="spacer"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="otherspace"></div>
+        <div class="otherspace"></div>
+        <div class="otherspace"></div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="Index.html">- Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="https://www.shakopee.k12.mn.us/">- Shakopee Homepage <span class="sr-only">(current)</span></a>
+            </li>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+</header> <!-- Navbar Copy; END -->
 
 
 </head>
@@ -117,15 +286,14 @@
     </header>
     
     <section id="intro">
-        <div class="glow">
-            <h1 onmouseover="style.color='white'" onmouseout="style.color='black'"><b>What are CSS Animations?</b></h1>
+        <div class="container">
+            <h2 onmouseover="style.color='green'" onmouseout="style.color='black'"><b>What are CSS Animations?</b></h2>
+            <p>CSS animations allow you to animate transitions between one CSS style to another. This can bring your web page to life with smooth effects and transitions. Animations can be triggered by user interactions or can run automatically.</p>
         </div>
-
     </section>
 
     <section id="examples">
         <div class="container">
-            <p>CSS animations allow you to animate transitions between one CSS style to another. This can bring your web page to life with smooth effects and transitions. Animations can be triggered by user interactions or can run automatically.</p>
             <h2><b>CSS Animation Examples</b></h2>
             <div class="example-grid">
                 <div class="example-card fade-in">
@@ -147,6 +315,32 @@
             </div>
         </div>
 
+
+            <h2><b>Bad CSS Animation Examples</b></h2>
+        <div class="container2">
+            <div class="card">
+
+                <h3>Shifting</h3>
+                        <p>This card is moving out of the screen with erratic movements.</p>
+            </div>
+
+            <div class="card2">
+                <h3>Flipping</h3>
+                        <p>This card flips at unnatural speed when you hover over it.</p>
+            </div>
+
+            <div class="card3">
+                <h3>Jump scare!</h3>
+                        <p>This card is a good animation but it scares you when hovering over it :(</p>
+            </div>
+            <div class="card4">
+                <h3>Flashing</h3>
+               <p>This card flashes infintely at a fast speed and can be distracting to the user.</p>
+            </div>
+        </div>
+        
+
+
         <h2><b>What are CSS Card Animations?</b></h2>
 
         <p>CSS card animations can be used to animate images or boxes on a website. CSS card animations methods are often used to create interactive experiences when users click on items. With CSS card animations, you can add visual effects and transitions like flipping or changing the rotation of the card!</p>
@@ -158,9 +352,45 @@
 
         <a href="https://github.com/rmainhar/SHS_WebDevelopment/blob/master/Version4.0/user00/gallery.html" target="_blank">
 
-            <h2 class="mh-100"><b>Repository link</b></h2>
+            <h2 class="mh-100">Repository link</h2>
             </a>
 
+            <h2><b>How does this looks like?</b></h2>
+            <xmp>
+            <div id="gallery">
+                <div class="container">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="https://www.axiomtek.com/Download/Ptype3/en-US/ATX_Motherboard.jpg" alt="ATX_Motherboard">
+                            <p class="caption">Computer Part</p>
+                        </div>
+                        <div class="back">
+                            <a href="https://en.wikipedia.org/wiki/Motherboard" target="_blank">
+                            <h1>Motherboard</h1>
+                            </a>
+                            <p class="description">A motherboard is the main printed circuit board in general-purpose computers.</p>
+                     </div>
+                </div>
+            </div>
+            </xmp>
+
+            <div id="gallery">
+                <div class="container">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="https://www.axiomtek.com/Download/Ptype3/en-US/ATX_Motherboard.jpg" alt="ATX_Motherboard">
+                            <p class="caption">Computer Part</p>
+                        </div>
+                        <div class="back">
+                            <a href="https://en.wikipedia.org/wiki/Motherboard" target="_blank">
+                            <h1>Motherboard</h1>
+                            </a>
+                            <p class="description">A motherboard is the main printed circuit board in general-purpose computers.</p>
+                     </div>
+                </div>
+            </div>
+
+            <h4>As you can see, this looks straightforward with 1 big "div" gallery that holds the entire gallery, and 1 "div" container for each item - each having a front and back. However, it isn't a card and has no animations.</h4>
 
             <h2><b>1. Creating a gallery.css file</b></h2>
             <p>We will start from the top and work our way down. You can start by creating a new .css file and name it gallery.css The file is already linked in head of your .html file, so make sure you name it with correct spelling!</p>
@@ -179,11 +409,11 @@
             <h4>The most outer "div"(line #1 from above) has the id "gallery" so we will start by giving that "div" 3 basic styles; a font, a specific line height, and alignment of the text to the center.</h4>
 
             <p><b>The added code should look like this:</b></p>
-            <img src="./Images/1.4d example code.jpg" class="w-100">
+            <img src="1.4d example code.jpg" class="w-100 ">
 
             
 
-            <h2><b>3. Creating a container!</b></h2>
+            <h2<b>3. Creating a container!</b></h2>
                 <h4>Copy and paste the code from below into your gallery.css file </h4>
                     <xmp>
                         .container {
@@ -231,7 +461,7 @@
 
             <h4>The last 2 div's we will style are the "front" and "back".  We will use 3 different selectors 1 we will combine styling for the "front" and "back" and 1 each for seperate "front" and "back" styling. Backface-visibility is yet another obscure property.  When we turn an object around or transform it we can make sure we don't see the "backside" of that object.  In this case think of a playing card, when you flip it over you reveal the number/color/suit, when we hide the visibility we see nothing. Adding this code should result in a pile of messiness when opening the live sever!</h4>
             <p><b>The added code should look like this:</b></p>
-            <img src="./Images/1.4d example code2.jpg" class="w-100">
+            <img src="1.4d example code2.jpg" class="w-100 ">
 
             <h2><b>6. Adding an image width!</b></h2>
             <h4>Copy and paste the code from below into your gallery.css file.</h4>
@@ -243,7 +473,7 @@
 
             <h4>The images are all over the place, 3 very different sizes, so adding this will change the size of the image to fit their container.</h4>
             <p><b>The added code should look like this:</b></p>
-            <img src="./Images/1.4d example code3.jpg" class="w-100">
+            <img src="1.4d example code3.jpg" class="w-100 ">
 
             <h2><b>7. Seperating and adding animation to the cards!</b></h2>
             <h4>Copy and paste the code from below into your gallery.css file.</h4>
@@ -261,63 +491,51 @@
             <h4>To make the cards separated and not on top of each other let's give them a specific size. If you want to change the size here is where you can do that. Using the hover pseudo class here will make just a space between .container:hover and .flipper. This means that .flipper needs to be child of .container in order to work.</h4>
             <p><b>The final code added should look like this for the front and back side of the card:</b></p>
 
-    
+            <img src="1.4d example code4.jpg" class="w-100 ">
+            <img src="1.4d example code5.jpg" class="w-100 ">
 
-            <div id="gallery">
-                <p>Hover over the images to get the answer</p>
-                <div class="boxer">
-                    <div class="flipper">
-                        <div class="front">
-                            <img src="https://www.axiomtek.com/Download/Ptype3/en-US/ATX_Motherboard.jpg" alt="ATX_Motherboard">
-                            <p class="caption">Computer Part</p>
-                        </div>
-                        <div class="back">
-                            <a href="https://en.wikipedia.org/wiki/Motherboard" target="_blank">
-                                <h2 class="mh-100">Motherboard</h2>
-                            </a>
-                            <p class="description">A motherboard (also called mainboard, main circuit board, or mobo) is the main printed circuit board (PCB) in general-purpose computers and other expandable systems.</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="boxer">
-                    <div class="flipper">
-                        <div class="front">
-                            <img src="https://sc04.alicdn.com/kf/H2d9c1b6b8d5748efb5cc2fca2c0ae8e2U.jpg" alt="RAM Stick">
-                            <p class="caption">Computer Part</p>
-                        </div>
-                        <div class="back">
-                            <a href="https://en.wikipedia.org/wiki/Random-access_memory" target="_blank">
-                                <h2>RAM</h2>
-                            </a>
-                            <p class="description">Random-access memory is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="boxer">
-                    <div class="flipper">
-                        <div class="front">
-                            <img src="https://www.notebookcheck.net/fileadmin/Notebooks/NVIDIA/Turing/nvidia_TU117_chip.jpg" alt="NVIDIA GPU">
-                            <p class="caption">Computer Part</p>
-                        </div>
-                        <div class="back">
-                            <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" target="_blank">
-                                <h2 class="">GPU</h2>
-                            </a>
-                            <p class="description">A graphics processing unit (GPU) is a specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h2 onmouseover="style.color='green'" onmouseout="style.color='black'"><b>Congratulations, now you have animated cards!</b></h2>
+            <h2><b>Congratulations, now you have animated cards!</b></h2>
     </section>
 
     <footer>
-        <div class="container">
-            <p>My Footer</p>
-        </div>
+        <footer class="bg-body-tertiary text-center">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                        style="background-color: #3b5998;" href="https://www.facebook.com/" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                        style="background-color: #55acee;" href="https://x.com/Xx_Bloodmoon_xX" role="button"><i
+                            class="fab fa-twitter"></i></a>
+
+                    <!-- Instagram -->
+                    <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                        style="background-color: #ac2bac;" href="https://www.instagram.com/x__xblood__moonx__x/"
+                        role="button"><i class="fab fa-instagram"></i></a>
+
+                    <!-- Github -->
+                    <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                        style="background-color: #333333;" href="https://github.com/Ericmal512" role="button"><i
+                            class="fab fa-github"></i></a>
+                    <!-- Google -->
+                    <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1"
+                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+                    <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(126, 41, 224, 0.05);">
+                © 2028 Copyright: EOM
+            </div>
+            <!-- Copyright -->
+        </footer>
     </footer>
 
 </body>

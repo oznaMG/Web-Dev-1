@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 10
-    Name: shabir sadeqi
+<!-- Version 10
+    Name: Shabir Sadeqi
     Date Completed: 1/13/25
 -->
 
 <head>
-    <title>Table Of Contents</title>
+    <title>Tables and CSS Box Model</title>
 
     <!-- Homepage meta data -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Version 5.0 - Index Bootstrap Examples">
+    <meta name="description"
+        content="Complete guide to mastering HTML tables. Learn step-by-step how to create, customize, and style tables.">
 
     <!-- CSS -->
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Animate -->
@@ -24,39 +25,410 @@
     <!-- Custom -->
     <link rel="stylesheet" href="CSS/style.css">
 
-    <!-- JavaScript -->
-    <!-- These are needed to get the responsive menu to work -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
-    <!-- Custom styles for this template -->
-    <style type="text/css">
+
+        header {
+            text-align: center;
+            background-color: #0048ff;
+            color: white;
+            padding: 50px 20px;
+            box-shadow: 0 4px 6px rgba(9, 74, 213, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
 
 
+        .navbar {
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-left: 20px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #0048ff;
+            text-decoration: underline;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+
+        .step-heading {
+            margin-top: 40px;
+            font-size: 2.5rem;
+            color: #0048ff;
+            text-decoration: underline;
+            border-bottom: 3px solid #0048ff;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+
+        .step-description {
+            background-color: #f1f3f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1rem;
+            line-height: 1.7;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .step-description ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .step-description p {
+            margin-bottom: 15px;
+        }
+
+
+        .code-block {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table th,
+        table td {
+            padding: 15px 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #0048ff;
+            color: white;
+        }
+
+        table td {
+            background-color: #f9f9f9;
+        }
+
+
+        .btn {
+            display: inline-block;
+            background-color: #28a72e;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+            transform: translateY(-3px);
+        }
+
+
+        footer {
+            background-color: #0048ff;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: #f6f5f3;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .navbar .navbar-brand {
+                font-size: 1.2rem;
+            }
+
+            .navbar-nav .nav-link {
+                font-size: 0.9rem;
+                margin-left: 15px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .step-heading {
+                font-size: 2rem;
+            }
+
+            .step-description {
+                padding: 15px;
+            }
+
+            .code-block {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 
+<body>
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">HTML Tables Tutorial</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#intro">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#step1">Step 1: Basic Structure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#step2">Step 2: Adding Rows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#step3">Step 3: Adding Columns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#step4">Step 4: Adding Headers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#step5">Step 5: Styling</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>Tables and CSS Box Model</h1>
+        <p>Learn how to create and style tables step-by-step</p>
+    </header>
 
-<Body>
-    <Nav>
+    <div class="container">
 
-    </Nav>
+        <div id="intro" class="step-heading">Introduction to HTML Tables</div>
+        <div class="step-description">
+            <p>Tables in HTML are created using the <code>&lt;table&gt;</code> element. Tables are helpful when you need
+                to display data in a structured format, like in reports, lists, or schedules.</p>
+            <ul>
+                <li><strong><code>&lt;table&gt;</code></strong>: Defines the entire table structure.</li>
+                <li><strong><code>&lt;tr&gt;</code></strong>: Defines a row within the table.</li>
+                <li><strong><code>&lt;th&gt;</code></strong>: Defines a header cell within a row.</li>
+                <li><strong><code>&lt;td&gt;</code></strong>: Defines a standard data cell.</li>
+            </ul>
+            <p>In this tutorial, we will walk through building a table from scratch, with detailed explanations of each
+                component.</p>
+        </div>
 
-    <Main>
+        <div id="step1" class="step-heading">Step 1: The Basic Table Structure</div>
+        <div class="step-description">
+            <p>To create a basic table, you only need to use the <code>&lt;table&gt;</code> element.</p>
+            <p>Here’s the most basic form of an HTML table:</p>
+            <div class="code-block">
+                &lt;table&gt;<br>
+                &nbsp;&nbsp;&lt;/table&gt;
+            </div>
+        </div>
 
-    </Main>
+        <div id="step2" class="step-heading">Step 2: Adding Rows</div>
+        <div class="step-description">
+            <p>To add rows to the table, use the <code>&lt;tr&gt;</code> tag. Each row represents a single horizontal
+                line of data.</p>
+            <p>Example:</p>
+            <div class="code-block">
+                &lt;table&gt;<br>
+                &nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&lt;td&gt;Row 1, Column 1&lt;/td&gt;<br>
+                &nbsp;&nbsp;&lt;td&gt;Row 1, Column 2&lt;/td&gt;<br>
+                &nbsp;&lt;/tr&gt;<br>
+                &lt;/table&gt;
+            </div>
+            <p>Output:</p>
+            <table>
+                <tr>
+                    <td>Row 1, Column 1</td>
+                    <td>Row 1, Column 2</td>
+                </tr>
+            </table>
+        </div>
 
+        <div id="step3" class="step-heading">Step 3: Adding Columns</div>
+        <div class="step-description">
+            <p>Columns are added within the rows using the <code>&lt;td&gt;</code> tag. Each <code>&lt;td&gt;</code>
+                element represents a data cell in the row.</p>
+            <p>For example, we can create a table with multiple columns:</p>
+            <div class="code-block">
+                &lt;table&gt;<br>
+                &nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&lt;td&gt;Column 1&lt;/td&gt;<br>
+                &nbsp;&nbsp;&lt;td&gt;Column 2&lt;/td&gt;<br>
+                &nbsp;&lt;/tr&gt;<br>
+                &nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&lt;td&gt;Row 2, Column 1&lt;/td&gt;<br>
+                &nbsp;&nbsp;&lt;td&gt;Row 2, Column 2&lt;/td&gt;<br>
+                &nbsp;&lt;/tr&gt;<br>
+                &lt;/table&gt;
+            </div>
+            <p>Output:</p>
+            <table>
+                <tr>
+                    <td>Column 1</td>
+                    <td>Column 2</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Column 1</td>
+                    <td>Row 2, Column 2</td>
+                </tr>
+            </table>
+        </div>
 
+        <div id="step4" class="step-heading">Step 4: Adding Table Headers</div>
+        <div class="step-description">
+            <p>Table headers are defined using the <code>&lt;th&gt;</code> element. These headers are bold and centered
+                by default, making them stand out as titles for each column.</p>
+            <p>Example:</p>
+            <div class="code-block">
+                &lt;table&gt;<br>
+                &nbsp;&lt;thead&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;th&gt;Header 1&lt;/th&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;th&gt;Header 2&lt;/th&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &nbsp;&lt;/thead&gt;<br>
+                &nbsp;&lt;tbody&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;td&gt;Row 1, Column 1&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;td&gt;Row 1, Column 2&lt;/td&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &nbsp;&lt;/tbody&gt;<br>
+                &lt;/table&gt;
+            </div>
+            <p>Output:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1, Column 1</td>
+                        <td>Row 1, Column 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+        <div id="step5" class="step-heading">Step 5: Styling the Table</div>
+        <div class="step-description">
+            <p>Now that we have the table structure, let's make it look better with some simple CSS styles. Here's an
+                example of how to apply a basic border and alternate row colors:</p>
+            <div class="code-block">
+                &lt;style&gt;<br>
+                &nbsp;.table {<br>
+                &nbsp;&nbsp;&nbsp;border-collapse: collapse;<br>
+                &nbsp;&nbsp;&nbsp;width: 100%;<br>
+                &nbsp;&nbsp;&nbsp;border: 1px solid #ddd;<br>
+                &nbsp;}<br>
+                &lt;/style&gt;
+            </div>
+        </div>
 
-    <Footer>
+        <a href="#" class="btn">Try Building Your Own Table Now!</a>
 
-    </Footer>
-</Body>
+    </div>
 
-
-
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025</p>
+                    <p>For more tutorials, visit <a href="#">www.htmltutorials.com</a></p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-icons">
+                        <a href="#" class="facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="instagram.com"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Designed by Shabir Sadeqi</p>
+            </div>
+        </div>
+    </footer>
+</body>
 
 </Html>
