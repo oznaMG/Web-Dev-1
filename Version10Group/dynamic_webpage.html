@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 10
+
+    Date Completed: 1/13/25
+-->
+
+<head>
+    <title>JavaScript</title>
+
+    <!-- Homepage meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Version 5.0 - Index Bootstrap Examples">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom -->
+    <!--<link rel="stylesheet" href="CSS/style.css"> -->
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .filetypeindacator {
+            width: 394%;
+            border: .6px, solid rgb(96, 88, 88);
+            padding: 50px;
+            transform: translate(-17.86rem);
+            background-color: rgb(55, 50, 66);
+            color: rgb(20, 255, 235);
+            text-align: left;
+            height: 100%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 150%;
+        }
+
+        .codeeditorcontent {
+            width: 80%;
+            border: 2px, solid rgb(96, 88, 88);
+            padding: 50px;
+            margin: 0px;
+            background-color: rgb(39, 29, 37);
+            color: rgb(49, 255, 49);
+            text-align: left;
+            height: 100%;
+        }
+
+        .Example-Tag {
+            color: rgb(202, 125, 241);
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        #Signature {
+            font-family: monospace;
+            font-size: 65%;
+        }
+
+        main {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 5px, double, red;
+            text-align: center;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        .Copy-Paste-Heading {
+            font-family: monospace;
+        }
+
+        img {
+            display: inline;
+        }
+
+        .paragraph {
+            background-color: rgb(255, 255, 255);
+            border: 1.5px, solid rgb(223, 218, 218);
+            padding: 4px;
+        }
+
+        nav {
+            display: block;
+            unicode-bidi: isolate;
+        }
+
+        .navbar-expand-lg {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-brand {
+            /* TEXT ON THE NAVBAR - SOME THINGS WILL CAUSE ISSUES; WARNING */
+
+
+            padding-top: var(--bs-navbar-brand-padding-y);
+            padding-bottom: var(--bs-navbar-brand-padding-y);
+            margin-right: var(--bs-navbar-brand-margin-end);
+            font-size: var(--bs-navbar-brand-font-size);
+            color: var(--bs-navbar-brand-color);
+            color: #323232;
+            text-decoration: none;
+            white-space: nowrap;
+            position: sticky;
+
+
+
+
+        }
+
+        nav {
+            display: block;
+            unicode-bidi: isolate;
+        }
+
+        @media (min-width: 992px) {
+            .navbar-expand-lg {
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<!--< = &lt
+    > = &gt;
+    -->
+
+
+
+<Body>
+    <header> <!-- Navbar Copy; START -->
+        <nav class="navbar sticky-top fixed-top navbar-expand-lg navbar-light bg-light">
+
+            <div class="otherspace"></div>
+            <img style="margin-left: 33%;"
+                src="https://www.shakopee.k12.mn.us/cms/lib/MN01909221/Centricity/Domain/36/Saber%20Head%20PNG.png"
+                width="60" height="40" alt="Shakopee High School">
+            <div class="otherspace"></div>
+            <span style="color: #323232;">SHS - WebDev</span>
+            <div class="otherspace"></div>
+
+            <div class="otherspace"></div>
+            <div class="spacer"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="otherspace"></div>
+            <div class="otherspace"></div>
+            <div class="otherspace"></div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Index.html">- Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.shakopee.k12.mn.us/">- Shakopee Homepage <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <br>
+    <br>
+    <h4>
+        <center>Making Your WebPage Dynamic<img src="Images/Science and Tech.png"
+                style="display:inline;width:54px;height:50px"></center style="display:inline;">
+    </h4>
+    <div id="Signature">Written by<br>Avery R. Johnson</div>
+
+    <Main>
+        <div class="paragraph">
+            <br>
+            <br>
+
+            <p>While you can make cool WebPages just using HTML with CSS, there is a whole other world opened up by
+                introducing Javascript into a WebPage. JavaScript is a scripting language designed for the purpose of
+                working with WebPages. It allows you to change CSS and HTML information. In this lesson we will start
+                learning the basics of intergrating JavaScript into your website, making your webpages more dynamic and
+                interactive.</p>
+            <br>
+
+            <div class="Copy-Paste-Heading">Copy and Paste this code into your body
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-11">
+                <pre
+                    class="codeeditorcontent"><div class="Example-Tag">&ltscript&gt;</div>    alert("This is an alert")<div class="Example-Tag">&lt/script&gt;</div></pre>
+            </div>
+            <div class="col-md-1" style="text-align:left;">
+                <div class="filetypeindacator">
+                    <center>Code File Location</center>
+                    <center>index.html</center>
+                </div>
+            </div>
+        </div>
+
+        <div class="paragraph">
+            <br>
+            <p>The code you copy and pasted above executes a pop up alert on your browser. You have probably seen this
+                on
+                websites before, usually an annoying alert, telling you an error or problem. Right now, the code
+                executes
+                this as soon as the html reads the scripted code. This means the alert shows up as soon as the page
+                loads,
+                this is as you can guess, an annoying and not so amazing web design feature. We can fix this however,
+                all we
+                need to do is make our own function that will only send an alert upon a certain condition happening.</p>
+            <br>
+            <div class="Copy-Paste-Heading">Copy and Paste this code into your outside of the script tag
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-11">
+                <pre
+                    class="codeeditorcontent"><div class="Example-Tag">&ltbutton onclick="alert('You Clicked The Button')"&gt;</div>    Press to Alert<div class="Example-Tag">&lt/button&gt;</div></pre>
+            </div>
+            <div class="col-md-1" style="text-align:left;">
+                <div class="filetypeindacator">
+                    <center>Code File Location</center>
+                    <center>index.html</center>
+                </div>
+            </div>
+        </div>
+        <h4>Result</h4>
+        <button onclick="alert('You Clicked The Button')">
+            Press to Alert
+        </button>
+        <div class="paragraph">
+            <br>
+            <p>Now, the alert will only play upon the consumer choosing to do an action that calls the alert code to activate. To end this section off you create a html element that changes upon a criteria being met. If you don't already, create a folder in your project folder titled "JS", then put a file in it called "script.js". This file is for actual javascript code, prior we have been html tags or atrributes that simply call on javascript code, which we are still going to do in this step, but we will now be calling on our own code created within the script.js folder.</p>
+            <br>
+            <div class="Copy-Paste-Heading">Copy and Paste this code into your outside of the script tag
+            </div>
+            <div class="row">
+                <div class="col-md-11">
+                    <pre class="codeeditorcontent">function changeText() {<br> document.getElementById("textChange").innerHTML="Thanks for liking my Webpage";<br>}</pre>
+                </div>
+                <div class="col-md-1" style="text-align:left;">
+                    <div class="filetypeindacator">
+                        <center>Code File Location</center>
+                        <center>script.js</center>
+                    </div>
+                </div>
+            </div>
+    </Main>
+
+
+    <Footer>
+        <a href="/Version10Group/Index.html" class="btn btn-outline-danger">Return to Home Page</a>
+    </Footer>
+</Body>
+
+
+
+
+</Html>
