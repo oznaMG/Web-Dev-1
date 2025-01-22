@@ -3,9 +3,9 @@
 <!--Version 10.0 
 	Name: Jacob Schieffer
 	Started 1/13/2025
-  Completed 1/16/2025
+  Completed 
  -->
-  
+
 <head>
   <title>GitHub Account Info</title>
     <!-- Homepage meta data -->
@@ -22,7 +22,7 @@
     <!-- Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Custom -->
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -31,6 +31,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom styles for this template -->
+
+    <style type="text/css">
+
+nav{background-color: aquamarine;}
+    </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <button type="button" class="btn  btn-outline-primary btn-lg" href="Index.html">Home</button>
+      <button style="float: right;" type="button" class="btn  btn-outline-success btn-lg" href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home">Sign Up</button>
+    </ul>
+  </nav>
+
+
+<Main>
+
+
+
+</Main>
+
   <style type="text/css">
     h4{background-color: rgb(134, 115, 161);}
     nav{background-color: aquamarine;}
@@ -38,21 +60,125 @@
     main {text-align: left;}
     h4 {text-align: center;}
     tr {border: 5px;}
-  </style>
+    .navbar-brand { /* TEXT ON THE NAVBAR - SOME THINGS WILL CAUSE ISSUES; WARNING */
+
+
+padding-top: var(--bs-navbar-brand-padding-y);
+padding-bottom: var(--bs-navbar-brand-padding-y);
+margin-right: var(--bs-navbar-brand-margin-end);
+font-size: var(--bs-navbar-brand-font-size);
+color: var(--bs-navbar-brand-color);
+color: #323232;
+text-decoration: none;
+white-space: nowrap;
+position: sticky;
+
+
+
+
+}
+xmp {
+padding-right: 100%;
+}
+
+.navbar {  /* MESSING WITH THIS CODE CAUSES THE NAVBAR TO HAVE ISSUES; WARNING */
+
+
+z-index: 10000;
+position:fixed;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex
+
+;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+padding: .5rem 1rem;
+} 
+
+nav {
+display: block;
+unicode-bidi: isolate;
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+}
+
+.bg-light {
+background-color: #d6d6d6 !important;  /* YOU CAN CHANGE THE NAVBAR COLOR HERE */
+}
+
+.spacer {
+background-color: #00000041;
+width: 1px;
+height: 3rem;
+}
+.otherspace {
+background-color:#d6d6d6;
+width: 5px;
+height: 3rem;
+}
+
+/* END OF MAIN NAVBAR */
+</style>
+  <header>  <!-- Navbar Copy; START -->
+    <nav class="navbar sticky-top fixed-top navbar-expand-lg navbar-light bg-light">
+
+    <div class="otherspace"></div>
+    <img style="margin-left: 33%;"  src="https://www.shakopee.k12.mn.us/cms/lib/MN01909221/Centricity/Domain/36/Saber%20Head%20PNG.png" width="60" height="40" alt="Shakopee High School">
+    <div class="otherspace"></div>
+    <span style="color: #323232;">SHS - WebDev</span>
+    <div class="otherspace"></div>
+    
+    <div class="otherspace"></div>
+    <div class="spacer"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="otherspace"></div>
+        <div class="otherspace"></div>
+        <div class="otherspace"></div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="Index.html">- Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="https://www.shakopee.k12.mn.us/">- Shakopee Homepage <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home">- Sign Up <span class="sr-only">(current)</span></a>
+            </li>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+</header> <!-- Navbar Copy; END -->
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <a href="Index.html" target="_blank">
-        <button id="home" type="button" class="btn  btn-outline-primary btn-lg" onclick="alert('Redirecting...');" value="Click Me!">Home</button>
-      </a>
-      <a href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home" target="_blank">
-        <button style="float: right;" type="button" class="btn  btn-outline-success btn-lg" onclick="alert('Redirecting...');" value="Click Me!">Sign Up</button>
-      </a>
-    </ul>
-  </nav>
-
 <main>
   <div class="a2-toggle-details-container"><div class="css-1gkhyq7-toggleDetails"><button data-testid="assignments-2-assignment-toggle-details" aria-controls="Expandable_0" aria-expanded="true" type="button" class="css-1ggnvx2-toggleDetails__toggle"><span class="css-10dz9lm-toggleDetails__summary"><span class="css-dwm2m9-toggleDetails__icon"><svg name="IconArrowOpenDown" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="css-1uh2md0-inlineSVG-svgIcon" style="width: 1em; height: 1em;"><g role="presentation"><path d="m.08 568.063 176.13-176.13 783.988 783.864 783.74-783.864 176.129 176.13-959.87 960.118z" fill-rule="evenodd"></path></g></svg></span><span class="css-f32ptg-toggleDetails__summaryText"><span wrap="normal" letter-spacing="normal" class="css-1fvrx9c-text">Details</span></span></span></button><div id="Expandable_0" class="css-gyi6rc-toggleDetails__details"><div class="css-a9o3ew-toggleDetails__content"><span dir="ltr" class="css-wxpmja-view"><div class="user_content enhanced" data-testid="assignments-2-assignment-toggle-details-text"><table border="0">
     <p>&nbsp;</p>
@@ -155,5 +281,7 @@
     <p style="padding-left: 30px; text-align: center;"><img src="https://shakopee.instructure.com/courses/161195/files/11103483/download" alt="1.1.1 forked from.png" width="294" height="74" data-api-endpoint="https://shakopee.instructure.com/api/v1/courses/161195/files/11103483" data-api-returntype="File"></p>
     <p style="padding-left: 30px;">&nbsp;</p></div></span></div></div></div></div>
 </main>
+
 </body>
+
 </html>
